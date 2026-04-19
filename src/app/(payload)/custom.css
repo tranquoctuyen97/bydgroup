@@ -1,0 +1,298 @@
+/* ═══════════════════════════════════════════════════════
+   BYD Việt Nam — Admin Panel Theme
+   Matching Frontend Landing Page Colors:
+   • White bg, #FAFAFA panels, BYD Red #EC1313 accents
+   • Text: #0F172A (heading), #475569 (body), #64748B (muted)
+   ═══════════════════════════════════════════════════════ */
+
+/* ─── Override Payload Theme Vars → Light BYD ─── */
+:root,
+[data-theme="light"],
+[data-theme="dark"] {
+  /* Background: clean white */
+  --theme-bg: #ffffff;
+  --theme-text: #0F172A;
+  --theme-input-bg: #ffffff;
+
+  /* Elevation scale: white → off-white → light gray */
+  --theme-elevation-0: #ffffff;
+  --theme-elevation-50: #fdfdfe;
+  --theme-elevation-100: #FAFAFA;
+  --theme-elevation-150: #f8f8f9;
+  --theme-elevation-200: #f5f5f6;
+  --theme-elevation-250: #f1f1f3;
+  --theme-elevation-300: #ededf0;
+  --theme-elevation-350: #e8e8ec;
+  --theme-elevation-400: #e3e3e8;
+  --theme-elevation-450: #dddde4;
+  --theme-elevation-500: #d5d5de;
+  --theme-elevation-550: #ccccda;
+  --theme-elevation-600: #b8b8c8;
+  --theme-elevation-650: #9e9eb0;
+  --theme-elevation-700: #7f7f94;
+  --theme-elevation-750: #64748b;
+  --theme-elevation-800: #475569;
+  --theme-elevation-850: #334155;
+  --theme-elevation-900: #1E293B;
+  --theme-elevation-950: #0F172A;
+  --theme-elevation-1000: #020617;
+
+  /* Status colors */
+  --theme-success-50: #f0fdf4;
+  --theme-success-100: #dcfce7;
+  --theme-success-500: #22c55e;
+  --theme-success-650: #16a34a;
+  --theme-warning-50: #fffbeb;
+  --theme-warning-100: #fef3c7;
+  --theme-warning-500: #f59e0b;
+  --theme-warning-650: #d97706;
+  --theme-error-50: #fef2f2;
+  --theme-error-100: #fee2e2;
+  --theme-error-500: #ef4444;
+  --theme-error-650: #dc2626;
+
+  /* Nav */
+  --nav-color: #ffffff;
+  --color-base-750: #64748b;
+  --color-base-850: #475569;
+  --color-base-1000: #0F172A;
+}
+
+/* ─── Custom BYD tokens ─── */
+:root {
+  --byd-red: #EC1313;
+  --byd-red-dark: #d41111;
+  --byd-red-glow: rgba(236, 19, 19, 0.15);
+  --byd-red-tint: rgba(236, 19, 19, 0.06);
+  --byd-red-tint-strong: rgba(236, 19, 19, 0.10);
+  --byd-bg: #ffffff;
+  --byd-bg-alt: #FAFAFA;
+  --byd-border: rgba(0, 0, 0, 0.08);
+  --byd-border-hover: rgba(236, 19, 19, 0.20);
+  --byd-text: #0F172A;
+  --byd-text-body: #475569;
+  --byd-text-muted: #64748B;
+  --byd-text-light: #94A3B8;
+  --byd-font: 'Inter', 'Be Vietnam Pro', system-ui, sans-serif;
+}
+
+/* ─── Base ─── */
+body {
+  font-family: var(--byd-font) !important;
+  background-color: var(--byd-bg) !important;
+  color: var(--byd-text) !important;
+}
+
+/* ─── Navigation / Sidebar ─── */
+.nav {
+  background-color: var(--byd-bg) !important;
+  border-right: 1px solid var(--byd-border) !important;
+}
+
+.nav-group__toggle {
+  color: var(--byd-red) !important;
+  font-size: 0.7rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.1em !important;
+  font-weight: 700 !important;
+}
+
+.nav__link {
+  color: var(--byd-text-body) !important;
+  font-weight: 500 !important;
+  border-radius: 10px !important;
+  transition: all 180ms ease !important;
+}
+
+.nav__link:hover {
+  color: var(--byd-text) !important;
+  background-color: var(--byd-red-tint) !important;
+}
+
+.nav__link--active {
+  color: var(--byd-red) !important;
+  background-color: var(--byd-red-tint) !important;
+  font-weight: 600 !important;
+}
+
+/* ─── App Header / Breadcrumbs ─── */
+.app-header {
+  background-color: var(--byd-bg) !important;
+  border-bottom: 1px solid var(--byd-border) !important;
+}
+
+/* ─── Primary Buttons — BYD Red ─── */
+.btn--style-primary {
+  background-color: var(--byd-red) !important;
+  color: #ffffff !important;
+  border: none !important;
+  box-shadow: 0 4px 14px var(--byd-red-glow) !important;
+  border-radius: 10px !important;
+  font-weight: 600 !important;
+  transition: all 200ms ease !important;
+}
+
+.btn--style-primary:hover {
+  background-color: var(--byd-red-dark) !important;
+  box-shadow: 0 8px 24px rgba(236, 19, 19, 0.25) !important;
+  transform: translateY(-1px);
+}
+
+/* ─── Secondary Buttons ─── */
+.btn--style-secondary {
+  background-color: var(--byd-bg) !important;
+  color: var(--byd-text) !important;
+  border: 1px solid var(--byd-border) !important;
+  border-radius: 10px !important;
+  transition: all 200ms ease !important;
+}
+
+.btn--style-secondary:hover {
+  border-color: var(--byd-border-hover) !important;
+  background-color: var(--byd-red-tint) !important;
+  color: var(--byd-red) !important;
+}
+
+/* ─── Pill Buttons ─── */
+.btn--style-pill {
+  border-radius: 10px !important;
+  font-weight: 600 !important;
+}
+
+/* ─── Doc Tabs ─── */
+.doc-tab {
+  border-radius: 10px !important;
+  font-weight: 500 !important;
+  transition: all 180ms ease !important;
+}
+
+.doc-tab--active,
+.doc-tab.doc-tab--active {
+  background-color: var(--byd-red) !important;
+  color: #ffffff !important;
+}
+
+.doc-tab:hover:not(.doc-tab--active) {
+  background-color: var(--byd-red-tint) !important;
+  color: var(--byd-text) !important;
+}
+
+/* ─── Dashboard Cards ─── */
+.card {
+  background-color: var(--byd-bg-alt) !important;
+  border: 1px solid var(--byd-border) !important;
+  border-radius: 14px !important;
+  transition: all 250ms ease !important;
+}
+
+.card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08) !important;
+  border-color: var(--byd-border-hover) !important;
+}
+
+/* ─── Table rows ─── */
+tr:hover {
+  background-color: var(--byd-red-tint) !important;
+}
+
+thead th {
+  color: var(--byd-text-muted) !important;
+  text-transform: uppercase !important;
+  font-size: 0.75rem !important;
+  letter-spacing: 0.08em !important;
+}
+
+/* ─── Field Inputs ─── */
+.field-type input:focus-visible,
+.field-type textarea:focus-visible,
+.field-type select:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  border-color: var(--byd-red) !important;
+  box-shadow: 0 0 0 3px var(--byd-red-glow) !important;
+  outline: none !important;
+}
+
+/* ─── Search ─── */
+.search-filter__input input {
+  border: 1px solid var(--byd-border) !important;
+  border-radius: 10px !important;
+  background-color: var(--byd-bg-alt) !important;
+}
+
+.search-filter__input input:focus {
+  border-color: var(--byd-red) !important;
+  box-shadow: 0 0 0 3px var(--byd-red-glow) !important;
+}
+
+/* ─── Lists ─── */
+.collection-list__header {
+  border-bottom: 1px solid var(--byd-border) !important;
+}
+
+/* ─── Document header ─── */
+.doc-header__title {
+  font-weight: 800 !important;
+  color: var(--byd-text) !important;
+}
+
+/* ─── Links ─── */
+a:hover {
+  color: var(--byd-red) !important;
+}
+
+/* ─── Checkbox / Toggle ─── */
+.checkbox-input:checked+.custom-checkbox,
+.check:checked~.custom-checkbox {
+  background-color: var(--byd-red) !important;
+}
+
+/* ─── Login page ─── */
+.login {
+  background-color: var(--byd-bg-alt) !important;
+}
+
+.login__brand {
+  margin-bottom: 2rem !important;
+}
+
+/* ─── Top contact-bar style accent line ─── */
+.app-header::before {
+  content: '';
+  display: block;
+  height: 3px;
+  background: linear-gradient(90deg, var(--byd-red), #d41111, var(--byd-red));
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.12);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(236, 19, 19, 0.4);
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 1024px) {
+
+  .collection,
+  .card,
+  .dashboard {
+    padding: 1rem !important;
+  }
+}

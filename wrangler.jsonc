@@ -1,0 +1,30 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "main": ".open-next/worker.js",
+  "name": "bydgroup",
+  "account_id": "f1d87484535394437ea157f4237202f2",
+  "compatibility_date": "2026-04-18",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "d1_databases": [
+    {
+      "binding": "BYD_DB",
+      "database_name": "byd-db",
+      "database_id": "dedc7101-8bf7-4a72-9c3e-ba326261f5c6"
+    }
+  ],
+  "vars": {
+    "CF_PAGES": "1",
+    "PAYLOAD_SECRET": "bydgroup-super-secret-key-change-in-production"
+  },
+  "define": {
+    "process.env.NODE_ENV": "\"production\""
+  },
+  "alias": {
+    "critters": "./node_modules/@opennextjs/cloudflare/dist/cli/templates/shims/empty.js",
+    "@opentelemetry/api": "./.open-next/server-functions/default/node_modules/next/dist/compiled/@opentelemetry/api/index.js"
+  }
+}
