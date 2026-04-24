@@ -1,9 +1,9 @@
-import * as migration_20260418_235438_init_schema from './20260418_235438_init_schema';
+import * as migration_20260423_103247_init_postgres from './20260423_103247_init_postgres';
 
 export const migrations = [
   {
-    up: migration_20260418_235438_init_schema.up,
-    down: migration_20260418_235438_init_schema.down,
-    name: '20260418_235438_init_schema'
+    up: migration_20260423_103247_init_postgres.up,
+    down: migration_20260423_103247_init_postgres.down,
+    name: '20260423_103247_init_postgres'
   },
 ];

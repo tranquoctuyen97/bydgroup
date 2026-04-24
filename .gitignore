@@ -33,3 +33,5 @@ media/
 next-env.d.ts
 payload-types.ts
 .vercel
+.open-next
+.wrangler

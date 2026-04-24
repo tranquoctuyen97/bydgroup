@@ -20,9 +20,9 @@ if (!upSectionMatch) {
 }
 
 const upSection = upSectionMatch[1]
-const sqlBlocks = [...upSection.matchAll(/await db\.run\(sql`((?:\\`|[^`])*)`\);?/g)].map(
-  (match) => match[1].replaceAll('\\`', '`').trim(),
-)
+const sqlBlocks = [
+  ...upSection.matchAll(/await db\.(?:run|execute)\(sql`((?:\\`|[^`])*)`\);?/g),
+].map((match) => match[1].replaceAll('\\`', '`').trim())
 
 if (!sqlBlocks.length) {
   console.error(`No SQL blocks found in ${inputPath}`)
