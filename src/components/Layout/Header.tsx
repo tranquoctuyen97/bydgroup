@@ -90,7 +90,7 @@ export function Header() {
                 <Link
                   key={item.path}
                   href={item.path}
-                  className={`px-4 py-2.5 rounded-lg text-sm font-semibold transition-all duration-200 ${pathname === item.path
+                  className={`px-4 py-2.5 rounded-lg text-sm font-bold uppercase tracking-wide transition-all duration-200 ${pathname === item.path
                     ? 'text-[#EC1313] bg-[rgba(236,19,19,0.06)]'
                     : 'text-[#475569] hover:text-[#0F172A] hover:bg-slate-50'
                     }`}
@@ -138,7 +138,7 @@ export function Header() {
               <Link
                 key={item.path}
                 href={item.path}
-                className={`px-4 py-3 rounded-lg text-sm font-semibold ${pathname === item.path
+                className={`px-4 py-3 rounded-lg text-sm font-bold uppercase tracking-wide ${pathname === item.path
                   ? 'text-[#EC1313] bg-[rgba(236,19,19,0.05)]'
                   : 'text-[#475569]'
                   }`}
