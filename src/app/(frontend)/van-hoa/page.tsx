@@ -207,11 +207,11 @@ export default function CulturePage() {
               </span>
             </div>
             <h2 className="text-3xl lg:text-4xl font-black text-[#0F172A] mb-4 tracking-tight">
-              NHỮNG GIÁ TRỊ CHÚNG TÔI THEO ĐUỔI
+              8 GIÁ TRỊ CỐT LÕI BYD
             </h2>
             <p className="text-[#64748B] text-lg max-w-2xl mx-auto">
-              BYD xây dựng văn hóa doanh nghiệp dựa trên nền tảng con người,
-              sáng tạo và trách nhiệm cộng đồng.
+              Đây là bộ nguyên tắc định hướng cách BYD suy nghĩ, phối hợp,
+              phục vụ khách hàng và xây dựng đội ngũ mỗi ngày.
             </p>
           </div>
 

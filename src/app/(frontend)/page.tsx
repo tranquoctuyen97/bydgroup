@@ -267,8 +267,8 @@ export default function HomePage() {
           </div>
 
           <div className="mt-12 text-center">
-            <Link href="/gioi-thieu" className="group inline-flex items-center gap-3 rounded-xl bg-[#EC1313] px-8 py-4 text-lg font-bold text-white transition-all duration-300 hover:bg-[#d41111] hover:shadow-lg hover:shadow-red-200">
-              Xem ý nghĩa từng giá trị
+            <Link href="/van-hoa" className="group inline-flex items-center gap-3 rounded-xl bg-[#EC1313] px-8 py-4 text-lg font-bold text-white transition-all duration-300 hover:bg-[#d41111] hover:shadow-lg hover:shadow-red-200">
+              Đọc đầy đủ tại trang Văn hóa
               <svg className="h-5 w-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>

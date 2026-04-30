@@ -1,7 +1,5 @@
 import Link from 'next/link'
 
-import { CoreValueIcon, coreValues } from '../core-values'
-
 const imgHero = '/images/du-lich-cua-lo.webp'
 
 const timeline = [
@@ -24,6 +22,46 @@ const stats = [
   { value: '50+', label: 'Đối tác thương hiệu' },
   { value: '5+', label: 'Ngành hàng' },
   { value: '99%', label: 'Khách hàng hài lòng' },
+]
+
+const businessPillars = [
+  {
+    title: 'Thương mại điện tử đa nền tảng',
+    desc: 'Xây dựng năng lực bán hàng trên các kênh số, tối ưu hành trình mua sắm và mở rộng độ phủ sản phẩm bằng dữ liệu.',
+  },
+  {
+    title: 'Hệ sinh thái ngành hàng đa dạng',
+    desc: 'Phát triển danh mục nông nghiệp, gia dụng, thời trang, mỹ phẩm và hàng thương hiệu theo nhu cầu thực tế của thị trường.',
+  },
+  {
+    title: 'Kết nối sản phẩm Việt ra thị trường lớn hơn',
+    desc: 'Tìm kiếm, đóng gói và phân phối các sản phẩm có tiềm năng để nâng cao sức cạnh tranh của hàng Việt trong khu vực.',
+  },
+]
+
+const operatingCapabilities = [
+  {
+    title: 'Nghiên cứu thị trường',
+    desc: 'Theo dõi xu hướng tiêu dùng, dữ liệu nền tảng và phản hồi khách hàng để chọn đúng sản phẩm, đúng thời điểm.',
+  },
+  {
+    title: 'Marketing hiệu suất',
+    desc: 'Triển khai nội dung, quảng cáo và đo lường chuyển đổi nhằm tăng trưởng doanh thu có kiểm soát.',
+  },
+  {
+    title: 'Vận hành bán hàng',
+    desc: 'Chuẩn hóa quy trình đăng bán, xử lý đơn, chăm sóc khách hàng và phối hợp cùng đối tác cung ứng.',
+  },
+  {
+    title: 'Phát triển đội ngũ',
+    desc: 'Xây dựng môi trường học nhanh, làm thật, đo kết quả rõ ràng và tạo cơ hội phát triển cho nhân sự trẻ.',
+  },
+]
+
+const companyCommitments = [
+  'Sản phẩm có giá trị sử dụng rõ ràng, phù hợp nhu cầu khách hàng.',
+  'Vận hành minh bạch, bám dữ liệu và liên tục cải tiến chất lượng dịch vụ.',
+  'Phát triển đội ngũ có chuyên môn, kỷ luật và tinh thần phụng sự.',
 ]
 
 export default function GioiThieuPage() {
@@ -177,43 +215,86 @@ export default function GioiThieuPage() {
         </div>
       </section>
 
-      <section className="bg-[#F8FBFF] py-20 lg:py-28">
+      <section className="bg-[#FAFAFA] py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-16 text-center">
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#DCEBFF] bg-white px-4 py-2 shadow-sm">
-              <span className="h-8 w-1 rounded-full bg-[#F6C400]" />
-              <span className="text-xs font-black uppercase tracking-widest text-[#0074E8]">Văn hóa doanh nghiệp</span>
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-[rgba(236,19,19,0.08)] px-4 py-2">
+              <div className="h-1.5 w-1.5 rounded-full bg-[#EC1313]" />
+              <span className="text-xs font-bold uppercase tracking-widest text-[#EC1313]">Năng lực BYD</span>
             </div>
-            <h2 className="mb-4 text-3xl font-black uppercase tracking-wide text-[#0074E8] lg:text-4xl">8 GIÁ TRỊ CỐT LÕI</h2>
+            <h2 className="mb-4 text-3xl font-black tracking-tight text-[#0F172A] lg:text-4xl">BYD LÀM GÌ?</h2>
             <p className="mx-auto max-w-3xl text-lg text-[#475569]">
-              Bộ giá trị định hình cách BYD suy nghĩ, ra quyết định, phối hợp và phục vụ khách hàng mỗi ngày.
+              BYD tập trung xây dựng năng lực thương mại điện tử, phát triển danh mục sản phẩm và vận hành đội ngũ tăng trưởng bền vững.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-            {coreValues.map((item) => (
+          <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
+            {businessPillars.map((item, index) => (
               <div
                 key={item.title}
-                className="group relative overflow-hidden rounded-[8px] border border-[#E5EFFD] bg-white p-7 shadow-[0_18px_45px_rgba(0,74,173,0.08)] transition-all duration-300 hover:-translate-y-1 hover:border-[#0074E8]/30 hover:shadow-[0_24px_60px_rgba(0,116,232,0.15)]"
+                className="group relative overflow-hidden rounded-2xl border border-slate-100 bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#EC1313]/20 hover:shadow-xl"
               >
-                <div className="absolute inset-x-0 bottom-0 h-1.5 bg-[#F6C400]" />
-                <div className="mb-5 flex items-start gap-4">
-                  <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-[8px] bg-[#EAF4FF] text-[#0074E8]">
-                    <CoreValueIcon name={item.icon} className="h-8 w-8" />
-                  </div>
-                  <div>
-                    <div className="mb-1 text-xs font-black uppercase tracking-widest text-[#0074E8]/50">{item.number}</div>
-                    <h3 className="text-2xl font-black uppercase tracking-wide text-[#0074E8]">{item.title}</h3>
-                  </div>
+                <div className="absolute inset-x-0 bottom-0 h-1 bg-[#EC1313]" />
+                <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-[rgba(236,19,19,0.08)] text-lg font-black text-[#EC1313]">
+                  {String(index + 1).padStart(2, '0')}
                 </div>
-                <p className="mb-4 text-base font-semibold leading-relaxed text-[#0F172A]">{item.shortDesc}</p>
-                <p className="mb-4 text-sm leading-relaxed text-[#475569]">{item.longDesc}</p>
-                <div className="rounded-[8px] bg-[#F8FBFF] p-4 text-sm leading-relaxed text-[#334155]">
-                  <span className="font-bold text-[#0074E8]">Trong công việc: </span>
-                  {item.workMeaning}
-                </div>
+                <h3 className="mb-3 text-xl font-black uppercase tracking-wide text-[#0F172A]">{item.title}</h3>
+                <p className="leading-relaxed text-[#475569]">{item.desc}</p>
               </div>
             ))}
+          </div>
+
+          <div className="mt-14 grid grid-cols-1 gap-8 lg:grid-cols-[0.95fr_1.35fr]">
+            <div className="relative overflow-hidden rounded-3xl bg-[#0F172A] p-8 text-white lg:p-10">
+              <div className="pointer-events-none absolute right-0 top-0 h-48 w-48 translate-x-1/3 -translate-y-1/3 rounded-full bg-[#EC1313]/20" />
+              <div className="relative">
+                <span className="mb-4 inline-block rounded-full bg-white/10 px-3 py-1.5 text-xs font-bold uppercase tracking-widest text-white/80">
+                  Định vị
+                </span>
+                <h3 className="mb-5 text-3xl font-black uppercase leading-tight">Doanh nghiệp thương mại điện tử lấy vận hành làm lõi</h3>
+                <p className="mb-8 leading-relaxed text-slate-300">
+                  BYD không chỉ bán sản phẩm. Công ty xây dựng hệ thống từ lựa chọn hàng hóa, marketing, vận hành đơn hàng đến chăm sóc khách hàng để tạo tăng trưởng có thể lặp lại.
+                </p>
+                <Link
+                  href="/linh-vuc"
+                  className="inline-flex items-center gap-3 rounded-xl bg-[#EC1313] px-6 py-3 font-bold text-white transition-colors hover:bg-[#d41111]"
+                >
+                  Xem lĩnh vực hoạt động
+                  <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+              {operatingCapabilities.map((item) => (
+                <div key={item.title} className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm">
+                  <h3 className="mb-3 text-lg font-black uppercase tracking-wide text-[#0F172A]">{item.title}</h3>
+                  <p className="text-sm leading-relaxed text-[#475569]">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="mt-14 rounded-3xl border border-[#FEE2E2] bg-white p-8 shadow-sm lg:p-10">
+            <div className="grid grid-cols-1 gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
+              <div>
+                <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-[rgba(236,19,19,0.08)] px-4 py-2">
+                  <div className="h-1.5 w-1.5 rounded-full bg-[#EC1313]" />
+                  <span className="text-xs font-bold uppercase tracking-widest text-[#EC1313]">Cam kết phát triển</span>
+                </div>
+                <h3 className="text-3xl font-black uppercase text-[#0F172A]">Tăng trưởng đi cùng chất lượng và con người</h3>
+              </div>
+              <div className="space-y-4">
+                {companyCommitments.map((item) => (
+                  <div key={item} className="flex gap-4 rounded-2xl bg-[#FAFAFA] p-4">
+                    <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#EC1313] text-xs font-bold text-white">✓</span>
+                    <p className="leading-relaxed text-[#475569]">{item}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -225,22 +306,22 @@ export default function GioiThieuPage() {
             <div className="absolute bottom-0 left-0 h-48 w-48 -translate-x-1/4 translate-y-1/3 rounded-full bg-white/5" />
 
             <div className="relative text-center">
-              <h2 className="mb-5 text-4xl font-black lg:text-5xl">Cùng BYD kiến tạo giá trị vĩ đại</h2>
+              <h2 className="mb-5 text-4xl font-black uppercase lg:text-5xl">Cùng BYD kiến tạo giá trị vĩ đại</h2>
               <p className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-white/90">
                 Phụng sự xã hội qua những sản phẩm tốt lành - cùng chúng tôi nâng cao chất lượng cuộc sống cho mọi người.
               </p>
               <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-                <Link
-                  href="/lien-he"
+                <a
+                  href="mailto:hcns.byd@gmail.com"
                   className="w-full rounded-xl bg-white px-8 py-4 text-center text-lg font-bold text-[#EC1313] shadow-lg transition-colors hover:bg-red-50 sm:w-auto"
                 >
-                  Liên hệ tư vấn
-                </Link>
+                  Trao đổi hợp tác
+                </a>
                 <Link
-                  href="/linh-vuc"
+                  href="/van-hoa"
                   className="w-full rounded-xl border-2 border-white/50 px-8 py-4 text-center text-lg font-bold text-white transition-all hover:border-white hover:bg-white/10 sm:w-auto"
                 >
-                  Xem dịch vụ
+                  Xem văn hóa BYD
                 </Link>
               </div>
             </div>

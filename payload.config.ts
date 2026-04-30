@@ -41,6 +41,21 @@ if (!databaseURL) {
   )
 }
 
+const normalizePostgresSSLMode = (connectionString: string) => {
+  try {
+    const url = new URL(connectionString)
+    const sslMode = url.searchParams.get('sslmode')
+
+    if (sslMode && ['prefer', 'require', 'verify-ca'].includes(sslMode)) {
+      url.searchParams.set('sslmode', 'verify-full')
+    }
+
+    return url.toString()
+  } catch {
+    return connectionString
+  }
+}
+
 const buildPublicMediaURL = ({
   filename,
   prefix,
@@ -116,7 +131,7 @@ export default buildConfig({
   },
   db: postgresAdapter({
     pool: {
-      connectionString: databaseURL,
+      connectionString: normalizePostgresSSLMode(databaseURL),
     },
   }),
   plugins: [

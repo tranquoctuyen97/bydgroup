@@ -185,7 +185,7 @@ Khuyến nghị setup:
 ## 5. Mẫu env production hoàn chỉnh
 
 ```bash
-DATABASE_URL=postgresql://USER:PASSWORD@HOST/DB?sslmode=require
+DATABASE_URL=postgresql://USER:PASSWORD@HOST/DB?sslmode=verify-full
 PAYLOAD_SECRET=<random-secret>
 NEXT_PUBLIC_SERVER_URL=https://bydgroup.vn
 
