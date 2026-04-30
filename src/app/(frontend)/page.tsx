@@ -1,5 +1,7 @@
 import Link from 'next/link'
 
+import { CoreValueIcon, coreValues } from './core-values'
+
 const stats = [
   { display: '1000+', label: 'Sản phẩm', icon: 'users' },
   { display: '50+', label: 'Đối tác thương hiệu', icon: 'handshake' },
@@ -38,17 +40,6 @@ const services = [
     title: 'Truyền thông thương mại',
     desc: 'Marketing đa nền tảng, tiếp cận khách hàng mục tiêu hiệu quả với chi phí tối ưu.',
   },
-]
-
-const coreValues = [
-  { num: '01', title: 'NGHĨ LỚN', desc: 'Dám mơ những giấc mơ vĩ đại - bộ não sẽ tự tìm đường dẫn đến đích.' },
-  { num: '02', title: 'TỐC ĐỘ', desc: 'Ai nhanh hơn, người đó chiến thắng - thực thi nhanh, học nhanh, thích nghi nhanh.' },
-  { num: '03', title: 'ĐOÀN KẾT', desc: 'Yêu thương, thấu hiểu và bảo vệ nhau - sức mạnh tập thể vượt trội hơn nỗ lực cá nhân.' },
-  { num: '04', title: 'HẠNH PHÚC', desc: 'Hạnh phúc đến từ lòng Biết Ơn - mỗi ngày tìm ít nhất một điều để biết ơn.' },
-  { num: '05', title: 'TỬ TẾ', desc: 'Win-Win-Win: khách hàng, đối tác và BYD cùng thắng - đó mới là giá trị bền vững.' },
-  { num: '06', title: 'KỶ LUẬT', desc: 'Kỷ luật đưa chúng ta tới nơi mà động lực không thể - nền tảng của mọi thành công.' },
-  { num: '07', title: 'CHUYÊN GIA', desc: 'Không ngừng trau dồi kiến thức và kỹ năng - trở thành chuyên gia trong lĩnh vực của mình để tạo ra giá trị vượt trội.' },
-  { num: '08', title: 'SÁNG TẠO', desc: 'Luôn tìm kiếm cách làm mới, đột phá - biến ý tưởng thành hành động tạo nên sự khác biệt.' },
 ]
 
 const teamGallery = [
@@ -242,37 +233,46 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-20 lg:py-28 bg-[#0F172A] relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#EC1313]/10 to-transparent pointer-events-none" />
+      <section className="py-20 lg:py-28 bg-[#FFF5F5] relative overflow-hidden">
+        <div className="absolute inset-x-0 top-0 h-1 bg-[#EC1313]" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-black text-white mb-4 tracking-widest uppercase">Giá trị cốt lõi</h2>
-            <p className="text-slate-300 text-lg max-w-2xl mx-auto">Những nguyên tắc nền tảng dẫn dắt mọi hoạt động của chúng tôi</p>
-          </div>
-
-          <div className="max-w-4xl mx-auto mb-12">
-            <div className="group bg-white/5 backdrop-blur-sm rounded-2xl p-12 border border-white/10 hover:bg-white/10 hover:border-[#EC1313]/30 transition-all duration-300 text-center">
-              <div className="flex justify-center mb-8">
-                <div className="w-16 h-16 rounded-2xl bg-[#EC1313] flex items-center justify-center text-white">
-                  <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" /></svg>
-                </div>
-              </div>
-              <p className="text-white text-xl lg:text-2xl font-bold leading-relaxed uppercase tracking-wide">
-                Xây dựng BYD thành doanh nghiệp toàn cầu, phân phối sản phẩm Việt ra quốc tế, góp phần nâng cao vị thế kinh tế Việt Nam
-              </p>
+            <div className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full mb-4 shadow-sm border border-[#FEE2E2]">
+              <span className="h-8 w-1 rounded-full bg-[#EC1313]" />
+              <span className="text-[#EC1313] text-xs font-black tracking-widest uppercase">Giá trị cốt lõi</span>
             </div>
+            <h2 className="text-3xl lg:text-4xl font-black text-[#0F172A] mb-4 tracking-wide uppercase">Bộ giá trị định hướng BYD</h2>
+            <p className="text-[#475569] text-lg max-w-2xl mx-auto">
+              8 nguyên tắc nền tảng giúp BYD thống nhất cách suy nghĩ, hành động và tạo ra giá trị bền vững.
+            </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {coreValues.map((item) => (
-              <div key={item.title} className="group bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 hover:border-[#EC1313]/30 transition-all duration-300 cursor-default">
-                <div className="w-10 h-10 rounded-full bg-[#EC1313] text-white flex items-center justify-center text-sm font-bold mb-4">
-                  {item.num}
+              <div
+                key={item.title}
+                className="group relative min-h-[220px] overflow-hidden rounded-[8px] border border-[#FEE2E2] bg-white p-6 shadow-[0_18px_45px_rgba(236,19,19,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-[#EC1313]/30 hover:shadow-[0_24px_60px_rgba(236,19,19,0.12)]"
+              >
+                <div className="absolute inset-x-0 bottom-0 h-1.5 bg-[#EC1313]" />
+                <div className="mb-5 flex items-center justify-between">
+                  <div className="text-[#EC1313]">
+                    <CoreValueIcon name={item.icon} className="h-11 w-11" />
+                  </div>
+                  <span className="text-sm font-black text-[#EC1313]/15">{item.number}</span>
                 </div>
-                <h3 className="text-base font-bold text-white mb-2 tracking-wide">{item.title}</h3>
-                <p className="text-slate-300 text-sm leading-relaxed">{item.desc}</p>
+                <h3 className="mb-3 text-xl font-black uppercase tracking-wide text-[#EC1313]">{item.title}</h3>
+                <p className="text-sm leading-relaxed text-[#475569]">{item.shortDesc}</p>
               </div>
             ))}
+          </div>
+
+          <div className="mt-12 text-center">
+            <Link href="/gioi-thieu" className="group inline-flex items-center gap-3 rounded-xl bg-[#EC1313] px-8 py-4 text-lg font-bold text-white transition-all duration-300 hover:bg-[#d41111] hover:shadow-lg hover:shadow-red-200">
+              Xem ý nghĩa từng giá trị
+              <svg className="h-5 w-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </Link>
           </div>
         </div>
       </section>

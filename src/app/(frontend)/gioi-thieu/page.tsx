@@ -1,5 +1,7 @@
 import Link from 'next/link'
 
+import { CoreValueIcon, coreValues } from '../core-values'
+
 const imgHero = '/images/du-lich-cua-lo.webp'
 
 const timeline = [
@@ -22,17 +24,6 @@ const stats = [
   { value: '50+', label: 'Đối tác thương hiệu' },
   { value: '5+', label: 'Ngành hàng' },
   { value: '99%', label: 'Khách hàng hài lòng' },
-]
-
-const cultureValues = [
-  { title: 'NGHĨ LỚN', desc: 'Dám mơ những giấc mơ vĩ đại - bộ não sẽ tự tìm đường dẫn đến đích.' },
-  { title: 'TỐC ĐỘ', desc: 'Ai nhanh hơn, người đó chiến thắng - thực thi nhanh, học nhanh, thích nghi nhanh.' },
-  { title: 'ĐOÀN KẾT', desc: 'Yêu thương, thấu hiểu và bảo vệ nhau - sức mạnh tập thể vượt trội hơn nỗ lực cá nhân.' },
-  { title: 'HẠNH PHÚC', desc: 'Hạnh phúc đến từ lòng Biết Ơn - mỗi ngày tìm ít nhất một điều để biết ơn.' },
-  { title: 'TỬ TẾ', desc: 'Win-Win-Win: khách hàng, đối tác và BYD cùng thắng - đó mới là giá trị bền vững.' },
-  { title: 'KỶ LUẬT', desc: 'Kỷ luật đưa chúng ta tới nơi mà động lực không thể - nền tảng của mọi thành công.' },
-  { title: 'CHUYÊN GIA', desc: 'Không ngừng trau dồi kiến thức và kỹ năng - trở thành chuyên gia trong lĩnh vực của mình để tạo ra giá trị vượt trội.' },
-  { title: 'SÁNG TẠO', desc: 'Luôn tìm kiếm cách làm mới, đột phá - biến ý tưởng thành hành động tạo nên sự khác biệt.' },
 ]
 
 export default function GioiThieuPage() {
@@ -186,30 +177,41 @@ export default function GioiThieuPage() {
         </div>
       </section>
 
-      <section className="bg-white py-20 lg:py-28">
+      <section className="bg-[#F8FBFF] py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-16 text-center">
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-[rgba(236,19,19,0.08)] px-4 py-2">
-              <div className="h-1.5 w-1.5 rounded-full bg-[#EC1313]" />
-              <span className="text-xs font-bold uppercase tracking-widest text-[#EC1313]">Văn hóa doanh nghiệp</span>
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#DCEBFF] bg-white px-4 py-2 shadow-sm">
+              <span className="h-8 w-1 rounded-full bg-[#F6C400]" />
+              <span className="text-xs font-black uppercase tracking-widest text-[#0074E8]">Văn hóa doanh nghiệp</span>
             </div>
-            <h2 className="mb-4 text-3xl font-black tracking-tight text-[#0F172A] lg:text-4xl">8 GIÁ TRỊ CỐT LÕI</h2>
-            <p className="mx-auto max-w-2xl text-lg text-[#64748B]">
-              Bộ gen văn hóa định hình cách BYD tư duy, hành động và tạo ra tác động mỗi ngày
+            <h2 className="mb-4 text-3xl font-black uppercase tracking-wide text-[#0074E8] lg:text-4xl">8 GIÁ TRỊ CỐT LÕI</h2>
+            <p className="mx-auto max-w-3xl text-lg text-[#475569]">
+              Bộ giá trị định hình cách BYD suy nghĩ, ra quyết định, phối hợp và phục vụ khách hàng mỗi ngày.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {cultureValues.map((item, i) => (
+          <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+            {coreValues.map((item) => (
               <div
                 key={item.title}
-                className="group rounded-2xl border border-transparent bg-[#FAFAFA] p-6 transition-all duration-300 hover:border-slate-100 hover:bg-white hover:shadow-lg hover:shadow-slate-200/50"
+                className="group relative overflow-hidden rounded-[8px] border border-[#E5EFFD] bg-white p-7 shadow-[0_18px_45px_rgba(0,74,173,0.08)] transition-all duration-300 hover:-translate-y-1 hover:border-[#0074E8]/30 hover:shadow-[0_24px_60px_rgba(0,116,232,0.15)]"
               >
-                <div className="mb-5 flex h-10 w-10 items-center justify-center rounded-full bg-[#EC1313] text-sm font-bold text-white">
-                  {String(i + 1).padStart(2, '0')}
+                <div className="absolute inset-x-0 bottom-0 h-1.5 bg-[#F6C400]" />
+                <div className="mb-5 flex items-start gap-4">
+                  <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-[8px] bg-[#EAF4FF] text-[#0074E8]">
+                    <CoreValueIcon name={item.icon} className="h-8 w-8" />
+                  </div>
+                  <div>
+                    <div className="mb-1 text-xs font-black uppercase tracking-widest text-[#0074E8]/50">{item.number}</div>
+                    <h3 className="text-2xl font-black uppercase tracking-wide text-[#0074E8]">{item.title}</h3>
+                  </div>
                 </div>
-                <h3 className="mb-2 text-lg font-bold text-[#0F172A]">{item.title}</h3>
-                <p className="text-sm leading-relaxed text-[#475569]">{item.desc}</p>
+                <p className="mb-4 text-base font-semibold leading-relaxed text-[#0F172A]">{item.shortDesc}</p>
+                <p className="mb-4 text-sm leading-relaxed text-[#475569]">{item.longDesc}</p>
+                <div className="rounded-[8px] bg-[#F8FBFF] p-4 text-sm leading-relaxed text-[#334155]">
+                  <span className="font-bold text-[#0074E8]">Trong công việc: </span>
+                  {item.workMeaning}
+                </div>
               </div>
             ))}
           </div>

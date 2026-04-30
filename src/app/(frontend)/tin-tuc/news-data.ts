@@ -82,7 +82,7 @@ export const fallbackNews: NewsItem[] = [
     title: 'Vinh danh Top doanh thu – Giải thưởng Everest 🏆',
     desc: 'Lễ trao giải Everest – Top 1 doanh thu tháng. BYD tôn vinh những cá nhân xuất sắc đã cống hiến hết mình.',
     date: '15 Tháng 11, 2024',
-    content: 'BYD vinh danh những cá nhân xuất sắc nhất trong tháng!\n\n🏆 Giải thưởng Everest – Top 1 doanh thu được trao cho những chiến binh kinh doanh đã nỗ lực không ngừng nghỉ.\n\nĐây không chỉ là phần thưởng vật chất, mà còn là sự ghi nhận cho tinh thần "Vượt Đích" – một trong 8 giá trị cốt lõi của BYD.\n\nChúc mừng tất cả các anh chị em đã đạt được thành tích xuất sắc! Hãy tiếp tục chinh phục những đỉnh cao mới! 🚀',
+    content: 'BYD vinh danh những cá nhân xuất sắc nhất trong tháng!\n\n🏆 Giải thưởng Everest – Top 1 doanh thu được trao cho những chiến binh kinh doanh đã nỗ lực không ngừng nghỉ.\n\nĐây không chỉ là phần thưởng vật chất, mà còn là sự ghi nhận cho tinh thần Kỷ Luật, Tốc Độ và Chuyên Gia trong hành trình tạo ra kết quả xuất sắc.\n\nChúc mừng tất cả các anh chị em đã đạt được thành tích xuất sắc! Hãy tiếp tục chinh phục những đỉnh cao mới! 🚀',
     author: 'BYD Media',
   },
   {

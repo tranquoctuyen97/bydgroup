@@ -4,6 +4,8 @@ import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 
+import { CoreValueIcon, coreValues } from '../core-values'
+
 /* ── images ───────────────────────────────────────── */
 
 const imgCulture = '/images/hoat-dong-20-10.webp'
@@ -29,14 +31,14 @@ const testimonials = [
     role: 'Senior Developer, 3 năm tại BYD',
     avatar: 'MA',
     quote:
-      'BYD không chỉ là nơi làm việc — mà là nơi tôi dám mơ lớn và biến ước mơ thành hiện thực. Tinh thần WOW ở đây thực sự truyền cảm hứng cho tôi mỗi ngày.',
+      'BYD không chỉ là nơi làm việc - mà là nơi tôi được khuyến khích nghĩ lớn, hành động nhanh và biến mục tiêu thành kết quả thực tế.',
   },
   {
     name: 'Trần Thị Hương',
     role: 'Marketing Manager, 4 năm tại BYD',
     avatar: 'TH',
     quote:
-      'Văn hóa 8 giá trị cốt lõi tại BYD không chỉ trên giấy — chúng tôi sống với nó mỗi ngày. Sự Tử Tế và Đoàn Kết là điều khen thưởng xứng đáng.',
+      'Văn hóa 8 giá trị cốt lõi tại BYD không chỉ nằm trên giấy. Tử Tế, Đoàn Kết và Kỷ Luật thể hiện rõ trong cách đội ngũ phối hợp mỗi ngày.',
   },
   {
     name: 'Lê Văn Đức',
@@ -213,22 +215,39 @@ export default function CulturePage() {
             </p>
           </div>
 
-          {/* Row 1: text left, image right */}
+          <div className="mb-16 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {coreValues.map((item) => (
+              <div
+                key={item.title}
+                className="group relative min-h-[210px] overflow-hidden rounded-[8px] border border-[#FEE2E2] bg-white p-6 shadow-[0_18px_45px_rgba(236,19,19,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-[#EC1313]/30 hover:bg-white hover:shadow-[0_24px_60px_rgba(236,19,19,0.12)]"
+              >
+                <div className="absolute inset-x-0 bottom-0 h-1.5 bg-[#EC1313]" />
+                <div className="mb-5 flex items-center justify-between">
+                  <div className="text-[#EC1313]">
+                    <CoreValueIcon name={item.icon} className="h-10 w-10" />
+                  </div>
+                  <span className="text-sm font-black text-[#EC1313]/15">{item.number}</span>
+                </div>
+                <h3 className="mb-3 text-lg font-black uppercase tracking-wide text-[#EC1313]">{item.title}</h3>
+                <p className="text-sm leading-relaxed text-[#475569]">{item.shortDesc}</p>
+              </div>
+            ))}
+          </div>
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-20">
             <div>
               <h3 className="text-2xl lg:text-3xl font-bold text-[#0F172A] mb-6">
-                Nghĩ Lớn — Tốc Độ — WOW
+                Nghĩ Lớn - Tốc Độ - Kỷ Luật - Chuyên Gia
               </h3>
               <p className="text-[#475569] text-lg leading-relaxed mb-6">
-                Tại BYD, mỗi nhân viên đều là một cá nhân độc đáo với tiềm năng
-                riêng. Chúng tôi tạo môi trường để mỗi người có thể phát huy tối
-                đa khả năng của mình, đóng góp vào sự phát triển chung của tổ
-                chức.
+                BYD xây dựng đội ngũ có khả năng đặt mục tiêu lớn, phản hồi nhanh
+                với thị trường và giữ cam kết trong từng đầu việc. Tốc độ chỉ tạo
+                giá trị khi đi cùng kỷ luật và năng lực chuyên môn đủ sâu.
               </p>
               <p className="text-[#475569] leading-relaxed">
-                Chính sách nhân sự linh hoạt, chương trình mentoring 1-1, và văn
-                hóa feedback mở giúp mọi thành viên luôn cảm thấy được lắng
-                nghe và trân trọng.
+                Trong vận hành, mỗi thành viên được khuyến khích học nhanh, làm
+                chủ chuyên môn, chuẩn hóa cách làm và biến kế hoạch thành kết
+                quả có thể đo lường.
               </p>
             </div>
             <div className="rounded-2xl overflow-hidden shadow-2xl">
@@ -242,7 +261,6 @@ export default function CulturePage() {
             </div>
           </div>
 
-          {/* Row 2: image left, text right */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="order-2 lg:order-1 rounded-2xl overflow-hidden shadow-2xl">
               <img
@@ -255,17 +273,17 @@ export default function CulturePage() {
             </div>
             <div className="order-1 lg:order-2">
               <h3 className="text-2xl lg:text-3xl font-bold text-[#0F172A] mb-6">
-                Tử Tế — Đoàn Kết — Vượt Đích
+                Đoàn Kết - Hạnh Phúc - Tử Tế - Sáng Tạo
               </h3>
               <p className="text-[#475569] text-lg leading-relaxed mb-6">
-                Sáng tạo là DNA của BYD. Chúng tôi khuyến khích mọi ý tưởng mới
-                và tạo không gian an toàn để thử nghiệm. Thất bại được xem là
-                bài học quý giá trên hành trình đổi mới.
+                Văn hóa BYD đặt con người ở trung tâm: tôn trọng đồng đội, phối
+                hợp vì mục tiêu chung và giữ tinh thần tử tế trong cách làm việc
+                với khách hàng, đối tác và nội bộ.
               </p>
               <p className="text-[#475569] leading-relaxed">
-                Hackathon nội bộ hàng quý, Innovation Lab, và chương trình
-                Intrapreneurship giúp nhân viên biến ý tưởng thành sản phẩm thực
-                tế có tác động lớn.
+                Trên nền tảng đó, đội ngũ có không gian để thử nghiệm ý tưởng
+                mới, cải tiến quy trình và cùng nhau tạo ra môi trường làm việc
+                tích cực, bền vững.
               </p>
             </div>
           </div>
