@@ -28,30 +28,30 @@ const benefits = [
 const testimonials = [
   {
     name: 'Nguyễn Minh Anh',
-    role: 'Senior Developer, 3 năm tại BYD',
+    role: 'Senior Developer, 3 năm tại Thành Công 45',
     avatar: 'MA',
     quote:
-      'BYD không chỉ là nơi làm việc - mà là nơi tôi được khuyến khích nghĩ lớn, hành động nhanh và biến mục tiêu thành kết quả thực tế.',
+      'Thành Công 45 không chỉ là nơi làm việc - mà là nơi tôi được khuyến khích nghĩ lớn, hành động nhanh và biến mục tiêu thành kết quả thực tế.',
   },
   {
     name: 'Trần Thị Hương',
-    role: 'Marketing Manager, 4 năm tại BYD',
+    role: 'Marketing Manager, 4 năm tại Thành Công 45',
     avatar: 'TH',
     quote:
-      'Văn hóa 8 giá trị cốt lõi tại BYD không chỉ nằm trên giấy. Tử Tế, Đoàn Kết và Kỷ Luật thể hiện rõ trong cách đội ngũ phối hợp mỗi ngày.',
+      'Văn hóa 8 giá trị cốt lõi tại Thành Công 45 không chỉ nằm trên giấy. Tử Tế, Đoàn Kết và Kỷ Luật thể hiện rõ trong cách đội ngũ phối hợp mỗi ngày.',
   },
   {
     name: 'Lê Văn Đức',
-    role: 'Product Owner, 2 năm tại BYD',
+    role: 'Product Owner, 2 năm tại Thành Công 45',
     avatar: 'VD',
     quote:
-      'BYD là nơi mỗi cá nhân đều có cơ hội tỏa sáng. Lộ trình từ Học việc đến Core Leader rất rõ ràng. Đó là điều tôi trân quý nhất.',
+      'Thành Công 45 là nơi mỗi cá nhân đều có cơ hội tỏa sáng. Lộ trình từ Học việc đến Core Leader rất rõ ràng. Đó là điều tôi trân quý nhất.',
   },
 ]
 
 const culturePrograms = [
   {
-    title: 'BYD ACADEMY',
+    title: 'THÀNH CÔNG 45 ACADEMY',
     desc: 'Chương trình đào tạo nội bộ với 100+ khóa học từ kỹ năng cứng đến mềm, do chuyên gia trong và ngoài công ty giảng dạy.',
     icon: '🎓',
   },
@@ -61,7 +61,7 @@ const culturePrograms = [
     icon: '💡',
   },
   {
-    title: 'BYD CARES',
+    title: 'THÀNH CÔNG 45 CARES',
     desc: 'Chương trình CSR với các hoạt động thiện nguyện, bảo vệ môi trường và hỗ trợ cộng đồng xung quanh.',
     icon: '❤️',
   },
@@ -83,7 +83,7 @@ const activityHighlights = [
   {
     img: '/images/hoat-dong-20-10.webp',
     title: '8/3 – NGÀY CỦA HỘI CHỊ EM',
-    desc: 'Nhân ngày Quốc tế Phụ nữ, BYD gửi lời chúc toàn thể chị em luôn xinh đẹp, ví luôn đầy và mood luôn chill!',
+    desc: 'Nhân ngày Quốc tế Phụ nữ, Thành Công 45 gửi lời chúc toàn thể chị em luôn xinh đẹp, ví luôn đầy và mood luôn chill!',
     tag: '🌸 Sự kiện',
     date: '08/03/2025',
   },
@@ -97,21 +97,21 @@ const activityHighlights = [
   {
     img: '/images/sinh-nhat-van-phong.webp',
     title: 'CẦU LÔNG – GIẢI TỎA NĂNG LƯỢNG',
-    desc: 'Không chỉ hết mình trong công việc, các thành viên BYD còn cháy hết mình trên sân cầu lông!',
+    desc: 'Không chỉ hết mình trong công việc, các thành viên Thành Công 45 còn cháy hết mình trên sân cầu lông!',
     tag: '🏸 Thể thao',
     date: '2025',
   },
   {
     img: '/images/vinh-danh-top1.webp',
     title: 'VINH DANH TOP DOANH THU',
-    desc: 'Lễ trao giải Everest – Top 1 doanh thu. BYD tôn vinh những cá nhân xuất sắc đã cống hiến hết mình.',
+    desc: 'Lễ trao giải Everest – Top 1 doanh thu. Thành Công 45 tôn vinh những cá nhân xuất sắc đã cống hiến hết mình.',
     tag: '🏆 Vinh danh',
     date: 'T10/2024',
   },
   {
     img: '/images/ngay-nam-gioi.webp',
     title: 'HAPPY MEN\'S DAY',
-    desc: 'BYD chúc mừng ngày nam giới – cảm ơn các anh em đã luôn đồng hành và cống hiến!',
+    desc: 'Thành Công 45 chúc mừng ngày nam giới – cảm ơn các anh em đã luôn đồng hành và cống hiến!',
     tag: '🎉 Sự kiện',
     date: '11/2024',
   },
@@ -130,7 +130,7 @@ export default function CulturePage() {
         <div className="absolute inset-0">
           <img
             src={imgCulture}
-            alt="Văn hóa BYD"
+            alt="Văn hóa Thành Công 45"
             className="w-full h-full object-cover"
             loading="eager"
             fetchPriority="high"
@@ -139,13 +139,13 @@ export default function CulturePage() {
           <div className="absolute inset-0 bg-gradient-to-r from-[#0F172A]/90 via-[#0F172A]/70 to-[#0F172A]/30" />
         </div>
 
-        <div className="absolute top-20 right-20 w-72 h-72 bg-[#EC1313]/10 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute bottom-10 left-10 w-56 h-56 bg-[#EC1313]/5 rounded-full blur-2xl pointer-events-none" />
+        <div className="absolute top-20 right-20 w-72 h-72 bg-[#00afea]/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute bottom-10 left-10 w-56 h-56 bg-[#00afea]/5 rounded-full blur-2xl pointer-events-none" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-5 py-2.5 rounded-full mb-8 border border-white/20">
-              <div className="w-2.5 h-2.5 rounded-full bg-[#EC1313] animate-pulse" />
+              <div className="w-2.5 h-2.5 rounded-full bg-[#00afea] animate-pulse" />
               <span className="text-white/90 text-sm font-semibold tracking-wider uppercase">
                 Văn hóa doanh nghiệp
               </span>
@@ -153,7 +153,7 @@ export default function CulturePage() {
 
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-white leading-[1.05] mb-6 tracking-tight">
               Văn hóa{' '}
-              <span className="text-[#EC1313]">BYD</span>
+              <span className="text-[#00afea]">Thành Công 45</span>
             </h1>
 
             <p className="text-lg lg:text-xl text-white/80 leading-relaxed mb-10 max-w-xl">
@@ -165,7 +165,7 @@ export default function CulturePage() {
               <button
                 type="button"
                 onClick={() => router.push('/tuyen-dung')}
-                className="group bg-[#EC1313] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#d41111] transition-all duration-300 hover:shadow-2xl hover:shadow-red-500/30 flex items-center gap-3"
+                className="group bg-[#00afea] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#d41111] transition-all duration-300 hover:shadow-2xl hover:shadow-red-500/30 flex items-center gap-3"
               >
                 Gia nhập ngay
                 <svg
@@ -187,7 +187,7 @@ export default function CulturePage() {
                 onClick={() => router.push('/gioi-thieu')}
                 className="border-2 border-white/40 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/10 hover:border-white/60 transition-all duration-300 backdrop-blur-sm"
               >
-                Về BYD
+                Về Thành Công 45
               </button>
             </div>
           </div>
@@ -200,17 +200,17 @@ export default function CulturePage() {
       <section className="py-20 lg:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 bg-[rgba(236,19,19,0.08)] px-4 py-2 rounded-full mb-4">
-              <div className="w-1.5 h-1.5 rounded-full bg-[#EC1313]" />
-              <span className="text-[#EC1313] text-xs font-bold tracking-widest uppercase">
+            <div className="inline-flex items-center gap-2 bg-[rgba(0, 175, 234,0.08)] px-4 py-2 rounded-full mb-4">
+              <div className="w-1.5 h-1.5 rounded-full bg-[#00afea]" />
+              <span className="text-[#00afea] text-xs font-bold tracking-widest uppercase">
                 Giá trị văn hóa
               </span>
             </div>
             <h2 className="text-3xl lg:text-4xl font-black text-[#0F172A] mb-4 tracking-tight">
-              8 GIÁ TRỊ CỐT LÕI BYD
+              8 GIÁ TRỊ CỐT LÕI THÀNH CÔNG 45
             </h2>
             <p className="text-[#64748B] text-lg max-w-2xl mx-auto">
-              Đây là bộ nguyên tắc định hướng cách BYD suy nghĩ, phối hợp,
+              Đây là bộ nguyên tắc định hướng cách Thành Công 45 suy nghĩ, phối hợp,
               phục vụ khách hàng và xây dựng đội ngũ mỗi ngày.
             </p>
           </div>
@@ -219,16 +219,16 @@ export default function CulturePage() {
             {coreValues.map((item) => (
               <div
                 key={item.title}
-                className="group relative min-h-[210px] overflow-hidden rounded-[8px] border border-[#FEE2E2] bg-white p-6 shadow-[0_18px_45px_rgba(236,19,19,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-[#EC1313]/30 hover:bg-white hover:shadow-[0_24px_60px_rgba(236,19,19,0.12)]"
+                className="group relative min-h-[210px] overflow-hidden rounded-[8px] border border-[#00afea1a] bg-white p-6 shadow-[0_18px_45px_rgba(0, 175, 234,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-[#00afea]/30 hover:bg-white hover:shadow-[0_24px_60px_rgba(0, 175, 234,0.12)]"
               >
-                <div className="absolute inset-x-0 bottom-0 h-1.5 bg-[#EC1313]" />
+                <div className="absolute inset-x-0 bottom-0 h-1.5 bg-[#00afea]" />
                 <div className="mb-5 flex items-center justify-between">
-                  <div className="text-[#EC1313]">
+                  <div className="text-[#00afea]">
                     <CoreValueIcon name={item.icon} className="h-10 w-10" />
                   </div>
-                  <span className="text-sm font-black text-[#EC1313]/15">{item.number}</span>
+                  <span className="text-sm font-black text-[#00afea]/15">{item.number}</span>
                 </div>
-                <h3 className="mb-3 text-lg font-black uppercase tracking-wide text-[#EC1313]">{item.title}</h3>
+                <h3 className="mb-3 text-lg font-black uppercase tracking-wide text-[#00afea]">{item.title}</h3>
                 <p className="text-sm leading-relaxed text-[#475569]">{item.shortDesc}</p>
               </div>
             ))}
@@ -240,7 +240,7 @@ export default function CulturePage() {
                 Nghĩ Lớn - Tốc Độ - Kỷ Luật - Chuyên Gia
               </h3>
               <p className="text-[#475569] text-lg leading-relaxed mb-6">
-                BYD xây dựng đội ngũ có khả năng đặt mục tiêu lớn, phản hồi nhanh
+                Thành Công 45 xây dựng đội ngũ có khả năng đặt mục tiêu lớn, phản hồi nhanh
                 với thị trường và giữ cam kết trong từng đầu việc. Tốc độ chỉ tạo
                 giá trị khi đi cùng kỷ luật và năng lực chuyên môn đủ sâu.
               </p>
@@ -253,7 +253,7 @@ export default function CulturePage() {
             <div className="rounded-2xl overflow-hidden shadow-2xl">
               <img
                 src={imgOffice}
-                alt="Văn phòng BYD"
+                alt="Văn phòng Thành Công 45"
                 className="w-full h-auto object-cover"
                 loading="lazy"
                 decoding="async"
@@ -265,7 +265,7 @@ export default function CulturePage() {
             <div className="order-2 lg:order-1 rounded-2xl overflow-hidden shadow-2xl">
               <img
                 src={imgTeam}
-                alt="Đội ngũ BYD"
+                alt="Đội ngũ Thành Công 45"
                 className="w-full h-auto object-cover"
                 loading="lazy"
                 decoding="async"
@@ -276,7 +276,7 @@ export default function CulturePage() {
                 Đoàn Kết - Hạnh Phúc - Tử Tế - Sáng Tạo
               </h3>
               <p className="text-[#475569] text-lg leading-relaxed mb-6">
-                Văn hóa BYD đặt con người ở trung tâm: tôn trọng đồng đội, phối
+                Văn hóa Thành Công 45 đặt con người ở trung tâm: tôn trọng đồng đội, phối
                 hợp vì mục tiêu chung và giữ tinh thần tử tế trong cách làm việc
                 với khách hàng, đối tác và nội bộ.
               </p>
@@ -294,8 +294,8 @@ export default function CulturePage() {
       <section className="py-20 lg:py-28 bg-[#FAFAFA]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 bg-[rgba(236,19,19,0.08)] px-4 py-2 rounded-full mb-4">
-              <span className="text-[#EC1313] text-xs font-bold tracking-widest uppercase">
+            <div className="inline-flex items-center gap-2 bg-[rgba(0, 175, 234,0.08)] px-4 py-2 rounded-full mb-4">
+              <span className="text-[#00afea] text-xs font-bold tracking-widest uppercase">
                 Quyền lợi
               </span>
             </div>
@@ -303,7 +303,7 @@ export default function CulturePage() {
               PHÚC LỢI VƯỢT TRỘI
             </h2>
             <p className="text-[#64748B] text-lg max-w-2xl mx-auto">
-              BYD cam kết mang đến chế độ đãi ngộ tốt nhất để nhân viên yên tâm
+              Thành Công 45 cam kết mang đến chế độ đãi ngộ tốt nhất để nhân viên yên tâm
               cống hiến và phát triển sự nghiệp.
             </p>
           </div>
@@ -312,10 +312,10 @@ export default function CulturePage() {
             {benefits.map((benefit) => (
               <div
                 key={benefit.title}
-                className="group bg-white rounded-2xl p-6 border border-slate-100 hover:shadow-xl hover:border-[#EC1313]/20 transition-all duration-300 hover:-translate-y-1"
+                className="group bg-white rounded-2xl p-6 border border-slate-100 hover:shadow-xl hover:border-[#00afea]/20 transition-all duration-300 hover:-translate-y-1"
               >
                 <div className="text-4xl mb-4">{benefit.icon}</div>
-                <h3 className="text-lg font-bold text-[#0F172A] mb-2 group-hover:text-[#EC1313] transition-colors">
+                <h3 className="text-lg font-bold text-[#0F172A] mb-2 group-hover:text-[#00afea] transition-colors">
                   {benefit.title}
                 </h3>
                 <p className="text-[#64748B] text-sm leading-relaxed">
@@ -331,8 +331,8 @@ export default function CulturePage() {
       <section className="py-20 lg:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 bg-[rgba(236,19,19,0.08)] px-4 py-2 rounded-full mb-4">
-              <span className="text-[#EC1313] text-xs font-bold tracking-widest uppercase">
+            <div className="inline-flex items-center gap-2 bg-[rgba(0, 175, 234,0.08)] px-4 py-2 rounded-full mb-4">
+              <span className="text-[#00afea] text-xs font-bold tracking-widest uppercase">
                 Chương trình nổi bật
               </span>
             </div>
@@ -340,7 +340,7 @@ export default function CulturePage() {
               CHƯƠNG TRÌNH VĂN HÓA
             </h2>
             <p className="text-[#64748B] text-lg max-w-2xl mx-auto">
-              Những chương trình đặc biệt giúp BYD trở thành nơi làm việc tuyệt
+              Những chương trình đặc biệt giúp Thành Công 45 trở thành nơi làm việc tuyệt
               vời nhất.
             </p>
           </div>
@@ -349,12 +349,12 @@ export default function CulturePage() {
             {culturePrograms.map((program) => (
               <div
                 key={program.title}
-                className="group bg-[#FAFAFA] rounded-2xl p-8 border border-slate-100 hover:shadow-xl hover:border-[#EC1313]/20 transition-all duration-300"
+                className="group bg-[#FAFAFA] rounded-2xl p-8 border border-slate-100 hover:shadow-xl hover:border-[#00afea]/20 transition-all duration-300"
               >
                 <div className="flex items-start gap-5">
                   <div className="text-4xl flex-shrink-0">{program.icon}</div>
                   <div>
-                    <h3 className="text-xl font-bold text-[#0F172A] mb-3 group-hover:text-[#EC1313] transition-colors">
+                    <h3 className="text-xl font-bold text-[#0F172A] mb-3 group-hover:text-[#00afea] transition-colors">
                       {program.title}
                     </h3>
                     <p className="text-[#475569] leading-relaxed">
@@ -372,18 +372,18 @@ export default function CulturePage() {
       <section className="py-20 lg:py-28 bg-[#FAFAFA]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 bg-[rgba(236,19,19,0.08)] px-4 py-2 rounded-full mb-4">
-              <div className="w-1.5 h-1.5 rounded-full bg-[#EC1313]" />
-              <span className="text-[#EC1313] text-xs font-bold tracking-widest uppercase">
+            <div className="inline-flex items-center gap-2 bg-[rgba(0, 175, 234,0.08)] px-4 py-2 rounded-full mb-4">
+              <div className="w-1.5 h-1.5 rounded-full bg-[#00afea]" />
+              <span className="text-[#00afea] text-xs font-bold tracking-widest uppercase">
                 Hoạt động nổi bật
               </span>
             </div>
             <h2 className="text-3xl lg:text-4xl font-black text-[#0F172A] mb-4 tracking-tight">
-              KHOẢNH KHẮC BYD
+              KHOẢNH KHẮC THÀNH CÔNG 45
             </h2>
             <p className="text-[#64748B] text-lg max-w-2xl mx-auto">
               Những khoảnh khắc đáng nhớ từ các hoạt động gắn kết, vinh danh và
-              sự kiện nội bộ tại BYD.
+              sự kiện nội bộ tại Thành Công 45.
             </p>
           </div>
 
@@ -413,12 +413,12 @@ export default function CulturePage() {
                 {/* Content overlay */}
                 <div className="absolute inset-0 flex flex-col justify-end p-5 lg:p-6">
                   <div className="flex items-center gap-2 mb-2">
-                    <span className="inline-block bg-[#EC1313] text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                    <span className="inline-block bg-[#00afea] text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
                       {item.tag}
                     </span>
                     <span className="text-white/60 text-xs">{item.date}</span>
                   </div>
-                  <h3 className="text-white font-bold text-sm lg:text-base leading-snug mb-1 group-hover:text-[#EC1313] transition-colors line-clamp-2">
+                  <h3 className="text-white font-bold text-sm lg:text-base leading-snug mb-1 group-hover:text-[#00afea] transition-colors line-clamp-2">
                     {item.title}
                   </h3>
                   <p className="text-white/70 text-xs lg:text-sm leading-relaxed line-clamp-2 translate-y-2 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
@@ -436,7 +436,7 @@ export default function CulturePage() {
         <div
           role="dialog"
           aria-modal="true"
-          aria-label="Thư viện ảnh hoạt động BYD"
+          aria-label="Thư viện ảnh hoạt động Thành Công 45"
           className="fixed inset-0 z-50 flex items-center justify-center p-4"
           onClick={() => setGalleryImage(null)}
         >
@@ -444,7 +444,7 @@ export default function CulturePage() {
           <div className="relative max-w-5xl max-h-[90vh]" onClick={(e) => e.stopPropagation()}>
             <img
               src={galleryImage}
-              alt="BYD Activity"
+              alt="Thành Công 45 Activity"
               className="max-w-full max-h-[85vh] object-contain rounded-2xl shadow-2xl"
               loading="eager"
               decoding="async"
@@ -453,7 +453,7 @@ export default function CulturePage() {
               type="button"
               aria-label="Đóng thư viện ảnh"
               onClick={() => setGalleryImage(null)}
-              className="absolute -top-3 -right-3 w-10 h-10 rounded-full bg-white shadow-lg flex items-center justify-center text-[#0F172A] hover:bg-[#EC1313] hover:text-white transition-colors"
+              className="absolute -top-3 -right-3 w-10 h-10 rounded-full bg-white shadow-lg flex items-center justify-center text-[#0F172A] hover:bg-[#00afea] hover:text-white transition-colors"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -465,8 +465,8 @@ export default function CulturePage() {
 
       {/* ═══════════════ TESTIMONIALS ═══════════════ */}
       <section className="py-20 lg:py-28 bg-[#0F172A] relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#EC1313]/10 to-transparent pointer-events-none" />
-        <div className="absolute top-0 right-0 w-96 h-96 bg-[#EC1313]/5 rounded-full translate-x-1/3 -translate-y-1/3 blur-3xl pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#00afea]/10 to-transparent pointer-events-none" />
+        <div className="absolute top-0 right-0 w-96 h-96 bg-[#00afea]/5 rounded-full translate-x-1/3 -translate-y-1/3 blur-3xl pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center mb-16">
@@ -476,11 +476,11 @@ export default function CulturePage() {
               </span>
             </div>
             <h2 className="text-3xl lg:text-4xl font-black text-white mb-4 tracking-tight">
-              BYD QUA LỜI KỂ NHÂN VIÊN
+              THÀNH CÔNG 45 QUA LỜI KỂ NHÂN VIÊN
             </h2>
             <p className="text-slate-400 text-lg max-w-2xl mx-auto">
               Lắng nghe chia sẻ thực tế từ những thành viên đang đồng hành cùng
-              BYD.
+              Thành Công 45.
             </p>
           </div>
 
@@ -488,10 +488,10 @@ export default function CulturePage() {
             {testimonials.map((t) => (
               <div
                 key={t.name}
-                className="group bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:bg-white/10 hover:border-[#EC1313]/30 transition-all duration-300 hover:-translate-y-1"
+                className="group bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:bg-white/10 hover:border-[#00afea]/30 transition-all duration-300 hover:-translate-y-1"
               >
                 <svg
-                  className="w-10 h-10 text-[#EC1313]/40 mb-6"
+                  className="w-10 h-10 text-[#00afea]/40 mb-6"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -501,7 +501,7 @@ export default function CulturePage() {
                   &ldquo;{t.quote}&rdquo;
                 </p>
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-[#EC1313] flex items-center justify-center text-white font-bold text-sm">
+                  <div className="w-12 h-12 rounded-full bg-[#00afea] flex items-center justify-center text-white font-bold text-sm">
                     {t.avatar}
                   </div>
                   <div>
@@ -518,22 +518,22 @@ export default function CulturePage() {
       {/* ═══════════════ CTA ═══════════════ */}
       <section className="py-20 bg-[#FAFAFA]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="relative bg-gradient-to-br from-[#EC1313] to-[#b91010] rounded-3xl p-12 lg:p-16 text-white shadow-2xl shadow-red-200/50 overflow-hidden">
+          <div className="relative bg-gradient-to-br from-[#00afea] to-[#103faa] rounded-3xl p-12 lg:p-16 text-white shadow-2xl shadow-blue-200/50 overflow-hidden">
             <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/3 translate-x-1/3" />
             <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-1/3 -translate-x-1/4" />
 
             <div className="relative text-center">
               <h2 className="text-4xl lg:text-5xl font-black mb-5">
-                Bạn muốn trở thành một phần của BYD?
+                Bạn muốn trở thành một phần của Thành Công 45?
               </h2>
-              <p className="text-red-100 text-lg mb-10 max-w-2xl mx-auto leading-relaxed">
+              <p className="text-blue-100 text-lg mb-10 max-w-2xl mx-auto leading-relaxed">
                 Khám phá cơ hội nghề nghiệp và cùng chúng tôi xây dựng tương
                 lai thương mại điện tử Việt Nam.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Link
                   href="/tuyen-dung"
-                  className="bg-white text-[#EC1313] px-8 py-4 rounded-xl font-bold text-lg hover:bg-red-50 transition-colors w-full sm:w-auto shadow-lg text-center"
+                  className="bg-white text-[#00afea] px-8 py-4 rounded-xl font-bold text-lg hover:bg-red-50 transition-colors w-full sm:w-auto shadow-lg text-center"
                 >
                   Xem vị trí tuyển dụng
                 </Link>

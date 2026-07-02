@@ -261,14 +261,14 @@ const Field = ({
   <label className="block">
     <span className="mb-2 block text-sm font-semibold text-slate-800">
       {label}
-      {required ? <span className="text-[#EC1313]"> *</span> : null}
+      {required ? <span className="text-[#00afea]"> *</span> : null}
     </span>
     {children}
   </label>
 )
 
 const inputClass =
-  'w-full rounded-lg border border-slate-200 bg-white px-3 py-2.5 text-sm text-slate-900 outline-none transition focus:border-[#EC1313] focus:ring-2 focus:ring-[#EC1313]/15'
+  'w-full rounded-lg border border-slate-200 bg-white px-3 py-2.5 text-sm text-slate-900 outline-none transition focus:border-[#00afea] focus:ring-2 focus:ring-[#00afea]/15'
 
 const textareaClass = `${inputClass} min-h-32 leading-relaxed`
 
@@ -363,7 +363,7 @@ export default function JobsLiteClient({ userEmail }: { userEmail: string }) {
       <div className="mx-auto max-w-7xl px-5 py-8 lg:px-8">
         <header className="mb-7 flex flex-col gap-4 border-b border-slate-200 pb-6 lg:flex-row lg:items-end lg:justify-between">
           <div>
-            <p className="text-sm font-semibold text-[#EC1313]">BYD Admin</p>
+            <p className="text-sm font-semibold text-[#00afea]">BYD Admin</p>
             <h1 className="mt-2 text-3xl font-black tracking-tight text-slate-950">
               Tuyển dụng nhanh
             </h1>
@@ -377,7 +377,7 @@ export default function JobsLiteClient({ userEmail }: { userEmail: string }) {
             </span>
             <a
               href="/admin"
-              className="rounded-lg border border-slate-200 bg-white px-3 py-2 font-semibold text-slate-700 transition hover:border-[#EC1313] hover:text-[#EC1313]"
+              className="rounded-lg border border-slate-200 bg-white px-3 py-2 font-semibold text-slate-700 transition hover:border-[#00afea] hover:text-[#00afea]"
             >
               Payload admin
             </a>
@@ -577,14 +577,14 @@ export default function JobsLiteClient({ userEmail }: { userEmail: string }) {
                   type="button"
                   onClick={() => void saveJob()}
                   disabled={saving}
-                  className="rounded-lg bg-[#EC1313] px-5 py-3 text-sm font-black text-white shadow-sm shadow-red-200 transition hover:bg-[#d41111] disabled:cursor-not-allowed disabled:bg-red-300"
+                  className="rounded-lg bg-[#00afea] px-5 py-3 text-sm font-black text-white shadow-sm shadow-red-200 transition hover:bg-[#d41111] disabled:cursor-not-allowed disabled:bg-red-300"
                 >
                   {saving ? 'Đang lưu...' : form.id ? 'Cập nhật tin' : 'Lưu tin mới'}
                 </button>
                 <button
                   type="button"
                   onClick={resetForm}
-                  className="rounded-lg border border-slate-200 bg-white px-5 py-3 text-sm font-bold text-slate-700 transition hover:border-[#EC1313] hover:text-[#EC1313]"
+                  className="rounded-lg border border-slate-200 bg-white px-5 py-3 text-sm font-bold text-slate-700 transition hover:border-[#00afea] hover:text-[#00afea]"
                 >
                   Làm mới form
                 </button>
@@ -593,7 +593,7 @@ export default function JobsLiteClient({ userEmail }: { userEmail: string }) {
                     href={`/tuyen-dung/${slugPreview}`}
                     target="_blank"
                     rel="noreferrer"
-                    className="rounded-lg border border-slate-200 bg-white px-5 py-3 text-sm font-bold text-slate-700 transition hover:border-[#EC1313] hover:text-[#EC1313]"
+                    className="rounded-lg border border-slate-200 bg-white px-5 py-3 text-sm font-bold text-slate-700 transition hover:border-[#00afea] hover:text-[#00afea]"
                   >
                     Mở trang chi tiết
                   </a>
@@ -608,7 +608,7 @@ export default function JobsLiteClient({ userEmail }: { userEmail: string }) {
               <button
                 type="button"
                 onClick={() => void loadJobs()}
-                className="rounded-lg border border-slate-200 px-3 py-2 text-xs font-bold text-slate-700 transition hover:border-[#EC1313] hover:text-[#EC1313]"
+                className="rounded-lg border border-slate-200 px-3 py-2 text-xs font-bold text-slate-700 transition hover:border-[#00afea] hover:text-[#00afea]"
               >
                 Tải lại
               </button>
@@ -639,7 +639,7 @@ export default function JobsLiteClient({ userEmail }: { userEmail: string }) {
                         href={`/tuyen-dung/${job.slug}`}
                         target="_blank"
                         rel="noreferrer"
-                        className="rounded-md border border-slate-200 px-3 py-1.5 text-xs font-bold text-slate-700 transition hover:border-[#EC1313] hover:text-[#EC1313]"
+                        className="rounded-md border border-slate-200 px-3 py-1.5 text-xs font-bold text-slate-700 transition hover:border-[#00afea] hover:text-[#00afea]"
                       >
                         Mở
                       </a>

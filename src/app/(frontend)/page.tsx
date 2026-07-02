@@ -45,7 +45,7 @@ const services = [
 const teamGallery = [
   { img: '/images/du-lich-cua-lo.webp', title: 'Trải nghiệm & Gắn kết', desc: 'Cùng nhau tạo kỷ niệm - vì đội ngũ mạnh bắt đầu từ sự kết nối' },
   { img: '/images/trao-thuong-byd.webp', title: 'Ghi nhận & Tôn vinh', desc: 'Mỗi nỗ lực đều xứng đáng được công nhận và tưởng thưởng' },
-  { img: '/images/sinh-nhat-quy4.webp', title: 'Ấm áp như gia đình', desc: 'BYD là gia đình thứ hai - nơi bạn được quan tâm mỗi ngày' },
+  { img: '/images/sinh-nhat-quy4.webp', title: 'Ấm áp như gia đình', desc: 'Thành Công 45 là gia đình thứ hai - nơi bạn được quan tâm mỗi ngày' },
   { img: '/images/hoat-dong-20-10.webp', title: 'Yêu thương & Sẻ chia', desc: 'Những khoảnh khắc đặc biệt dành cho những con người đặc biệt' },
 ]
 
@@ -53,15 +53,15 @@ const defaultNews = [
   {
     img: '/images/sinh-nhat-quy4.webp',
     tag: 'Văn hóa',
-    title: 'Happy Birthday - Nhân sự Quý I của BYD',
+    title: 'Happy Birthday - Nhân sự Quý I của Thành Công 45',
     desc: 'Công ty trân trọng gửi lời chúc mừng sinh nhật tới các thành viên có ngày sinh trong tháng 1, 2 và 3.',
     date: '31 Tháng 3, 2025',
   },
   {
     img: '/images/hoat-dong-20-10.webp',
     tag: 'Sự kiện',
-    title: '8/3 - Ngày của hội chị em BYD',
-    desc: 'Nhân ngày Quốc tế Phụ nữ 8/3, BYD gửi lời chúc toàn thể chị em luôn xinh đẹp, ví luôn đầy và mood luôn chill!',
+    title: '8/3 - Ngày của hội chị em Thành Công 45',
+    desc: 'Nhân ngày Quốc tế Phụ nữ 8/3, Thành Công 45 gửi lời chúc toàn thể chị em luôn xinh đẹp, ví luôn đầy và mood luôn chill!',
     date: '8 Tháng 3, 2025',
   },
   {
@@ -74,7 +74,7 @@ const defaultNews = [
 ]
 
 function StatIcon({ type }: { type: string }) {
-  const cls = 'w-10 h-10 text-[#EC1313]'
+  const cls = 'w-10 h-10 text-[#00afea]'
 
   switch (type) {
     case 'users':
@@ -97,24 +97,22 @@ export default function HomePage() {
     <div className="bg-white">
       <section className="relative min-h-[600px] lg:min-h-[700px] flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/images/hero_banner.webp" alt="BYD Hero" className="w-full h-full object-cover" loading="eager" fetchPriority="high" decoding="async" width="1920" height="1080" />
+          <img src="/images/hero_banner.webp" alt="Thành Công 45 Hero" className="w-full h-full object-cover" loading="eager" fetchPriority="high" decoding="async" width="1920" height="1080" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0F172A]/90 via-[#0F172A]/70 to-[#0F172A]/30" />
         </div>
 
-        <div className="absolute top-20 right-20 w-72 h-72 bg-[#EC1313]/10 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute bottom-10 left-10 w-56 h-56 bg-[#EC1313]/5 rounded-full blur-2xl pointer-events-none" />
+        <div className="absolute top-20 right-20 w-72 h-72 bg-[#00afea]/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute bottom-10 left-10 w-56 h-56 bg-[#00afea]/5 rounded-full blur-2xl pointer-events-none" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-5 py-2.5 rounded-full mb-8 border border-white/20">
-              <div className="w-2.5 h-2.5 rounded-full bg-[#EC1313] animate-pulse" />
+              <div className="w-2.5 h-2.5 rounded-full bg-[#00afea] animate-pulse" />
               <span className="text-white/90 text-sm font-semibold tracking-wider uppercase">Hệ sinh thái TMĐT đa ngành</span>
             </div>
 
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-white leading-[1.05] mb-4 tracking-tight">
-              BYD - <span className="text-[#EC1313]">Build Your</span>
-              <br />
-              <span className="text-[#EC1313]">Dream</span>
+              Thành Công 45 - <span className="text-[#00afea]">Build Your Dream</span>
             </h1>
 
             <p className="text-xl lg:text-2xl text-white font-semibold mb-4 max-w-xl">
@@ -126,7 +124,7 @@ export default function HomePage() {
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <Link href="/linh-vuc" className="group bg-[#EC1313] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#d41111] transition-all duration-300 hover:shadow-2xl hover:shadow-red-500/30 flex items-center gap-3 cursor-pointer">
+              <Link href="/linh-vuc" className="group bg-[#00afea] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#d41111] transition-all duration-300 hover:shadow-2xl hover:shadow-red-500/30 flex items-center gap-3 cursor-pointer">
                 Khám phá ngay
                 <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
               </Link>
@@ -145,14 +143,14 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="relative">
               <div className="rounded-2xl overflow-hidden shadow-2xl">
-                <img src="/images/du-lich-cua-lo.webp" alt="Đội ngũ BYD" className="w-full h-auto object-cover" loading="lazy" decoding="async" width="1200" height="800" />
+                <img src="/images/du-lich-cua-lo.webp" alt="Đội ngũ Thành Công 45" className="w-full h-auto object-cover" loading="lazy" decoding="async" width="1200" height="800" />
               </div>
             </div>
 
             <div>
-              <div className="inline-flex items-center gap-2 bg-[rgba(236,19,19,0.08)] px-4 py-2 rounded-full mb-6">
-                <div className="w-1.5 h-1.5 rounded-full bg-[#EC1313]" />
-                <span className="text-[#EC1313] text-xs font-bold tracking-widest uppercase">Về BYD Việt Nam</span>
+              <div className="inline-flex items-center gap-2 bg-[rgba(0, 175, 234,0.08)] px-4 py-2 rounded-full mb-6">
+                <div className="w-1.5 h-1.5 rounded-full bg-[#00afea]" />
+                <span className="text-[#00afea] text-xs font-bold tracking-widest uppercase">Về Thành Công 45</span>
               </div>
 
               <h2 className="text-3xl lg:text-4xl font-black text-[#0F172A] mb-6 leading-tight tracking-tight uppercase">
@@ -160,10 +158,10 @@ export default function HomePage() {
               </h2>
 
               <p className="text-[#475569] text-lg leading-relaxed mb-8">
-                BYD là doanh nghiệp hoạt động trong lĩnh vực thương mại điện tử đa nền tảng, đa quốc gia, tập trung phát triển mạnh tại thị trường Việt Nam & Đông Nam Á. Công ty kinh doanh đa dạng ngành hàng: nông nghiệp, gia dụng, thời trang, mỹ phẩm và các sản phẩm thương hiệu, mang đến trải nghiệm mua sắm hiện đại - tiện lợi - đáng tin cậy cho khách hàng.
+                Thành Công 45 là doanh nghiệp hoạt động trong lĩnh vực thương mại điện tử đa nền tảng, đa quốc gia, tập trung phát triển mạnh tại thị trường Việt Nam & Đông Nam Á. Công ty kinh doanh đa dạng ngành hàng: nông nghiệp, gia dụng, thời trang, mỹ phẩm và các sản phẩm thương hiệu, mang đến trải nghiệm mua sắm hiện đại - tiện lợi - đáng tin cậy cho khách hàng.
               </p>
 
-              <Link href="/gioi-thieu" className="group inline-flex items-center gap-3 bg-[#EC1313] text-white px-8 py-4 rounded-xl font-bold hover:bg-[#d41111] transition-all duration-300 hover:shadow-lg hover:shadow-red-200 cursor-pointer">
+              <Link href="/gioi-thieu" className="group inline-flex items-center gap-3 bg-[#00afea] text-white px-8 py-4 rounded-xl font-bold hover:bg-[#d41111] transition-all duration-300 hover:shadow-lg hover:shadow-red-200 cursor-pointer">
                 Xem thêm
                 <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
               </Link>
@@ -175,8 +173,8 @@ export default function HomePage() {
       <section className="py-20 lg:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 bg-[rgba(236,19,19,0.08)] px-4 py-2 rounded-full mb-4">
-              <span className="text-[#EC1313] text-xs font-bold tracking-widest uppercase">Dịch vụ nổi bật</span>
+            <div className="inline-flex items-center gap-2 bg-[rgba(0, 175, 234,0.08)] px-4 py-2 rounded-full mb-4">
+              <span className="text-[#00afea] text-xs font-bold tracking-widest uppercase">Dịch vụ nổi bật</span>
             </div>
             <h2 className="text-3xl lg:text-4xl font-black text-[#0F172A] mb-4 tracking-widest uppercase">Lĩnh vực & Dịch vụ</h2>
             <p className="text-[#64748B] text-lg max-w-2xl mx-auto">
@@ -192,16 +190,16 @@ export default function HomePage() {
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A]/90 via-[#0F172A]/30 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 className="text-white font-bold text-lg mb-1 uppercase group-hover:text-[#EC1313] transition-colors">{service.title}</h3>
+                  <h3 className="text-white font-bold text-lg mb-1 uppercase group-hover:text-[#00afea] transition-colors">{service.title}</h3>
                   <p className="text-white/85 text-sm leading-relaxed line-clamp-2">{service.desc}</p>
-                  <div className="mt-3 h-0.5 bg-[#EC1313] w-0 group-hover:w-full transition-all duration-500" />
+                  <div className="mt-3 h-0.5 bg-[#00afea] w-0 group-hover:w-full transition-all duration-500" />
                 </div>
               </Link>
             ))}
           </div>
 
           <div className="text-center mt-12">
-            <Link href="/linh-vuc" className="group inline-flex items-center gap-3 border-2 border-[#EC1313] text-[#EC1313] px-8 py-4 rounded-xl font-bold hover:bg-[#EC1313] hover:text-white transition-all duration-300 cursor-pointer">
+            <Link href="/linh-vuc" className="group inline-flex items-center gap-3 border-2 border-[#00afea] text-[#00afea] px-8 py-4 rounded-xl font-bold hover:bg-[#00afea] hover:text-white transition-all duration-300 cursor-pointer">
               Xem tất cả dịch vụ
               <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
             </Link>
@@ -210,12 +208,12 @@ export default function HomePage() {
       </section>
 
       <section className="py-20 bg-[#FAFAFA] relative overflow-hidden">
-        <div className="absolute top-0 left-0 w-80 h-80 bg-[#EC1313]/5 rounded-full -translate-x-1/2 -translate-y-1/2 blur-3xl" />
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#EC1313]/5 rounded-full translate-x-1/3 translate-y-1/3 blur-3xl" />
+        <div className="absolute top-0 left-0 w-80 h-80 bg-[#00afea]/5 rounded-full -translate-x-1/2 -translate-y-1/2 blur-3xl" />
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#00afea]/5 rounded-full translate-x-1/3 translate-y-1/3 blur-3xl" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-black text-[#0F172A] mb-4 tracking-widest uppercase">Vì sao chọn BYD?</h2>
+            <h2 className="text-3xl lg:text-4xl font-black text-[#0F172A] mb-4 tracking-widest uppercase">Vì sao chọn Thành Công 45?</h2>
             <p className="text-[#64748B] text-lg max-w-2xl mx-auto">Được hàng triệu khách hàng và hàng trăm đối tác tin tưởng lựa chọn</p>
           </div>
 
@@ -225,7 +223,7 @@ export default function HomePage() {
                 <div className="w-20 h-20 mx-auto mb-5 rounded-2xl bg-white shadow-lg flex items-center justify-center group-hover:shadow-xl group-hover:-translate-y-1 transition-all duration-300 border border-slate-100">
                   <StatIcon type={stat.icon} />
                 </div>
-                <div className="text-4xl lg:text-5xl font-black text-[#EC1313] mb-2">{stat.display}</div>
+                <div className="text-4xl lg:text-5xl font-black text-[#00afea] mb-2">{stat.display}</div>
                 <div className="text-[#475569] font-semibold text-sm uppercase tracking-wider">{stat.label}</div>
               </div>
             ))}
@@ -233,17 +231,17 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-20 lg:py-28 bg-[#FFF5F5] relative overflow-hidden">
-        <div className="absolute inset-x-0 top-0 h-1 bg-[#EC1313]" />
+      <section className="py-20 lg:py-28 bg-[#00afea0d] relative overflow-hidden">
+        <div className="absolute inset-x-0 top-0 h-1 bg-[#00afea]" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full mb-4 shadow-sm border border-[#FEE2E2]">
-              <span className="h-8 w-1 rounded-full bg-[#EC1313]" />
-              <span className="text-[#EC1313] text-xs font-black tracking-widest uppercase">Giá trị cốt lõi</span>
+            <div className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full mb-4 shadow-sm border border-[#00afea1a]">
+              <span className="h-8 w-1 rounded-full bg-[#00afea]" />
+              <span className="text-[#00afea] text-xs font-black tracking-widest uppercase">Giá trị cốt lõi</span>
             </div>
-            <h2 className="text-3xl lg:text-4xl font-black text-[#0F172A] mb-4 tracking-wide uppercase">Bộ giá trị định hướng BYD</h2>
+            <h2 className="text-3xl lg:text-4xl font-black text-[#0F172A] mb-4 tracking-wide uppercase">Bộ giá trị định hướng Thành Công 45</h2>
             <p className="text-[#475569] text-lg max-w-2xl mx-auto">
-              8 nguyên tắc nền tảng giúp BYD thống nhất cách suy nghĩ, hành động và tạo ra giá trị bền vững.
+              8 nguyên tắc nền tảng giúp Thành Công 45 thống nhất cách suy nghĩ, hành động và tạo ra giá trị bền vững.
             </p>
           </div>
 
@@ -251,23 +249,23 @@ export default function HomePage() {
             {coreValues.map((item) => (
               <div
                 key={item.title}
-                className="group relative min-h-[220px] overflow-hidden rounded-[8px] border border-[#FEE2E2] bg-white p-6 shadow-[0_18px_45px_rgba(236,19,19,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-[#EC1313]/30 hover:shadow-[0_24px_60px_rgba(236,19,19,0.12)]"
+                className="group relative min-h-[220px] overflow-hidden rounded-[8px] border border-[#00afea1a] bg-white p-6 shadow-[0_18px_45px_rgba(0, 175, 234,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-[#00afea]/30 hover:shadow-[0_24px_60px_rgba(0, 175, 234,0.12)]"
               >
-                <div className="absolute inset-x-0 bottom-0 h-1.5 bg-[#EC1313]" />
+                <div className="absolute inset-x-0 bottom-0 h-1.5 bg-[#00afea]" />
                 <div className="mb-5 flex items-center justify-between">
-                  <div className="text-[#EC1313]">
+                  <div className="text-[#00afea]">
                     <CoreValueIcon name={item.icon} className="h-11 w-11" />
                   </div>
-                  <span className="text-sm font-black text-[#EC1313]/15">{item.number}</span>
+                  <span className="text-sm font-black text-[#00afea]/15">{item.number}</span>
                 </div>
-                <h3 className="mb-3 text-xl font-black uppercase tracking-wide text-[#EC1313]">{item.title}</h3>
+                <h3 className="mb-3 text-xl font-black uppercase tracking-wide text-[#00afea]">{item.title}</h3>
                 <p className="text-sm leading-relaxed text-[#475569]">{item.shortDesc}</p>
               </div>
             ))}
           </div>
 
           <div className="mt-12 text-center">
-            <Link href="/van-hoa" className="group inline-flex items-center gap-3 rounded-xl bg-[#EC1313] px-8 py-4 text-lg font-bold text-white transition-all duration-300 hover:bg-[#d41111] hover:shadow-lg hover:shadow-red-200">
+            <Link href="/van-hoa" className="group inline-flex items-center gap-3 rounded-xl bg-[#00afea] px-8 py-4 text-lg font-bold text-white transition-all duration-300 hover:bg-[#d41111] hover:shadow-lg hover:shadow-red-200">
               Đọc đầy đủ tại trang Văn hóa
               <svg className="h-5 w-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -280,13 +278,13 @@ export default function HomePage() {
       <section className="py-20 lg:py-28 bg-[#FAFAFA]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 bg-[rgba(236,19,19,0.08)] px-4 py-2 rounded-full mb-4">
-              <div className="w-1.5 h-1.5 rounded-full bg-[#EC1313]" />
-              <span className="text-[#EC1313] text-xs font-bold tracking-widest uppercase">Cuộc sống tại BYD</span>
+            <div className="inline-flex items-center gap-2 bg-[rgba(0, 175, 234,0.08)] px-4 py-2 rounded-full mb-4">
+              <div className="w-1.5 h-1.5 rounded-full bg-[#00afea]" />
+              <span className="text-[#00afea] text-xs font-bold tracking-widest uppercase">Cuộc sống tại Thành Công 45</span>
             </div>
             <h2 className="text-3xl lg:text-4xl font-black text-[#0F172A] mb-4 tracking-widest uppercase">Đội ngũ & Văn hóa</h2>
             <p className="text-[#64748B] text-lg max-w-2xl mx-auto">
-              BYD không chỉ là nơi làm việc - đó là gia đình thứ hai, nơi mỗi người đều được tỏa sáng
+              Thành Công 45 không chỉ là nơi làm việc - đó là gia đình thứ hai, nơi mỗi người đều được tỏa sáng
             </p>
           </div>
 
@@ -296,7 +294,7 @@ export default function HomePage() {
                 <img src={item.img} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" decoding="async" width="1200" height="750" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A]/80 via-[#0F172A]/20 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 className="text-white font-bold text-lg mb-1 uppercase group-hover:text-[#EC1313] transition-colors">{item.title}</h3>
+                  <h3 className="text-white font-bold text-lg mb-1 uppercase group-hover:text-[#00afea] transition-colors">{item.title}</h3>
                   <p className="text-white/85 text-sm">{item.desc}</p>
                 </div>
               </Link>
@@ -304,8 +302,8 @@ export default function HomePage() {
           </div>
 
           <div className="text-center mt-12">
-            <Link href="/van-hoa" className="group inline-flex items-center gap-3 border-2 border-[#EC1313] text-[#EC1313] px-8 py-4 rounded-xl font-bold hover:bg-[#EC1313] hover:text-white transition-all duration-300 cursor-pointer">
-              Khám phá văn hóa BYD
+            <Link href="/van-hoa" className="group inline-flex items-center gap-3 border-2 border-[#00afea] text-[#00afea] px-8 py-4 rounded-xl font-bold hover:bg-[#00afea] hover:text-white transition-all duration-300 cursor-pointer">
+              Khám phá văn hóa Thành Công 45
               <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
             </Link>
           </div>
@@ -316,12 +314,12 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-end justify-between mb-14">
             <div>
-              <div className="inline-flex items-center gap-2 bg-[rgba(236,19,19,0.08)] px-4 py-2 rounded-full mb-4">
-                <span className="text-[#EC1313] text-xs font-bold tracking-widest uppercase">Tin tức mới nhất</span>
+              <div className="inline-flex items-center gap-2 bg-[rgba(0, 175, 234,0.08)] px-4 py-2 rounded-full mb-4">
+                <span className="text-[#00afea] text-xs font-bold tracking-widest uppercase">Tin tức mới nhất</span>
               </div>
               <h2 className="text-3xl lg:text-4xl font-black text-[#0F172A] tracking-tight">Tin tức & Hoạt động</h2>
             </div>
-            <Link href="/tin-tuc" className="hidden md:flex items-center gap-2 text-[#EC1313] font-bold hover:gap-3 transition-all text-sm cursor-pointer">
+            <Link href="/tin-tuc" className="hidden md:flex items-center gap-2 text-[#00afea] font-bold hover:gap-3 transition-all text-sm cursor-pointer">
               Xem tất cả
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
             </Link>
@@ -332,8 +330,8 @@ export default function HomePage() {
               <img src={news[0].img} alt={news[0].title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 absolute inset-0" loading="lazy" decoding="async" width="1200" height="900" />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A]/90 via-[#0F172A]/30 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-8">
-                <span className="inline-block bg-[#EC1313] text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider mb-4">{news[0].tag}</span>
-                <h3 className="text-2xl font-bold text-white mb-3 leading-tight group-hover:text-[#EC1313] transition-colors">{news[0].title}</h3>
+                <span className="inline-block bg-[#00afea] text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider mb-4">{news[0].tag}</span>
+                <h3 className="text-2xl font-bold text-white mb-3 leading-tight group-hover:text-[#00afea] transition-colors">{news[0].title}</h3>
                 <p className="text-white/85 leading-relaxed mb-3 line-clamp-2">{news[0].desc}</p>
                 <span className="text-white/70 text-sm">{news[0].date}</span>
               </div>
@@ -346,8 +344,8 @@ export default function HomePage() {
                     <img src={item.img} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async" width="672" height="448" />
                   </div>
                   <div className="flex flex-col justify-center py-5 pr-5">
-                    <span className="text-[#EC1313] text-xs font-bold uppercase tracking-wider mb-2">{item.tag}</span>
-                    <h3 className="font-bold text-[#0F172A] mb-2 leading-snug line-clamp-2 group-hover:text-[#EC1313] transition-colors">{item.title}</h3>
+                    <span className="text-[#00afea] text-xs font-bold uppercase tracking-wider mb-2">{item.tag}</span>
+                    <h3 className="font-bold text-[#0F172A] mb-2 leading-snug line-clamp-2 group-hover:text-[#00afea] transition-colors">{item.title}</h3>
                     <p className="text-[#64748B] text-sm leading-relaxed mb-3 line-clamp-2">{item.desc}</p>
                     <span className="text-[#64748B] text-xs">{item.date}</span>
                   </div>
@@ -361,17 +359,17 @@ export default function HomePage() {
       <section className="py-20 lg:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <div className="inline-flex items-center gap-2 bg-[rgba(236,19,19,0.08)] px-4 py-2 rounded-full mb-4">
-              <span className="text-[#EC1313] text-xs font-bold tracking-widest uppercase">Liên hệ</span>
+            <div className="inline-flex items-center gap-2 bg-[rgba(0, 175, 234,0.08)] px-4 py-2 rounded-full mb-4">
+              <span className="text-[#00afea] text-xs font-bold tracking-widest uppercase">Liên hệ</span>
             </div>
             <h2 className="text-3xl lg:text-4xl font-black text-[#0F172A] mb-4 tracking-widest uppercase">Vị trí của chúng tôi</h2>
-            <p className="text-[#64748B] text-lg max-w-2xl mx-auto">Ghé thăm văn phòng BYD để được tư vấn trực tiếp</p>
+            <p className="text-[#64748B] text-lg max-w-2xl mx-auto">Ghé thăm văn phòng Thành Công 45 để được tư vấn trực tiếp</p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2 rounded-2xl overflow-hidden shadow-lg border border-slate-100 min-h-[400px]">
               <iframe
-                title="BYD Vietnam Office Location"
+                title="Thành Công 45 Vietnam Office Location"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.292576914698!2d105.83138!3d20.98234!2m3!1f0!2f0!3f0!2m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac5b0e66c95d%3A0x1e4bcf42e2f5e0e4!2zTmd1eeG7hW4gWGnhu4NuLCDEkOG7i25oIEPDtG5nLCBIb8OgbmcgTWFpLCBIw6AgTuG7mWk!5e0!3m2!1svi!2s!4v1709900000000"
                 width="100%"
                 height="100%"
@@ -383,9 +381,9 @@ export default function HomePage() {
             </div>
 
             <div className="flex flex-col gap-5">
-              <div className="group bg-[#FAFAFA] rounded-2xl p-6 border border-slate-100 hover:shadow-lg hover:border-[#EC1313]/20 transition-all duration-300">
-                <div className="w-12 h-12 rounded-xl bg-[#EC1313]/10 flex items-center justify-center mb-4 group-hover:bg-[#EC1313] transition-colors duration-300">
-                  <svg className="w-6 h-6 text-[#EC1313] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="group bg-[#FAFAFA] rounded-2xl p-6 border border-slate-100 hover:shadow-lg hover:border-[#00afea]/20 transition-all duration-300">
+                <div className="w-12 h-12 rounded-xl bg-[#00afea]/10 flex items-center justify-center mb-4 group-hover:bg-[#00afea] transition-colors duration-300">
+                  <svg className="w-6 h-6 text-[#00afea] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
@@ -398,9 +396,9 @@ export default function HomePage() {
                 </p>
               </div>
 
-              <a href="tel:+84969240885" className="group bg-[#FAFAFA] rounded-2xl p-6 border border-slate-100 hover:shadow-lg hover:border-[#EC1313]/20 transition-all duration-300 block cursor-pointer">
-                <div className="w-12 h-12 rounded-xl bg-[#EC1313]/10 flex items-center justify-center mb-4 group-hover:bg-[#EC1313] transition-colors duration-300">
-                  <svg className="w-6 h-6 text-[#EC1313] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <a href="tel:+84969240885" className="group bg-[#FAFAFA] rounded-2xl p-6 border border-slate-100 hover:shadow-lg hover:border-[#00afea]/20 transition-all duration-300 block cursor-pointer">
+                <div className="w-12 h-12 rounded-xl bg-[#00afea]/10 flex items-center justify-center mb-4 group-hover:bg-[#00afea] transition-colors duration-300">
+                  <svg className="w-6 h-6 text-[#00afea] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
                 </div>
@@ -409,9 +407,9 @@ export default function HomePage() {
                 <p className="text-[#64748B] text-xs mt-1">Thứ 2 - Thứ 6, 8:00 - 17:30</p>
               </a>
 
-              <a href="mailto:hcns.byd@gmail.com" className="group bg-[#FAFAFA] rounded-2xl p-6 border border-slate-100 hover:shadow-lg hover:border-[#EC1313]/20 transition-all duration-300 block cursor-pointer">
-                <div className="w-12 h-12 rounded-xl bg-[#EC1313]/10 flex items-center justify-center mb-4 group-hover:bg-[#EC1313] transition-colors duration-300">
-                  <svg className="w-6 h-6 text-[#EC1313] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <a href="mailto:hcns.byd@gmail.com" className="group bg-[#FAFAFA] rounded-2xl p-6 border border-slate-100 hover:shadow-lg hover:border-[#00afea]/20 transition-all duration-300 block cursor-pointer">
+                <div className="w-12 h-12 rounded-xl bg-[#00afea]/10 flex items-center justify-center mb-4 group-hover:bg-[#00afea] transition-colors duration-300">
+                  <svg className="w-6 h-6 text-[#00afea] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 </div>
@@ -426,12 +424,12 @@ export default function HomePage() {
 
       <section className="py-20 bg-[#FAFAFA]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="relative bg-gradient-to-br from-[#EC1313] to-[#b91010] rounded-3xl p-12 lg:p-16 text-white shadow-2xl shadow-red-200/50 overflow-hidden">
+          <div className="relative bg-gradient-to-br from-[#00afea] to-[#103faa] rounded-3xl p-12 lg:p-16 text-white shadow-2xl shadow-blue-200/50 overflow-hidden">
             <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/3 translate-x-1/3" />
             <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-1/3 -translate-x-1/4" />
 
             <div className="relative text-center">
-              <h2 className="text-4xl lg:text-5xl font-black mb-5">Gia nhập đội ngũ BYD</h2>
+              <h2 className="text-4xl lg:text-5xl font-black mb-5">Gia nhập đội ngũ Thành Công 45</h2>
               <p className="text-white/90 text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
                 Chúng tôi đang tìm kiếm những tài năng đam mê công nghệ và thương mại điện tử. Cùng chúng tôi kiến tạo tương lai!
               </p>
@@ -446,7 +444,7 @@ export default function HomePage() {
               </div>
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <Link href="/tuyen-dung" className="bg-white text-[#EC1313] px-8 py-4 rounded-xl font-bold text-lg hover:bg-red-50 transition-colors w-full sm:w-auto shadow-lg text-center cursor-pointer">
+                <Link href="/tuyen-dung" className="bg-white text-[#00afea] px-8 py-4 rounded-xl font-bold text-lg hover:bg-red-50 transition-colors w-full sm:w-auto shadow-lg text-center cursor-pointer">
                   Xem vị trí đang tuyển
                 </Link>
                 <Link href="/tuyen-dung/ung-tuyen" className="border-2 border-white/50 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/10 hover:border-white transition-all w-full sm:w-auto text-center cursor-pointer">

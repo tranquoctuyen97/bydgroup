@@ -132,20 +132,20 @@ export default function LinhVucPage() {
 
       {/* ═══════════════ HERO SECTION ═══════════════ */}
       <section className="relative min-h-[400px] lg:min-h-[500px] flex items-center overflow-hidden bg-[#0F172A]">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#EC1313]/15 via-transparent to-[#0F172A]" />
-        <div className="absolute top-20 right-20 w-72 h-72 bg-[#EC1313]/10 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute bottom-10 left-10 w-56 h-56 bg-[#EC1313]/5 rounded-full blur-2xl pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#00afea]/15 via-transparent to-[#0F172A]" />
+        <div className="absolute top-20 right-20 w-72 h-72 bg-[#00afea]/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute bottom-10 left-10 w-56 h-56 bg-[#00afea]/5 rounded-full blur-2xl pointer-events-none" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-5 py-2.5 rounded-full mb-8 border border-white/20">
-              <div className="w-2.5 h-2.5 rounded-full bg-[#EC1313] animate-pulse" />
+              <div className="w-2.5 h-2.5 rounded-full bg-[#00afea] animate-pulse" />
               <span className="text-white/90 text-sm font-semibold tracking-wider uppercase">Lĩnh vực hoạt động</span>
             </div>
 
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-white leading-[1.05] mb-6 tracking-tight">
               Lĩnh vực{" "}
-              <span className="text-[#EC1313]">& Dịch vụ</span>
+              <span className="text-[#00afea]">& Dịch vụ</span>
             </h1>
 
             <p className="text-lg lg:text-xl text-white/80 leading-relaxed mb-10 max-w-xl">
@@ -155,7 +155,7 @@ export default function LinhVucPage() {
             <button
               type="button"
               onClick={() => router.push('/lien-he')}
-              className="group bg-[#EC1313] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#d41111] transition-all duration-300 hover:shadow-2xl hover:shadow-red-500/30 flex items-center gap-3"
+              className="group bg-[#00afea] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#d41111] transition-all duration-300 hover:shadow-2xl hover:shadow-red-500/30 flex items-center gap-3"
             >
               Liên hệ tư vấn
               <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
@@ -168,8 +168,8 @@ export default function LinhVucPage() {
       <section className="py-20 lg:py-28 bg-[#FAFAFA]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 bg-[rgba(236,19,19,0.08)] px-4 py-2 rounded-full mb-4">
-              <span className="text-[#EC1313] text-xs font-bold tracking-widest uppercase">Dịch vụ nổi bật</span>
+            <div className="inline-flex items-center gap-2 bg-[rgba(0, 175, 234,0.08)] px-4 py-2 rounded-full mb-4">
+              <span className="text-[#00afea] text-xs font-bold tracking-widest uppercase">Dịch vụ nổi bật</span>
             </div>
             <h2 className="text-3xl lg:text-4xl font-black text-[#0F172A] mb-4 tracking-tight">CÁC DỊCH VỤ CỦA CHÚNG TÔI</h2>
             <p className="text-[#475569] text-lg max-w-2xl mx-auto">
@@ -187,8 +187,8 @@ export default function LinhVucPage() {
                 aria-pressed={activeCategory === cat}
                 className={`px-6 py-2.5 rounded-full font-semibold text-sm transition-all duration-300 ${
                   activeCategory === cat
-                    ? "bg-[#EC1313] text-white shadow-lg shadow-red-200"
-                    : "bg-white text-[#475569] border border-slate-200 hover:border-[#EC1313]/30 hover:text-[#EC1313]"
+                    ? "bg-[#00afea] text-white shadow-lg shadow-red-200"
+                    : "bg-white text-[#475569] border border-slate-200 hover:border-[#00afea]/30 hover:text-[#00afea]"
                 }`}
               >
                 {cat}
@@ -211,18 +211,18 @@ export default function LinhVucPage() {
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A]/90 via-[#0F172A]/30 to-transparent" />
                 <div className="absolute top-4 left-4">
-                  <span className="inline-block bg-[#EC1313] text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">
+                  <span className="inline-block bg-[#00afea] text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">
                     {service.category}
                   </span>
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 className="text-white font-bold text-lg mb-1 group-hover:text-[#EC1313] transition-colors">{service.title}</h3>
+                  <h3 className="text-white font-bold text-lg mb-1 group-hover:text-[#00afea] transition-colors">{service.title}</h3>
                   <p className="text-white/85 text-sm leading-relaxed line-clamp-2">{service.shortDesc}</p>
-                  <div className="mt-3 flex items-center gap-2 text-white/80 text-sm group-hover:text-[#EC1313] transition-colors">
+                  <div className="mt-3 flex items-center gap-2 text-white/80 text-sm group-hover:text-[#00afea] transition-colors">
                     <span>Xem chi tiết</span>
                     <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
                   </div>
-                  <div className="mt-2 h-0.5 bg-[#EC1313] w-0 group-hover:w-full transition-all duration-500" />
+                  <div className="mt-2 h-0.5 bg-[#00afea] w-0 group-hover:w-full transition-all duration-500" />
                 </div>
               </button>
             ))}
@@ -258,7 +258,7 @@ export default function LinhVucPage() {
             </div>
 
             <div className="p-8">
-              <span className="inline-block bg-[rgba(236,19,19,0.08)] text-[#EC1313] text-xs font-bold px-3 py-1.5 rounded-full mb-4 uppercase tracking-wider">
+              <span className="inline-block bg-[rgba(0, 175, 234,0.08)] text-[#00afea] text-xs font-bold px-3 py-1.5 rounded-full mb-4 uppercase tracking-wider">
                 {selectedService.category}
               </span>
               <h3 id="service-modal-title" className="text-2xl font-black text-[#0F172A] mb-4">{selectedService.title}</h3>
@@ -268,8 +268,8 @@ export default function LinhVucPage() {
               <ul className="space-y-2 mb-8">
                 {selectedService.features.map((feature) => (
                   <li key={feature} className="flex items-center gap-3 text-[#475569]">
-                    <div className="w-5 h-5 rounded-full bg-[#EC1313]/10 flex items-center justify-center shrink-0">
-                      <svg className="w-3 h-3 text-[#EC1313]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" /></svg>
+                    <div className="w-5 h-5 rounded-full bg-[#00afea]/10 flex items-center justify-center shrink-0">
+                      <svg className="w-3 h-3 text-[#00afea]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" /></svg>
                     </div>
                     <span className="text-sm">{feature}</span>
                   </li>
@@ -283,7 +283,7 @@ export default function LinhVucPage() {
                     setSelectedService(null)
                     router.push('/lien-he')
                   }}
-                  className="bg-[#EC1313] text-white px-6 py-3 rounded-xl font-bold hover:bg-[#d41111] transition-colors flex-1 text-center"
+                  className="bg-[#00afea] text-white px-6 py-3 rounded-xl font-bold hover:bg-[#d41111] transition-colors flex-1 text-center"
                 >
                   Liên hệ tư vấn
                 </button>
@@ -304,10 +304,10 @@ export default function LinhVucPage() {
       <section className="py-20 lg:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 bg-[rgba(236,19,19,0.08)] px-4 py-2 rounded-full mb-4">
-              <span className="text-[#EC1313] text-xs font-bold tracking-widest uppercase">Sản phẩm</span>
+            <div className="inline-flex items-center gap-2 bg-[rgba(0, 175, 234,0.08)] px-4 py-2 rounded-full mb-4">
+              <span className="text-[#00afea] text-xs font-bold tracking-widest uppercase">Sản phẩm</span>
             </div>
-            <h2 className="text-3xl lg:text-4xl font-black text-[#0F172A] mb-4 tracking-tight">HỆ SINH THÁI SẢN PHẨM BYD</h2>
+            <h2 className="text-3xl lg:text-4xl font-black text-[#0F172A] mb-4 tracking-tight">HỆ SINH THÁI SẢN PHẨM THÀNH CÔNG 45</h2>
             <p className="text-[#64748B] text-lg max-w-2xl mx-auto">
               Bộ giải pháp công nghệ tích hợp, đáp ứng mọi nhu cầu kinh doanh số
             </p>
@@ -315,8 +315,8 @@ export default function LinhVucPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {products.map((product) => (
-              <div key={product.title} className="group bg-[#FAFAFA] rounded-2xl p-8 border border-slate-100 hover:shadow-xl hover:border-[#EC1313]/20 transition-all duration-300 hover:-translate-y-1 text-center">
-                <div className="w-16 h-16 mx-auto mb-6 rounded-2xl bg-[#EC1313]/10 flex items-center justify-center text-[#EC1313] group-hover:bg-[#EC1313] group-hover:text-white transition-all duration-300">
+              <div key={product.title} className="group bg-[#FAFAFA] rounded-2xl p-8 border border-slate-100 hover:shadow-xl hover:border-[#00afea]/20 transition-all duration-300 hover:-translate-y-1 text-center">
+                <div className="w-16 h-16 mx-auto mb-6 rounded-2xl bg-[#00afea]/10 flex items-center justify-center text-[#00afea] group-hover:bg-[#00afea] group-hover:text-white transition-all duration-300">
                   {product.icon}
                 </div>
                 <h3 className="text-lg font-bold text-[#0F172A] mb-3">{product.title}</h3>
@@ -330,21 +330,21 @@ export default function LinhVucPage() {
       {/* ═══════════════ CTA SECTION ═══════════════ */}
       <section className="py-20 bg-[#FAFAFA]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="relative bg-gradient-to-br from-[#EC1313] to-[#b91010] rounded-3xl p-12 lg:p-16 text-white shadow-2xl shadow-red-200/50 overflow-hidden">
+          <div className="relative bg-gradient-to-br from-[#00afea] to-[#103faa] rounded-3xl p-12 lg:p-16 text-white shadow-2xl shadow-blue-200/50 overflow-hidden">
             <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/3 translate-x-1/3" />
             <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-1/3 -translate-x-1/4" />
 
             <div className="relative text-center">
               <h2 className="text-4xl lg:text-5xl font-black mb-5">Bạn cần giải pháp phù hợp?</h2>
               <p className="text-white/90 text-lg mb-10 max-w-2xl mx-auto leading-relaxed">
-                Đội ngũ chuyên gia BYD sẵn sàng tư vấn và đồng hành cùng doanh nghiệp của bạn trong hành trình chuyển đổi số.
+                Đội ngũ chuyên gia Thành Công 45 sẵn sàng tư vấn và đồng hành cùng doanh nghiệp của bạn trong hành trình chuyển đổi số.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <Link href="/lien-he" className="bg-white text-[#EC1313] px-8 py-4 rounded-xl font-bold text-lg hover:bg-red-50 transition-colors w-full sm:w-auto shadow-lg text-center">
+                <Link href="/lien-he" className="bg-white text-[#00afea] px-8 py-4 rounded-xl font-bold text-lg hover:bg-red-50 transition-colors w-full sm:w-auto shadow-lg text-center">
                   Liên hệ tư vấn miễn phí
                 </Link>
                 <Link href="/gioi-thieu" className="border-2 border-white/50 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/10 hover:border-white transition-all w-full sm:w-auto text-center">
-                  Tìm hiểu về BYD
+                  Tìm hiểu về Thành Công 45
                 </Link>
               </div>
             </div>

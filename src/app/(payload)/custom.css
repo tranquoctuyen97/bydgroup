@@ -1,7 +1,7 @@
 /* ═══════════════════════════════════════════════════════
-   BYD Việt Nam — Admin Panel Theme
+   Thành Công 45 — Admin Panel Theme
    Matching Frontend Landing Page Colors:
-   • White bg, #FAFAFA panels, BYD Red #EC1313 accents
+   • White bg, #FAFAFA panels, BYD Red #00afea accents
    • Text: #0F172A (heading), #475569 (body), #64748B (muted)
    ═══════════════════════════════════════════════════════ */
 
@@ -60,15 +60,15 @@
 
 /* ─── Custom BYD tokens ─── */
 :root {
-  --byd-red: #EC1313;
+  --byd-red: #00afea;
   --byd-red-dark: #d41111;
-  --byd-red-glow: rgba(236, 19, 19, 0.15);
-  --byd-red-tint: rgba(236, 19, 19, 0.06);
-  --byd-red-tint-strong: rgba(236, 19, 19, 0.10);
+  --byd-red-glow: rgba(0, 175, 234, 0.15);
+  --byd-red-tint: rgba(0, 175, 234, 0.06);
+  --byd-red-tint-strong: rgba(0, 175, 234, 0.10);
   --byd-bg: #ffffff;
   --byd-bg-alt: #FAFAFA;
   --byd-border: rgba(0, 0, 0, 0.08);
-  --byd-border-hover: rgba(236, 19, 19, 0.20);
+  --byd-border-hover: rgba(0, 175, 234, 0.20);
   --byd-text: #0F172A;
   --byd-text-body: #475569;
   --byd-text-muted: #64748B;
@@ -134,7 +134,7 @@ body {
 
 .btn--style-primary:hover {
   background-color: var(--byd-red-dark) !important;
-  box-shadow: 0 8px 24px rgba(236, 19, 19, 0.25) !important;
+  box-shadow: 0 8px 24px rgba(0, 175, 234, 0.25) !important;
   transform: translateY(-1px);
 }
 
@@ -284,7 +284,7 @@ a:hover {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(236, 19, 19, 0.4);
+  background: rgba(0, 175, 234, 0.4);
 }
 
 /* ─── Responsive ─── */

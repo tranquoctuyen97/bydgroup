@@ -49,7 +49,7 @@ const typeMap: Record<string, string> = {
 }
 
 const tagColorMap: Record<string, string> = {
-  'Tuyển gấp': 'bg-[#EC1313] text-white',
+  'Tuyển gấp': 'bg-[#00afea] text-white',
   Hot: 'bg-orange-100 text-orange-600',
   'Mới': 'bg-green-100 text-green-700',
 }
@@ -89,7 +89,7 @@ export const fallbackJobs: Job[] = [
     level: 'Middle – Lead',
     salary: '10 – 15 triệu + thưởng doanh thu',
     tag: 'Tuyển gấp',
-    tagColor: 'bg-[#EC1313] text-white',
+    tagColor: 'bg-[#00afea] text-white',
     desc: 'Xây dựng kế hoạch Digital Marketing theo tháng/quý bám sát mục tiêu doanh thu. Triển khai và quản lý quảng cáo Facebook, Google, TikTok. Tối ưu funnel chuyển đổi, phân bổ ngân sách Ads và quản lý đội ngũ Digital.',
     requirements: [
       'Có kinh nghiệm chạy Facebook Ads hoặc TikTok Ads từ 1 – 2 năm trở lên',
@@ -175,7 +175,7 @@ export const fallbackJobs: Job[] = [
     level: 'Middle',
     salary: '15 – 25 triệu',
     tag: 'Tuyển gấp',
-    tagColor: 'bg-[#EC1313] text-white',
+    tagColor: 'bg-[#00afea] text-white',
     desc: 'Quản lý & tối ưu lịch làm việc của CEO. Chuẩn bị tài liệu, agenda, checklist cho các cuộc họp. Theo dõi toàn bộ đầu việc CEO giao, nhắc việc & cảnh báo deadline. Follow-up execution với các phòng ban, xây dựng & quản lý hệ thống tracker, dashboard, báo cáo.',
     requirements: [
       'Có từ 1–3 năm kinh nghiệm Trợ lý CEO, PMO, Project Coordinator, Operations',

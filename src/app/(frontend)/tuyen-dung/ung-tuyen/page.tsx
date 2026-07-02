@@ -172,16 +172,16 @@ export default function ApplyPage() {
       <div className="min-h-screen bg-white">
         <header className="bg-white border-b border-slate-100 sticky top-0 z-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <Link href="/" aria-label="Về trang chủ BYD" className="flex items-center gap-3">
+            <Link href="/" aria-label="Về trang chủ Thành Công 45" className="flex items-center gap-3">
               <ImageWithFallback
-                src="/images/byd-logo.png"
-                alt="BYD"
+                src="/images/thanh-cong-45-logo.png"
+                alt="Thành Công 45"
                 className="h-8 w-auto"
               />
             </Link>
             <Link
               href="/tuyen-dung"
-              className="text-[#475569] hover:text-[#EC1313] text-sm font-semibold transition-colors"
+              className="text-[#475569] hover:text-[#00afea] text-sm font-semibold transition-colors"
             >
               Xem vị trí khác
             </Link>
@@ -209,13 +209,13 @@ export default function ApplyPage() {
               Gửi hồ sơ thành công!
             </h1>
             <p className="text-[#475569] text-lg leading-relaxed mb-8">
-              Cảm ơn bạn đã quan tâm đến cơ hội tại BYD. Chúng tôi sẽ xem xét
+              Cảm ơn bạn đã quan tâm đến cơ hội tại Thành Công 45. Chúng tôi sẽ xem xét
               hồ sơ của bạn và phản hồi trong vòng 5-7 ngày làm việc.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 href="/tuyen-dung"
-                className="bg-[#EC1313] text-white px-8 py-4 rounded-xl font-bold hover:bg-[#d41111] transition-all w-full sm:w-auto text-center"
+                className="bg-[#00afea] text-white px-8 py-4 rounded-xl font-bold hover:bg-[#d41111] transition-all w-full sm:w-auto text-center"
               >
                 Xem vị trí khác
               </Link>
@@ -236,17 +236,17 @@ export default function ApplyPage() {
     <div className="min-h-screen bg-[#FAFAFA]">
       <header className="bg-white border-b border-slate-100 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-          <Link href="/" aria-label="Về trang chủ BYD" className="flex items-center gap-3">
+          <Link href="/" aria-label="Về trang chủ Thành Công 45" className="flex items-center gap-3">
             <ImageWithFallback
-              src="/images/byd-logo.png"
-              alt="BYD"
+              src="/images/thanh-cong-45-logo.png"
+              alt="Thành Công 45"
               className="h-8 w-auto"
             />
           </Link>
           <button
             type="button"
             onClick={() => router.push('/tuyen-dung')}
-            className="flex items-center gap-2 text-[#475569] hover:text-[#EC1313] text-sm font-semibold transition-colors"
+            className="flex items-center gap-2 text-[#475569] hover:text-[#00afea] text-sm font-semibold transition-colors"
           >
             <svg
               className="w-4 h-4"
@@ -269,7 +269,7 @@ export default function ApplyPage() {
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="text-center mb-10">
           <h1 className="text-3xl lg:text-4xl font-black text-[#0F172A] mb-3">
-            Ứng tuyển tại BYD
+            Ứng tuyển tại Thành Công 45
           </h1>
           <p className="text-[#64748B] text-lg">
             Form đã được rút gọn để bạn gửi hồ sơ nhanh hơn.
@@ -277,60 +277,60 @@ export default function ApplyPage() {
         </div>
 
         <div className="bg-white rounded-2xl shadow-sm border border-slate-100 p-8 lg:p-10 space-y-7">
-          <div className="bg-[rgba(236,19,19,0.06)] border border-[rgba(236,19,19,0.18)] rounded-xl px-4 py-3 text-sm text-[#334155]">
-            Trường có dấu <span className="text-[#EC1313] font-semibold">*</span> là bắt buộc.
+          <div className="bg-[rgba(0, 175, 234,0.06)] border border-[rgba(0, 175, 234,0.18)] rounded-xl px-4 py-3 text-sm text-[#334155]">
+            Trường có dấu <span className="text-[#00afea] font-semibold">*</span> là bắt buộc.
           </div>
 
           <div>
             <label className="block text-sm font-semibold text-[#0F172A] mb-2">
-              Họ và tên <span className="text-[#EC1313]">*</span>
+              Họ và tên <span className="text-[#00afea]">*</span>
             </label>
             <input
               type="text"
               value={form.fullName}
               onChange={(e) => updateField('fullName', e.target.value)}
               placeholder="Nguyễn Văn A"
-              className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#EC1313] focus:ring-2 focus:ring-[#EC1313]/20 outline-none transition-all text-[#0F172A] placeholder:text-[#94A3B8]"
+              className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#00afea] focus:ring-2 focus:ring-[#00afea]/20 outline-none transition-all text-[#0F172A] placeholder:text-[#94A3B8]"
             />
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <label className="block text-sm font-semibold text-[#0F172A] mb-2">
-                Email <span className="text-[#EC1313]">*</span>
+                Email <span className="text-[#00afea]">*</span>
               </label>
               <input
                 type="email"
                 value={form.email}
                 onChange={(e) => updateField('email', e.target.value)}
                 placeholder="email@example.com"
-                className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#EC1313] focus:ring-2 focus:ring-[#EC1313]/20 outline-none transition-all text-[#0F172A] placeholder:text-[#94A3B8]"
+                className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#00afea] focus:ring-2 focus:ring-[#00afea]/20 outline-none transition-all text-[#0F172A] placeholder:text-[#94A3B8]"
               />
             </div>
             <div>
               <label className="block text-sm font-semibold text-[#0F172A] mb-2">
-                Số điện thoại <span className="text-[#EC1313]">*</span>
+                Số điện thoại <span className="text-[#00afea]">*</span>
               </label>
               <input
                 type="tel"
                 value={form.phone}
                 onChange={(e) => updateField('phone', e.target.value)}
                 placeholder="0901 234 567"
-                className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#EC1313] focus:ring-2 focus:ring-[#EC1313]/20 outline-none transition-all text-[#0F172A] placeholder:text-[#94A3B8]"
+                className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#00afea] focus:ring-2 focus:ring-[#00afea]/20 outline-none transition-all text-[#0F172A] placeholder:text-[#94A3B8]"
               />
             </div>
           </div>
 
           <div>
             <label className="block text-sm font-semibold text-[#0F172A] mb-2">
-              Vị trí ứng tuyển <span className="text-[#EC1313]">*</span>
+              Vị trí ứng tuyển <span className="text-[#00afea]">*</span>
             </label>
             <input
               list="job-position-list"
               value={form.position}
               onChange={(e) => updateField('position', e.target.value)}
               placeholder="Nhập hoặc chọn vị trí"
-              className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#EC1313] focus:ring-2 focus:ring-[#EC1313]/20 outline-none transition-all text-[#0F172A] placeholder:text-[#94A3B8]"
+              className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#00afea] focus:ring-2 focus:ring-[#00afea]/20 outline-none transition-all text-[#0F172A] placeholder:text-[#94A3B8]"
             />
             <datalist id="job-position-list">
               {positions.map((pos) => (
@@ -365,7 +365,7 @@ export default function ApplyPage() {
                   />
                   <label
                     htmlFor="cv-upload"
-                    className="flex items-center justify-center gap-3 w-full px-6 py-7 rounded-xl border-2 border-dashed border-slate-200 hover:border-[#EC1313] cursor-pointer transition-colors bg-white hover:bg-red-50/30"
+                    className="flex items-center justify-center gap-3 w-full px-6 py-7 rounded-xl border-2 border-dashed border-slate-200 hover:border-[#00afea] cursor-pointer transition-colors bg-white hover:bg-red-50/30"
                   >
                     {form.cvFile ? (
                       <div className="text-center">
@@ -400,7 +400,7 @@ export default function ApplyPage() {
                     value={form.expectedSalary}
                     onChange={(e) => updateField('expectedSalary', e.target.value)}
                     placeholder="VD: 20 – 30 triệu"
-                    className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#EC1313] focus:ring-2 focus:ring-[#EC1313]/20 outline-none transition-all text-[#0F172A] placeholder:text-[#94A3B8]"
+                    className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#00afea] focus:ring-2 focus:ring-[#00afea]/20 outline-none transition-all text-[#0F172A] placeholder:text-[#94A3B8]"
                   />
                 </div>
               </div>
@@ -414,7 +414,7 @@ export default function ApplyPage() {
                   onChange={(e) => updateField('coverLetter', e.target.value)}
                   placeholder="Giới thiệu ngắn về bạn và lý do ứng tuyển..."
                   rows={4}
-                  className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#EC1313] focus:ring-2 focus:ring-[#EC1313]/20 outline-none transition-all text-[#0F172A] placeholder:text-[#94A3B8] resize-none"
+                  className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#00afea] focus:ring-2 focus:ring-[#00afea]/20 outline-none transition-all text-[#0F172A] placeholder:text-[#94A3B8] resize-none"
                 />
               </div>
             </div>
@@ -449,7 +449,7 @@ export default function ApplyPage() {
               type="button"
               onClick={handleSubmit}
               disabled={submitting || !canSubmit}
-              className="w-full sm:w-auto flex items-center justify-center gap-2 px-8 py-3 rounded-xl font-bold bg-[#EC1313] text-white hover:bg-[#d41111] hover:shadow-lg hover:shadow-red-200 transition-all disabled:opacity-60 disabled:cursor-not-allowed"
+              className="w-full sm:w-auto flex items-center justify-center gap-2 px-8 py-3 rounded-xl font-bold bg-[#00afea] text-white hover:bg-[#d41111] hover:shadow-lg hover:shadow-red-200 transition-all disabled:opacity-60 disabled:cursor-not-allowed"
             >
               {submitting ? (
                 <>

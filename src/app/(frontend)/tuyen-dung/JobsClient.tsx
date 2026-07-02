@@ -102,30 +102,30 @@ export default function JobsClient({ initialJobs }: { initialJobs: Job[] }) {
         <div className="absolute inset-0">
           <ImageWithFallback
             src="/images/recruitment_hero.webp"
-            alt="Tuyển dụng BYD"
+            alt="Tuyển dụng Thành Công 45"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0F172A]/90 via-[#0F172A]/70 to-[#0F172A]/30" />
         </div>
 
-        <div className="absolute top-20 right-20 w-72 h-72 bg-[#EC1313]/10 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute bottom-10 left-10 w-56 h-56 bg-[#EC1313]/5 rounded-full blur-2xl pointer-events-none" />
+        <div className="absolute top-20 right-20 w-72 h-72 bg-[#00afea]/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute bottom-10 left-10 w-56 h-56 bg-[#00afea]/5 rounded-full blur-2xl pointer-events-none" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-5 py-2.5 rounded-full mb-8 border border-white/20">
-              <div className="w-2.5 h-2.5 rounded-full bg-[#EC1313] animate-pulse" />
+              <div className="w-2.5 h-2.5 rounded-full bg-[#00afea] animate-pulse" />
               <span className="text-white/90 text-sm font-semibold tracking-wider uppercase">
                 Cơ hội nghề nghiệp
               </span>
             </div>
 
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-white leading-[1.05] mb-6 tracking-tight">
-              Tuyển dụng <span className="text-[#EC1313]">BYD</span>
+              Tuyển dụng <span className="text-[#00afea]">Thành Công 45</span>
             </h1>
 
             <p className="text-lg lg:text-xl text-white/80 leading-relaxed mb-10 max-w-xl">
-              Gia nhập đội ngũ BYD — nơi mỗi cá nhân đều có cơ hội tỏa sáng,
+              Gia nhập đội ngũ Thành Công 45 — nơi mỗi cá nhân đều có cơ hội tỏa sáng,
               dám Nghĩ Lớn và tạo ra những thành tựu vĩ đại.
             </p>
 
@@ -136,7 +136,7 @@ export default function JobsClient({ initialJobs }: { initialJobs: Job[] }) {
                   const el = document.getElementById('job-list')
                   el?.scrollIntoView({ behavior: 'smooth' })
                 }}
-                className="group bg-[#EC1313] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#d41111] transition-all duration-300 hover:shadow-2xl hover:shadow-red-500/30 flex items-center gap-3"
+                className="group bg-[#00afea] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#d41111] transition-all duration-300 hover:shadow-2xl hover:shadow-red-500/30 flex items-center gap-3"
               >
                 Xem vị trí
                 <svg
@@ -169,9 +169,9 @@ export default function JobsClient({ initialJobs }: { initialJobs: Job[] }) {
       <section id="job-list" className="py-20 lg:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 bg-[rgba(236,19,19,0.08)] px-4 py-2 rounded-full mb-4">
-              <div className="w-1.5 h-1.5 rounded-full bg-[#EC1313]" />
-              <span className="text-[#EC1313] text-xs font-bold tracking-widest uppercase">
+            <div className="inline-flex items-center gap-2 bg-[rgba(0, 175, 234,0.08)] px-4 py-2 rounded-full mb-4">
+              <div className="w-1.5 h-1.5 rounded-full bg-[#00afea]" />
+              <span className="text-[#00afea] text-xs font-bold tracking-widest uppercase">
                 Vị trí đang tuyển
               </span>
             </div>
@@ -208,7 +208,7 @@ export default function JobsClient({ initialJobs }: { initialJobs: Job[] }) {
                 onChange={(e) => setSearch(e.target.value)}
                 placeholder="Tìm kiếm vị trí, từ khóa..."
                 autoComplete="off"
-                className="w-full pl-12 pr-4 py-4 rounded-xl border border-slate-200 focus:border-[#EC1313] focus:ring-2 focus:ring-[#EC1313]/20 outline-none transition-all text-[#0F172A] placeholder:text-[#64748B]"
+                className="w-full pl-12 pr-4 py-4 rounded-xl border border-slate-200 focus:border-[#00afea] focus:ring-2 focus:ring-[#00afea]/20 outline-none transition-all text-[#0F172A] placeholder:text-[#64748B]"
               />
             </div>
           </div>
@@ -222,7 +222,7 @@ export default function JobsClient({ initialJobs }: { initialJobs: Job[] }) {
                 aria-pressed={activeCategory === cat}
                 className={`px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 ${
                   activeCategory === cat
-                    ? 'bg-[#EC1313] text-white shadow-lg shadow-red-200'
+                    ? 'bg-[#00afea] text-white shadow-lg shadow-red-200'
                     : 'bg-slate-100 text-[#475569] hover:bg-slate-200'
                 }`}
               >
@@ -253,7 +253,7 @@ export default function JobsClient({ initialJobs }: { initialJobs: Job[] }) {
                       openJobDetail(job)
                     }
                   }}
-                  className="group bg-white rounded-2xl p-6 border border-slate-100 hover:shadow-xl hover:border-[#EC1313]/20 transition-all duration-300 hover:-translate-y-1 cursor-pointer"
+                  className="group bg-white rounded-2xl p-6 border border-slate-100 hover:shadow-xl hover:border-[#00afea]/20 transition-all duration-300 hover:-translate-y-1 cursor-pointer"
                   role="button"
                   tabIndex={0}
                   aria-label={`Xem chi tiết vị trí ${job.title}`}
@@ -269,12 +269,12 @@ export default function JobsClient({ initialJobs }: { initialJobs: Job[] }) {
                     )}
                   </div>
 
-                  <h3 className="text-lg font-bold text-[#0F172A] mb-2 group-hover:text-[#EC1313] transition-colors line-clamp-2">
+                  <h3 className="text-lg font-bold text-[#0F172A] mb-2 group-hover:text-[#00afea] transition-colors line-clamp-2">
                     {job.title}
                   </h3>
 
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="inline-block bg-[rgba(236,19,19,0.08)] text-[#EC1313] text-xs font-semibold px-2.5 py-1 rounded-full">
+                    <span className="inline-block bg-[rgba(0, 175, 234,0.08)] text-[#00afea] text-xs font-semibold px-2.5 py-1 rounded-full">
                       {job.category}
                     </span>
                   </div>
@@ -290,7 +290,7 @@ export default function JobsClient({ initialJobs }: { initialJobs: Job[] }) {
                   </p>
 
                   <div className="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-sm font-semibold text-[#EC1313] group-hover:underline">
+                    <span className="text-sm font-semibold text-[#00afea] group-hover:underline">
                       Mở trang chi tiết
                     </span>
                     <button
@@ -299,7 +299,7 @@ export default function JobsClient({ initialJobs }: { initialJobs: Job[] }) {
                         e.stopPropagation()
                         void copyJobLink(job)
                       }}
-                      className="text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200 hover:border-[#EC1313] hover:text-[#EC1313] transition-colors"
+                      className="text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200 hover:border-[#00afea] hover:text-[#00afea] transition-colors"
                       aria-label={`Sao chép link tuyển dụng ${job.title}`}
                     >
                       {copiedJobSlug === getJobSlug(job) ? 'Đã sao chép' : 'Copy link'}
@@ -315,16 +315,16 @@ export default function JobsClient({ initialJobs }: { initialJobs: Job[] }) {
       <section className="py-20 lg:py-28 bg-[#FAFAFA]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 bg-[rgba(236,19,19,0.08)] px-4 py-2 rounded-full mb-4">
-              <span className="text-[#EC1313] text-xs font-bold tracking-widest uppercase">
-                Vì sao chọn BYD
+            <div className="inline-flex items-center gap-2 bg-[rgba(0, 175, 234,0.08)] px-4 py-2 rounded-full mb-4">
+              <span className="text-[#00afea] text-xs font-bold tracking-widest uppercase">
+                Vì sao chọn Thành Công 45
               </span>
             </div>
             <h2 className="text-3xl lg:text-4xl font-black text-[#0F172A] mb-4 tracking-tight">
-              LÝ DO GIA NHẬP BYD
+              LÝ DO GIA NHẬP THÀNH CÔNG 45
             </h2>
             <p className="text-[#64748B] text-lg max-w-2xl mx-auto">
-              BYD mang đến môi trường làm việc lý tưởng cho những ai đam mê
+              Thành Công 45 mang đến môi trường làm việc lý tưởng cho những ai đam mê
               công nghệ và muốn tạo ra tác động lớn.
             </p>
           </div>
@@ -333,10 +333,10 @@ export default function JobsClient({ initialJobs }: { initialJobs: Job[] }) {
             {whyJoinItems.map((item) => (
               <div
                 key={item.title}
-                className="group bg-white rounded-2xl p-8 border border-slate-100 hover:shadow-xl hover:border-[#EC1313]/20 transition-all duration-300 hover:-translate-y-1"
+                className="group bg-white rounded-2xl p-8 border border-slate-100 hover:shadow-xl hover:border-[#00afea]/20 transition-all duration-300 hover:-translate-y-1"
               >
                 <div className="text-5xl mb-6">{item.icon}</div>
-                <h3 className="text-xl font-bold text-[#0F172A] mb-3 group-hover:text-[#EC1313] transition-colors">
+                <h3 className="text-xl font-bold text-[#0F172A] mb-3 group-hover:text-[#00afea] transition-colors">
                   {item.title}
                 </h3>
                 <p className="text-[#475569] leading-relaxed">{item.desc}</p>

@@ -183,7 +183,7 @@ export default function JobDetailPage() {
   if (loading) {
     return (
       <div className="min-h-[70vh] flex items-center justify-center">
-        <div className="inline-block w-8 h-8 border-4 border-[#EC1313] border-t-transparent rounded-full animate-spin" />
+        <div className="inline-block w-8 h-8 border-4 border-[#00afea] border-t-transparent rounded-full animate-spin" />
       </div>
     )
   }
@@ -195,7 +195,7 @@ export default function JobDetailPage() {
         <p className="text-[#64748B] mb-8">Liên kết có thể đã hết hạn hoặc vị trí đã đóng.</p>
         <Link
           href="/tuyen-dung"
-          className="inline-flex items-center gap-2 bg-[#EC1313] text-white px-6 py-3 rounded-xl font-bold hover:bg-[#d41111] transition-colors"
+          className="inline-flex items-center gap-2 bg-[#00afea] text-white px-6 py-3 rounded-xl font-bold hover:bg-[#d41111] transition-colors"
         >
           Quay lại danh sách tuyển dụng
         </Link>
@@ -207,7 +207,7 @@ export default function JobDetailPage() {
     <div className="bg-[#FAFAFA] py-14 lg:py-16">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8">
-          <Link href="/tuyen-dung" className="inline-flex items-center gap-2 text-sm font-semibold text-[#64748B] hover:text-[#EC1313] transition-colors">
+          <Link href="/tuyen-dung" className="inline-flex items-center gap-2 text-sm font-semibold text-[#64748B] hover:text-[#00afea] transition-colors">
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
@@ -220,7 +220,7 @@ export default function JobDetailPage() {
             <div>
               <h1 className="text-3xl lg:text-4xl font-black text-[#0F172A] mb-3">{job.title}</h1>
               <div className="flex flex-wrap items-center gap-2">
-                <span className="inline-block bg-[rgba(236,19,19,0.08)] text-[#EC1313] text-xs font-semibold px-2.5 py-1 rounded-full">
+                <span className="inline-block bg-[rgba(0, 175, 234,0.08)] text-[#00afea] text-xs font-semibold px-2.5 py-1 rounded-full">
                   {job.category}
                 </span>
                 {job.tag && (
@@ -234,7 +234,7 @@ export default function JobDetailPage() {
             <button
               type="button"
               onClick={scrollToApply}
-              className="bg-[#EC1313] text-white px-6 py-3 rounded-xl font-bold hover:bg-[#d41111] transition-colors"
+              className="bg-[#00afea] text-white px-6 py-3 rounded-xl font-bold hover:bg-[#d41111] transition-colors"
             >
               Ứng tuyển ngay
             </button>
@@ -251,7 +251,7 @@ export default function JobDetailPage() {
             </div>
             <div className="bg-[#FAFAFA] rounded-xl p-4">
               <div className="text-[#64748B] text-xs font-semibold uppercase tracking-wider mb-1">Mức lương</div>
-              <div className="text-[#EC1313] font-bold text-sm">{job.salary}</div>
+              <div className="text-[#00afea] font-bold text-sm">{job.salary}</div>
             </div>
             <div className="bg-[#FAFAFA] rounded-xl p-4">
               <div className="text-[#64748B] text-xs font-semibold uppercase tracking-wider mb-1">Cấp bậc</div>
@@ -273,7 +273,7 @@ export default function JobDetailPage() {
               <button
                 type="button"
                 onClick={() => void copyShareLink()}
-                className="px-4 py-2 rounded-lg border border-slate-200 text-sm font-semibold hover:border-[#EC1313] hover:text-[#EC1313] transition-colors"
+                className="px-4 py-2 rounded-lg border border-slate-200 text-sm font-semibold hover:border-[#00afea] hover:text-[#00afea] transition-colors"
               >
                 {copied ? 'Đã sao chép' : 'Sao chép'}
               </button>
@@ -291,7 +291,7 @@ export default function JobDetailPage() {
               <ul className="space-y-2">
                 {job.requirements.map((req, i) => (
                   <li key={i} className="flex items-start gap-3">
-                    <svg className="w-5 h-5 text-[#EC1313] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-[#00afea] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                     <span className="text-[#475569]">{req}</span>
@@ -322,33 +322,33 @@ export default function JobDetailPage() {
 
           {submitted ? (
             <div className="bg-green-50 border border-green-200 rounded-xl p-5 text-green-700">
-              Gửi hồ sơ thành công. BYD sẽ phản hồi cho bạn sớm.
+              Gửi hồ sơ thành công. Thành Công 45 sẽ phản hồi cho bạn sớm.
             </div>
           ) : (
             <div className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-sm font-semibold text-[#0F172A] mb-2">
-                    Họ và tên <span className="text-[#EC1313]">*</span>
+                    Họ và tên <span className="text-[#00afea]">*</span>
                   </label>
                   <input
                     type="text"
                     value={form.fullName}
                     onChange={(e) => updateField('fullName', e.target.value)}
                     placeholder="Nguyễn Văn A"
-                    className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#EC1313] focus:ring-2 focus:ring-[#EC1313]/20 outline-none transition-all"
+                    className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#00afea] focus:ring-2 focus:ring-[#00afea]/20 outline-none transition-all"
                   />
                 </div>
                 <div>
                   <label className="block text-sm font-semibold text-[#0F172A] mb-2">
-                    Email <span className="text-[#EC1313]">*</span>
+                    Email <span className="text-[#00afea]">*</span>
                   </label>
                   <input
                     type="email"
                     value={form.email}
                     onChange={(e) => updateField('email', e.target.value)}
                     placeholder="email@example.com"
-                    className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#EC1313] focus:ring-2 focus:ring-[#EC1313]/20 outline-none transition-all"
+                    className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#00afea] focus:ring-2 focus:ring-[#00afea]/20 outline-none transition-all"
                   />
                 </div>
               </div>
@@ -356,14 +356,14 @@ export default function JobDetailPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-sm font-semibold text-[#0F172A] mb-2">
-                    Số điện thoại <span className="text-[#EC1313]">*</span>
+                    Số điện thoại <span className="text-[#00afea]">*</span>
                   </label>
                   <input
                     type="tel"
                     value={form.phone}
                     onChange={(e) => updateField('phone', e.target.value)}
                     placeholder="0901 234 567"
-                    className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#EC1313] focus:ring-2 focus:ring-[#EC1313]/20 outline-none transition-all"
+                    className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#00afea] focus:ring-2 focus:ring-[#00afea]/20 outline-none transition-all"
                   />
                 </div>
               </div>
@@ -377,7 +377,7 @@ export default function JobDetailPage() {
                   value={form.expectedSalary}
                   onChange={(e) => updateField('expectedSalary', e.target.value)}
                   placeholder="VD: 20 – 30 triệu"
-                  className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#EC1313] focus:ring-2 focus:ring-[#EC1313]/20 outline-none transition-all"
+                  className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#00afea] focus:ring-2 focus:ring-[#00afea]/20 outline-none transition-all"
                 />
               </div>
 
@@ -402,7 +402,7 @@ export default function JobDetailPage() {
                   value={form.coverLetter}
                   onChange={(e) => updateField('coverLetter', e.target.value)}
                   placeholder="Giới thiệu ngắn về bạn..."
-                  className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#EC1313] focus:ring-2 focus:ring-[#EC1313]/20 outline-none transition-all resize-none"
+                  className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#00afea] focus:ring-2 focus:ring-[#00afea]/20 outline-none transition-all resize-none"
                 />
               </div>
 
@@ -416,7 +416,7 @@ export default function JobDetailPage() {
                 type="button"
                 onClick={handleSubmit}
                 disabled={!canSubmit || submitting}
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#EC1313] text-white px-8 py-3 rounded-xl font-bold hover:bg-[#d41111] transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#00afea] text-white px-8 py-3 rounded-xl font-bold hover:bg-[#d41111] transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
               >
                 {submitting ? 'Đang gửi...' : 'Gửi hồ sơ ngay'}
               </button>

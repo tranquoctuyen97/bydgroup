@@ -12,8 +12,8 @@ export default function Logo() {
             }}
         >
             <img
-                src="/images/byd-logo.png"
-                alt="BYD Việt Nam"
+                src="/images/thanh-cong-45-logo.png"
+                alt="Thành Công 45"
                 style={{
                     height: '48px',
                     width: 'auto',

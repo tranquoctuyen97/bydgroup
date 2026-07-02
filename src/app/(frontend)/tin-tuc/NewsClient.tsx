@@ -32,18 +32,18 @@ export default function NewsClient({ initialNews }: { initialNews: NewsItem[] })
       <section className="py-20 lg:py-28 bg-[#FAFAFA]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 bg-[rgba(236,19,19,0.08)] px-4 py-2 rounded-full mb-4">
-              <div className="w-1.5 h-1.5 rounded-full bg-[#EC1313]" />
-              <span className="text-[#EC1313] text-xs font-bold tracking-widest uppercase">
+            <div className="inline-flex items-center gap-2 bg-[rgba(0, 175, 234,0.08)] px-4 py-2 rounded-full mb-4">
+              <div className="w-1.5 h-1.5 rounded-full bg-[#00afea]" />
+              <span className="text-[#00afea] text-xs font-bold tracking-widest uppercase">
                 Tin tức & Hoạt động
               </span>
             </div>
             <h1 className="text-4xl lg:text-5xl font-black text-[#0F172A] mb-4 tracking-tight">
-              TIN TỨC BYD
+              TIN TỨC
             </h1>
             <p className="text-[#64748B] text-lg max-w-2xl mx-auto">
               Cập nhật những tin tức mới nhất về hoạt động, sự kiện và công
-              nghệ tại BYD.
+              nghệ tại Thành Công 45.
             </p>
           </div>
 
@@ -62,10 +62,10 @@ export default function NewsClient({ initialNews }: { initialNews: NewsItem[] })
                 />
               </div>
               <div className="flex flex-col justify-center p-8 lg:pr-10">
-                <span className="inline-block bg-[#EC1313] text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider mb-4 w-fit">
+                <span className="inline-block bg-[#00afea] text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider mb-4 w-fit">
                   {featuredArticle.tag}
                 </span>
-                <h2 className="text-2xl lg:text-3xl font-bold text-[#0F172A] mb-4 leading-tight group-hover:text-[#EC1313] transition-colors">
+                <h2 className="text-2xl lg:text-3xl font-bold text-[#0F172A] mb-4 leading-tight group-hover:text-[#00afea] transition-colors">
                   {featuredArticle.title}
                 </h2>
                 <p className="text-[#475569] leading-relaxed mb-4 line-clamp-3">
@@ -101,7 +101,7 @@ export default function NewsClient({ initialNews }: { initialNews: NewsItem[] })
                 onClick={() => setActiveCategory(cat)}
                 className={`px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 ${
                   activeCategory === cat
-                    ? 'bg-[#EC1313] text-white shadow-lg shadow-red-200'
+                    ? 'bg-[#00afea] text-white shadow-lg shadow-red-200'
                     : 'bg-slate-100 text-[#475569] hover:bg-slate-200'
                 }`}
               >
@@ -139,14 +139,14 @@ export default function NewsClient({ initialNews }: { initialNews: NewsItem[] })
                   </div>
                   <div className="p-6">
                     <div className="flex items-center gap-3 mb-3">
-                      <span className="text-[#EC1313] text-xs font-bold uppercase tracking-wider">
+                      <span className="text-[#00afea] text-xs font-bold uppercase tracking-wider">
                         {item.tag}
                       </span>
                       <span className="text-[#64748B] text-xs">
                         {item.date}
                       </span>
                     </div>
-                    <h3 className="text-lg font-bold text-[#0F172A] mb-2 leading-snug line-clamp-2 group-hover:text-[#EC1313] transition-colors">
+                    <h3 className="text-lg font-bold text-[#0F172A] mb-2 leading-snug line-clamp-2 group-hover:text-[#00afea] transition-colors">
                       {item.title}
                     </h3>
                     <p className="text-[#64748B] text-sm leading-relaxed line-clamp-2">
@@ -162,8 +162,8 @@ export default function NewsClient({ initialNews }: { initialNews: NewsItem[] })
 
       {/* ═══════════════ NEWSLETTER ═══════════════ */}
       <section className="py-20 bg-[#0F172A] relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#EC1313]/10 to-transparent pointer-events-none" />
-        <div className="absolute top-0 right-0 w-96 h-96 bg-[#EC1313]/5 rounded-full translate-x-1/3 -translate-y-1/3 blur-3xl pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#00afea]/10 to-transparent pointer-events-none" />
+        <div className="absolute top-0 right-0 w-96 h-96 bg-[#00afea]/5 rounded-full translate-x-1/3 -translate-y-1/3 blur-3xl pointer-events-none" />
 
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative text-center">
           <div className="inline-flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full mb-6 border border-white/10">
@@ -175,7 +175,7 @@ export default function NewsClient({ initialNews }: { initialNews: NewsItem[] })
             ĐĂNG KÝ NHẬN TIN
           </h2>
           <p className="text-slate-300 text-lg mb-8 max-w-xl mx-auto">
-            Nhận thông tin mới nhất về BYD, công nghệ và cơ hội nghề nghiệp
+            Nhận thông tin mới nhất về Thành Công 45, công nghệ và cơ hội nghề nghiệp
             trực tiếp vào email của bạn.
           </p>
 
@@ -214,11 +214,11 @@ export default function NewsClient({ initialNews }: { initialNews: NewsItem[] })
                 placeholder="Nhập email của bạn"
                 autoComplete="email"
                 required
-                className="flex-1 px-5 py-4 rounded-xl bg-white/10 border border-white/20 text-white placeholder:text-white/60 focus:border-[#EC1313] focus:ring-2 focus:ring-[#EC1313]/20 outline-none transition-all"
+                className="flex-1 px-5 py-4 rounded-xl bg-white/10 border border-white/20 text-white placeholder:text-white/60 focus:border-[#00afea] focus:ring-2 focus:ring-[#00afea]/20 outline-none transition-all"
               />
               <button
                 type="submit"
-                className="bg-[#EC1313] text-white px-8 py-4 rounded-xl font-bold hover:bg-[#d41111] transition-all hover:shadow-lg hover:shadow-red-500/30 whitespace-nowrap"
+                className="bg-[#00afea] text-white px-8 py-4 rounded-xl font-bold hover:bg-[#d41111] transition-all hover:shadow-lg hover:shadow-red-500/30 whitespace-nowrap"
               >
                 Đăng ký
               </button>
@@ -274,7 +274,7 @@ export default function NewsClient({ initialNews }: { initialNews: NewsItem[] })
 
               {/* Tag on image */}
               <div className="absolute bottom-4 left-6">
-                <span className="inline-block bg-[#EC1313] text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">
+                <span className="inline-block bg-[#00afea] text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">
                   {selectedNews.tag}
                 </span>
               </div>
@@ -317,12 +317,12 @@ export default function NewsClient({ initialNews }: { initialNews: NewsItem[] })
                   <span className="text-[#64748B] text-sm font-semibold">
                     Chia sẻ:
                   </span>
-                  <button type="button" aria-label="Chia sẻ lên X" className="w-9 h-9 rounded-full bg-slate-100 hover:bg-[#EC1313] hover:text-white text-[#475569] flex items-center justify-center transition-all">
+                  <button type="button" aria-label="Chia sẻ lên X" className="w-9 h-9 rounded-full bg-slate-100 hover:bg-[#00afea] hover:text-white text-[#475569] flex items-center justify-center transition-all">
                     <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
                     </svg>
                   </button>
-                  <button type="button" aria-label="Chia sẻ lên LinkedIn" className="w-9 h-9 rounded-full bg-slate-100 hover:bg-[#EC1313] hover:text-white text-[#475569] flex items-center justify-center transition-all">
+                  <button type="button" aria-label="Chia sẻ lên LinkedIn" className="w-9 h-9 rounded-full bg-slate-100 hover:bg-[#00afea] hover:text-white text-[#475569] flex items-center justify-center transition-all">
                     <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                     </svg>

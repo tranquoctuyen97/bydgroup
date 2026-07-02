@@ -14,6 +14,7 @@ import { Users } from './src/collections/Users'
 import { createSMTPEmailAdapter } from './src/lib/email/smtpEmailAdapter'
 
 
+
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
 const databaseURL =
@@ -108,8 +109,8 @@ export default buildConfig({
       baseDir: path.resolve(dirname),
     },
     meta: {
-      titleSuffix: ' | BYD Việt Nam',
-      description: 'Bảng quản trị nội bộ BYD Việt Nam',
+      titleSuffix: ' | Thành Công 45',
+      description: 'Bảng quản trị nội bộ Thành Công 45',
     },
     components: {
       graphics: {

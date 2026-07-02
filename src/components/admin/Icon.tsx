@@ -12,8 +12,8 @@ export default function Icon() {
             }}
         >
             <img
-                src="/images/byd-logo.png"
-                alt="BYD"
+                src="/images/thanh-cong-45-logo.png"
+                alt="Thành Công 45"
                 style={{
                     height: '22px',
                     width: 'auto',
