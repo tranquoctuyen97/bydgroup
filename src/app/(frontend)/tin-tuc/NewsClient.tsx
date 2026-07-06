@@ -43,7 +43,7 @@ export default function NewsClient({ initialNews }: { initialNews: NewsItem[] })
             </h1>
             <p className="text-[#64748B] text-lg max-w-2xl mx-auto">
               Cập nhật những tin tức mới nhất về hoạt động, sự kiện và công
-              nghệ tại Thành Công 45.
+              nghệ tại CHÂU Á THÀNH CÔNG.
             </p>
           </div>
 
@@ -175,7 +175,7 @@ export default function NewsClient({ initialNews }: { initialNews: NewsItem[] })
             ĐĂNG KÝ NHẬN TIN
           </h2>
           <p className="text-slate-300 text-lg mb-8 max-w-xl mx-auto">
-            Nhận thông tin mới nhất về Thành Công 45, công nghệ và cơ hội nghề nghiệp
+            Nhận thông tin mới nhất về CHÂU Á THÀNH CÔNG, công nghệ và cơ hội nghề nghiệp
             trực tiếp vào email của bạn.
           </p>
 

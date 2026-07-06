@@ -34,7 +34,7 @@ export default async function NewsPage() {
               })
             : '',
           content: contentText,
-          author: doc.author?.name || doc.author || 'Thành Công 45 Media',
+          author: doc.author?.name || doc.author || 'CHÂU Á THÀNH CÔNG Media',
         }
       })
     }

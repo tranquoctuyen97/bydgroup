@@ -5,7 +5,7 @@ const imgHero = '/images/du-lich-cua-lo.webp'
 const timeline = [
   {
     year: '08/2024',
-    title: 'THÀNH LẬP THÀNH CÔNG 45',
+    title: 'THÀNH LẬP CHÂU Á THÀNH CÔNG',
     desc: 'Với sứ mệnh chinh phục lĩnh vực thương mại điện tử và truyền thông thương mại đa nền tảng, lấy con người làm trung tâm.',
     color: 'bg-[#00afea]',
   },
@@ -71,7 +71,7 @@ export default function GioiThieuPage() {
         <div className="absolute inset-0">
           <img
             src={imgHero}
-            alt="Thành Công 45 About Hero"
+            alt="CHÂU Á THÀNH CÔNG About Hero"
             className="h-full w-full object-cover"
             loading="eager"
             fetchPriority="high"
@@ -93,7 +93,7 @@ export default function GioiThieuPage() {
             </div>
 
             <h1 className="mb-6 text-5xl font-black leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl">
-              Giới thiệu <span className="text-[#00afea]">Thành Công 45</span>
+              GIỚI THIỆU <span className="text-[#00afea]">CHÂU Á THÀNH CÔNG</span>
             </h1>
 
             <p className="mb-10 max-w-xl text-lg leading-relaxed text-white/85 lg:text-xl">
@@ -130,7 +130,7 @@ export default function GioiThieuPage() {
               <div className="h-1.5 w-1.5 rounded-full bg-[#00afea]" />
               <span className="text-xs font-bold uppercase tracking-widest text-[#00afea]">Về chúng tôi</span>
             </div>
-            <h2 className="mb-4 text-3xl font-black tracking-tight text-[#0F172A] lg:text-4xl">THÀNH CÔNG 45 VIỆT NAM</h2>
+            <h2 className="mb-4 text-3xl font-black tracking-tight text-[#0F172A] lg:text-4xl">CHÂU Á THÀNH CÔNG VIỆT NAM</h2>
             <p className="mx-auto max-w-2xl text-lg text-[#475569]">Hành trình xây dựng hệ sinh thái thương mại điện tử đa ngành tại Việt Nam & Đông Nam Á</p>
           </div>
 
@@ -139,7 +139,7 @@ export default function GioiThieuPage() {
               <div className="overflow-hidden rounded-2xl shadow-2xl">
                 <img
                   src="/images/du-lich-cua-lo.webp"
-                  alt="Đội ngũ Thành Công 45"
+                  alt="Đội ngũ CHÂU Á THÀNH CÔNG"
                   className="h-auto w-full object-cover"
                   loading="lazy"
                   decoding="async"
@@ -149,7 +149,7 @@ export default function GioiThieuPage() {
               </div>
               <div className="rounded-2xl border border-slate-100 bg-white p-8 shadow-sm">
                 <p className="text-lg leading-relaxed text-[#475569]">
-                  Thành Công 45 là doanh nghiệp hoạt động trong lĩnh vực <strong className="text-[#0F172A]">thương mại điện tử đa nền tảng, đa quốc gia</strong>, tập trung phát triển mạnh tại thị trường Việt Nam & Đông Nam Á. Công ty kinh doanh đa dạng ngành hàng: nông nghiệp, gia dụng, thời trang, mỹ phẩm và các sản phẩm thương hiệu, mang đến trải nghiệm mua sắm <strong className="text-[#0F172A]">hiện đại - tiện lợi - đáng tin cậy</strong> cho khách hàng.
+                  CHÂU Á THÀNH CÔNG là doanh nghiệp hoạt động trong lĩnh vực <strong className="text-[#0F172A]">thương mại điện tử đa nền tảng, đa quốc gia</strong>, tập trung phát triển mạnh tại thị trường Việt Nam & Đông Nam Á. Công ty kinh doanh đa dạng ngành hàng: nông nghiệp, gia dụng, thời trang, mỹ phẩm và các sản phẩm thương hiệu, mang đến trải nghiệm mua sắm <strong className="text-[#0F172A]">hiện đại - tiện lợi - đáng tin cậy</strong> cho khách hàng.
                 </p>
               </div>
             </div>
@@ -195,7 +195,7 @@ export default function GioiThieuPage() {
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-16 text-center">
             <h2 className="mb-4 text-3xl font-black tracking-tight text-white lg:text-4xl">TẦM NHÌN</h2>
-            <p className="mx-auto max-w-2xl text-lg text-slate-300">Định hướng chiến lược dẫn dắt mọi hoạt động của Thành Công 45</p>
+            <p className="mx-auto max-w-2xl text-lg text-slate-300">Định hướng chiến lược dẫn dắt mọi hoạt động của CHÂU Á THÀNH CÔNG</p>
           </div>
 
           <div className="mx-auto mb-10 max-w-4xl">
@@ -208,7 +208,7 @@ export default function GioiThieuPage() {
                 </div>
               </div>
               <p className="text-xl font-bold uppercase leading-relaxed tracking-wide text-white lg:text-2xl">
-                Xây dựng Thành Công 45 thành doanh nghiệp toàn cầu, phân phối sản phẩm Việt ra quốc tế, góp phần nâng cao vị thế kinh tế Việt Nam
+                Xây dựng CHÂU Á THÀNH CÔNG thành doanh nghiệp toàn cầu, phân phối sản phẩm Việt ra quốc tế, góp phần nâng cao vị thế kinh tế Việt Nam
               </p>
             </div>
           </div>
@@ -220,11 +220,11 @@ export default function GioiThieuPage() {
           <div className="mb-16 text-center">
             <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-[rgba(0, 175, 234,0.08)] px-4 py-2">
               <div className="h-1.5 w-1.5 rounded-full bg-[#00afea]" />
-              <span className="text-xs font-bold uppercase tracking-widest text-[#00afea]">Năng lực Thành Công 45</span>
+              <span className="text-xs font-bold uppercase tracking-widest text-[#00afea]">Năng lực CHÂU Á THÀNH CÔNG</span>
             </div>
-            <h2 className="mb-4 text-3xl font-black tracking-tight text-[#0F172A] lg:text-4xl">THÀNH CÔNG 45 LÀM GÌ?</h2>
+            <h2 className="mb-4 text-3xl font-black tracking-tight text-[#0F172A] lg:text-4xl">CHÂU Á THÀNH CÔNG LÀM GÌ?</h2>
             <p className="mx-auto max-w-3xl text-lg text-[#475569]">
-              Thành Công 45 tập trung xây dựng năng lực thương mại điện tử, phát triển danh mục sản phẩm và vận hành đội ngũ tăng trưởng bền vững.
+              CHÂU Á THÀNH CÔNG tập trung xây dựng năng lực thương mại điện tử, phát triển danh mục sản phẩm và vận hành đội ngũ tăng trưởng bền vững.
             </p>
           </div>
 
@@ -253,7 +253,7 @@ export default function GioiThieuPage() {
                 </span>
                 <h3 className="mb-5 text-3xl font-black uppercase leading-tight">Doanh nghiệp thương mại điện tử lấy vận hành làm lõi</h3>
                 <p className="mb-8 leading-relaxed text-slate-300">
-                  Thành Công 45 không chỉ bán sản phẩm. Công ty xây dựng hệ thống từ lựa chọn hàng hóa, marketing, vận hành đơn hàng đến chăm sóc khách hàng để tạo tăng trưởng có thể lặp lại.
+                  CHÂU Á THÀNH CÔNG không chỉ bán sản phẩm. Công ty xây dựng hệ thống từ lựa chọn hàng hóa, marketing, vận hành đơn hàng đến chăm sóc khách hàng để tạo tăng trưởng có thể lặp lại.
                 </p>
                 <Link
                   href="/linh-vuc"
@@ -306,7 +306,7 @@ export default function GioiThieuPage() {
             <div className="absolute bottom-0 left-0 h-48 w-48 -translate-x-1/4 translate-y-1/3 rounded-full bg-white/5" />
 
             <div className="relative text-center">
-              <h2 className="mb-5 text-4xl font-black uppercase lg:text-5xl">Cùng Thành Công 45 kiến tạo giá trị vĩ đại</h2>
+              <h2 className="mb-5 text-4xl font-black uppercase lg:text-5xl">Cùng CHÂU Á THÀNH CÔNG kiến tạo giá trị vĩ đại</h2>
               <p className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-white/90">
                 Phụng sự xã hội qua những sản phẩm tốt lành - cùng chúng tôi nâng cao chất lượng cuộc sống cho mọi người.
               </p>
@@ -321,7 +321,7 @@ export default function GioiThieuPage() {
                   href="/van-hoa"
                   className="w-full rounded-xl border-2 border-white/50 px-8 py-4 text-center text-lg font-bold text-white transition-all hover:border-white hover:bg-white/10 sm:w-auto"
                 >
-                  Xem văn hóa Thành Công 45
+                  Xem văn hóa CHÂU Á THÀNH CÔNG
                 </Link>
               </div>
             </div>

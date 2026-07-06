@@ -102,7 +102,7 @@ export default function JobsClient({ initialJobs }: { initialJobs: Job[] }) {
         <div className="absolute inset-0">
           <ImageWithFallback
             src="/images/recruitment_hero.webp"
-            alt="Tuyển dụng Thành Công 45"
+            alt="Tuyển dụng CHÂU Á THÀNH CÔNG"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0F172A]/90 via-[#0F172A]/70 to-[#0F172A]/30" />
@@ -112,7 +112,7 @@ export default function JobsClient({ initialJobs }: { initialJobs: Job[] }) {
         <div className="absolute bottom-10 left-10 w-56 h-56 bg-[#00afea]/5 rounded-full blur-2xl pointer-events-none" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
-          <div className="max-w-2xl">
+          <div className="max-w-[46rem]">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-5 py-2.5 rounded-full mb-8 border border-white/20">
               <div className="w-2.5 h-2.5 rounded-full bg-[#00afea] animate-pulse" />
               <span className="text-white/90 text-sm font-semibold tracking-wider uppercase">
@@ -121,11 +121,11 @@ export default function JobsClient({ initialJobs }: { initialJobs: Job[] }) {
             </div>
 
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-white leading-[1.05] mb-6 tracking-tight">
-              Tuyển dụng <span className="text-[#00afea]">Thành Công 45</span>
+              TUYỂN DỤNG <span className="text-[#00afea]">CHÂU Á THÀNH CÔNG</span>
             </h1>
 
             <p className="text-lg lg:text-xl text-white/80 leading-relaxed mb-10 max-w-xl">
-              Gia nhập đội ngũ Thành Công 45 — nơi mỗi cá nhân đều có cơ hội tỏa sáng,
+              Gia nhập đội ngũ CHÂU Á THÀNH CÔNG — nơi mỗi cá nhân đều có cơ hội tỏa sáng,
               dám Nghĩ Lớn và tạo ra những thành tựu vĩ đại.
             </p>
 
@@ -317,14 +317,14 @@ export default function JobsClient({ initialJobs }: { initialJobs: Job[] }) {
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 bg-[rgba(0, 175, 234,0.08)] px-4 py-2 rounded-full mb-4">
               <span className="text-[#00afea] text-xs font-bold tracking-widest uppercase">
-                Vì sao chọn Thành Công 45
+                Vì sao chọn CHÂU Á THÀNH CÔNG
               </span>
             </div>
             <h2 className="text-3xl lg:text-4xl font-black text-[#0F172A] mb-4 tracking-tight">
-              LÝ DO GIA NHẬP THÀNH CÔNG 45
+              LÝ DO GIA NHẬP CHÂU Á THÀNH CÔNG
             </h2>
             <p className="text-[#64748B] text-lg max-w-2xl mx-auto">
-              Thành Công 45 mang đến môi trường làm việc lý tưởng cho những ai đam mê
+              CHÂU Á THÀNH CÔNG mang đến môi trường làm việc lý tưởng cho những ai đam mê
               công nghệ và muốn tạo ra tác động lớn.
             </p>
           </div>

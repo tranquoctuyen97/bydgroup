@@ -45,7 +45,7 @@ const services = [
 const teamGallery = [
   { img: '/images/du-lich-cua-lo.webp', title: 'Trải nghiệm & Gắn kết', desc: 'Cùng nhau tạo kỷ niệm - vì đội ngũ mạnh bắt đầu từ sự kết nối' },
   { img: '/images/trao-thuong-byd.webp', title: 'Ghi nhận & Tôn vinh', desc: 'Mỗi nỗ lực đều xứng đáng được công nhận và tưởng thưởng' },
-  { img: '/images/sinh-nhat-quy4.webp', title: 'Ấm áp như gia đình', desc: 'Thành Công 45 là gia đình thứ hai - nơi bạn được quan tâm mỗi ngày' },
+  { img: '/images/sinh-nhat-quy4.webp', title: 'Ấm áp như gia đình', desc: 'CHÂU Á THÀNH CÔNG là gia đình thứ hai - nơi bạn được quan tâm mỗi ngày' },
   { img: '/images/hoat-dong-20-10.webp', title: 'Yêu thương & Sẻ chia', desc: 'Những khoảnh khắc đặc biệt dành cho những con người đặc biệt' },
 ]
 
@@ -53,15 +53,15 @@ const defaultNews = [
   {
     img: '/images/sinh-nhat-quy4.webp',
     tag: 'Văn hóa',
-    title: 'Happy Birthday - Nhân sự Quý I của Thành Công 45',
+    title: 'Happy Birthday - Nhân sự Quý I của CHÂU Á THÀNH CÔNG',
     desc: 'Công ty trân trọng gửi lời chúc mừng sinh nhật tới các thành viên có ngày sinh trong tháng 1, 2 và 3.',
     date: '31 Tháng 3, 2025',
   },
   {
     img: '/images/hoat-dong-20-10.webp',
     tag: 'Sự kiện',
-    title: '8/3 - Ngày của hội chị em Thành Công 45',
-    desc: 'Nhân ngày Quốc tế Phụ nữ 8/3, Thành Công 45 gửi lời chúc toàn thể chị em luôn xinh đẹp, ví luôn đầy và mood luôn chill!',
+    title: '8/3 - Ngày của hội chị em CHÂU Á THÀNH CÔNG',
+    desc: 'Nhân ngày Quốc tế Phụ nữ 8/3, CHÂU Á THÀNH CÔNG gửi lời chúc toàn thể chị em luôn xinh đẹp, ví luôn đầy và mood luôn chill!',
     date: '8 Tháng 3, 2025',
   },
   {
@@ -97,7 +97,7 @@ export default function HomePage() {
     <div className="bg-white">
       <section className="relative min-h-[600px] lg:min-h-[700px] flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/images/hero_banner.webp" alt="Thành Công 45 Hero" className="w-full h-full object-cover" loading="eager" fetchPriority="high" decoding="async" width="1920" height="1080" />
+          <img src="/images/hero_banner.webp" alt="CHÂU Á THÀNH CÔNG Hero" className="w-full h-full object-cover" loading="eager" fetchPriority="high" decoding="async" width="1920" height="1080" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0F172A]/90 via-[#0F172A]/70 to-[#0F172A]/30" />
         </div>
 
@@ -143,14 +143,14 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="relative">
               <div className="rounded-2xl overflow-hidden shadow-2xl">
-                <img src="/images/du-lich-cua-lo.webp" alt="Đội ngũ Thành Công 45" className="w-full h-auto object-cover" loading="lazy" decoding="async" width="1200" height="800" />
+                <img src="/images/du-lich-cua-lo.webp" alt="Đội ngũ CHÂU Á THÀNH CÔNG" className="w-full h-auto object-cover" loading="lazy" decoding="async" width="1200" height="800" />
               </div>
             </div>
 
             <div>
               <div className="inline-flex items-center gap-2 bg-[rgba(0, 175, 234,0.08)] px-4 py-2 rounded-full mb-6">
                 <div className="w-1.5 h-1.5 rounded-full bg-[#00afea]" />
-                <span className="text-[#00afea] text-xs font-bold tracking-widest uppercase">Về Thành Công 45</span>
+                <span className="text-[#00afea] text-xs font-bold tracking-widest uppercase">Về CHÂU Á THÀNH CÔNG</span>
               </div>
 
               <h2 className="text-3xl lg:text-4xl font-black text-[#0F172A] mb-6 leading-tight tracking-tight uppercase">
@@ -158,7 +158,7 @@ export default function HomePage() {
               </h2>
 
               <p className="text-[#475569] text-lg leading-relaxed mb-8">
-                Thành Công 45 là doanh nghiệp hoạt động trong lĩnh vực thương mại điện tử đa nền tảng, đa quốc gia, tập trung phát triển mạnh tại thị trường Việt Nam & Đông Nam Á. Công ty kinh doanh đa dạng ngành hàng: nông nghiệp, gia dụng, thời trang, mỹ phẩm và các sản phẩm thương hiệu, mang đến trải nghiệm mua sắm hiện đại - tiện lợi - đáng tin cậy cho khách hàng.
+                CHÂU Á THÀNH CÔNG là doanh nghiệp hoạt động trong lĩnh vực thương mại điện tử đa nền tảng, đa quốc gia, tập trung phát triển mạnh tại thị trường Việt Nam & Đông Nam Á. Công ty kinh doanh đa dạng ngành hàng: nông nghiệp, gia dụng, thời trang, mỹ phẩm và các sản phẩm thương hiệu, mang đến trải nghiệm mua sắm hiện đại - tiện lợi - đáng tin cậy cho khách hàng.
               </p>
 
               <Link href="/gioi-thieu" className="group inline-flex items-center gap-3 bg-[#00afea] text-white px-8 py-4 rounded-xl font-bold hover:bg-[#d41111] transition-all duration-300 hover:shadow-lg hover:shadow-red-200 cursor-pointer">
@@ -213,7 +213,7 @@ export default function HomePage() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-black text-[#0F172A] mb-4 tracking-widest uppercase">Vì sao chọn Thành Công 45?</h2>
+            <h2 className="text-3xl lg:text-4xl font-black text-[#0F172A] mb-4 tracking-widest uppercase">Vì sao chọn CHÂU Á THÀNH CÔNG?</h2>
             <p className="text-[#64748B] text-lg max-w-2xl mx-auto">Được hàng triệu khách hàng và hàng trăm đối tác tin tưởng lựa chọn</p>
           </div>
 
@@ -239,9 +239,9 @@ export default function HomePage() {
               <span className="h-8 w-1 rounded-full bg-[#00afea]" />
               <span className="text-[#00afea] text-xs font-black tracking-widest uppercase">Giá trị cốt lõi</span>
             </div>
-            <h2 className="text-3xl lg:text-4xl font-black text-[#0F172A] mb-4 tracking-wide uppercase">Bộ giá trị định hướng Thành Công 45</h2>
+            <h2 className="text-3xl lg:text-4xl font-black text-[#0F172A] mb-4 tracking-wide uppercase">Bộ giá trị định hướng CHÂU Á THÀNH CÔNG</h2>
             <p className="text-[#475569] text-lg max-w-2xl mx-auto">
-              8 nguyên tắc nền tảng giúp Thành Công 45 thống nhất cách suy nghĩ, hành động và tạo ra giá trị bền vững.
+              8 nguyên tắc nền tảng giúp CHÂU Á THÀNH CÔNG thống nhất cách suy nghĩ, hành động và tạo ra giá trị bền vững.
             </p>
           </div>
 
@@ -280,11 +280,11 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 bg-[rgba(0, 175, 234,0.08)] px-4 py-2 rounded-full mb-4">
               <div className="w-1.5 h-1.5 rounded-full bg-[#00afea]" />
-              <span className="text-[#00afea] text-xs font-bold tracking-widest uppercase">Cuộc sống tại Thành Công 45</span>
+              <span className="text-[#00afea] text-xs font-bold tracking-widest uppercase">Cuộc sống tại CHÂU Á THÀNH CÔNG</span>
             </div>
             <h2 className="text-3xl lg:text-4xl font-black text-[#0F172A] mb-4 tracking-widest uppercase">Đội ngũ & Văn hóa</h2>
             <p className="text-[#64748B] text-lg max-w-2xl mx-auto">
-              Thành Công 45 không chỉ là nơi làm việc - đó là gia đình thứ hai, nơi mỗi người đều được tỏa sáng
+              CHÂU Á THÀNH CÔNG không chỉ là nơi làm việc - đó là gia đình thứ hai, nơi mỗi người đều được tỏa sáng
             </p>
           </div>
 
@@ -303,7 +303,7 @@ export default function HomePage() {
 
           <div className="text-center mt-12">
             <Link href="/van-hoa" className="group inline-flex items-center gap-3 border-2 border-[#00afea] text-[#00afea] px-8 py-4 rounded-xl font-bold hover:bg-[#00afea] hover:text-white transition-all duration-300 cursor-pointer">
-              Khám phá văn hóa Thành Công 45
+              Khám phá văn hóa CHÂU Á THÀNH CÔNG
               <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
             </Link>
           </div>
@@ -363,13 +363,13 @@ export default function HomePage() {
               <span className="text-[#00afea] text-xs font-bold tracking-widest uppercase">Liên hệ</span>
             </div>
             <h2 className="text-3xl lg:text-4xl font-black text-[#0F172A] mb-4 tracking-widest uppercase">Vị trí của chúng tôi</h2>
-            <p className="text-[#64748B] text-lg max-w-2xl mx-auto">Ghé thăm văn phòng Thành Công 45 để được tư vấn trực tiếp</p>
+            <p className="text-[#64748B] text-lg max-w-2xl mx-auto">Ghé thăm văn phòng CHÂU Á THÀNH CÔNG để được tư vấn trực tiếp</p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2 rounded-2xl overflow-hidden shadow-lg border border-slate-100 min-h-[400px]">
               <iframe
-                title="Thành Công 45 Vietnam Office Location"
+                title="CHÂU Á THÀNH CÔNG Vietnam Office Location"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.292576914698!2d105.83138!3d20.98234!2m3!1f0!2f0!3f0!2m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac5b0e66c95d%3A0x1e4bcf42e2f5e0e4!2zTmd1eeG7hW4gWGnhu4NuLCDEkOG7i25oIEPDtG5nLCBIb8OgbmcgTWFpLCBIw6AgTuG7mWk!5e0!3m2!1svi!2s!4v1709900000000"
                 width="100%"
                 height="100%"
@@ -429,7 +429,7 @@ export default function HomePage() {
             <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-1/3 -translate-x-1/4" />
 
             <div className="relative text-center">
-              <h2 className="text-4xl lg:text-5xl font-black mb-5">Gia nhập đội ngũ Thành Công 45</h2>
+              <h2 className="text-4xl lg:text-5xl font-black mb-5">Gia nhập đội ngũ CHÂU Á THÀNH CÔNG</h2>
               <p className="text-white/90 text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
                 Chúng tôi đang tìm kiếm những tài năng đam mê công nghệ và thương mại điện tử. Cùng chúng tôi kiến tạo tương lai!
               </p>

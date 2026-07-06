@@ -137,15 +137,15 @@ export default function LinhVucPage() {
         <div className="absolute bottom-10 left-10 w-56 h-56 bg-[#00afea]/5 rounded-full blur-2xl pointer-events-none" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
-          <div className="max-w-2xl">
+          <div className="max-w-[43rem]">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-5 py-2.5 rounded-full mb-8 border border-white/20">
               <div className="w-2.5 h-2.5 rounded-full bg-[#00afea] animate-pulse" />
               <span className="text-white/90 text-sm font-semibold tracking-wider uppercase">Lĩnh vực hoạt động</span>
             </div>
 
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-white leading-[1.05] mb-6 tracking-tight">
-              Lĩnh vực{" "}
-              <span className="text-[#00afea]">& Dịch vụ</span>
+              LĨNH VỰC 
+              <span className="text-[#00afea]"> & DỊCH VỤ </span>
             </h1>
 
             <p className="text-lg lg:text-xl text-white/80 leading-relaxed mb-10 max-w-xl">
@@ -307,7 +307,7 @@ export default function LinhVucPage() {
             <div className="inline-flex items-center gap-2 bg-[rgba(0, 175, 234,0.08)] px-4 py-2 rounded-full mb-4">
               <span className="text-[#00afea] text-xs font-bold tracking-widest uppercase">Sản phẩm</span>
             </div>
-            <h2 className="text-3xl lg:text-4xl font-black text-[#0F172A] mb-4 tracking-tight">HỆ SINH THÁI SẢN PHẨM THÀNH CÔNG 45</h2>
+            <h2 className="text-3xl lg:text-4xl font-black text-[#0F172A] mb-4 tracking-tight">HỆ SINH THÁI SẢN PHẨM CHÂU Á THÀNH CÔNG</h2>
             <p className="text-[#64748B] text-lg max-w-2xl mx-auto">
               Bộ giải pháp công nghệ tích hợp, đáp ứng mọi nhu cầu kinh doanh số
             </p>
@@ -337,14 +337,14 @@ export default function LinhVucPage() {
             <div className="relative text-center">
               <h2 className="text-4xl lg:text-5xl font-black mb-5">Bạn cần giải pháp phù hợp?</h2>
               <p className="text-white/90 text-lg mb-10 max-w-2xl mx-auto leading-relaxed">
-                Đội ngũ chuyên gia Thành Công 45 sẵn sàng tư vấn và đồng hành cùng doanh nghiệp của bạn trong hành trình chuyển đổi số.
+                Đội ngũ chuyên gia CHÂU Á THÀNH CÔNG sẵn sàng tư vấn và đồng hành cùng doanh nghiệp của bạn trong hành trình chuyển đổi số.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Link href="/lien-he" className="bg-white text-[#00afea] px-8 py-4 rounded-xl font-bold text-lg hover:bg-red-50 transition-colors w-full sm:w-auto shadow-lg text-center">
                   Liên hệ tư vấn miễn phí
                 </Link>
                 <Link href="/gioi-thieu" className="border-2 border-white/50 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/10 hover:border-white transition-all w-full sm:w-auto text-center">
-                  Tìm hiểu về Thành Công 45
+                  Tìm hiểu về CHÂU Á THÀNH CÔNG
                 </Link>
               </div>
             </div>

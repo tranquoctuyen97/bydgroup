@@ -28,30 +28,30 @@ const benefits = [
 const testimonials = [
   {
     name: 'Nguyễn Minh Anh',
-    role: 'Senior Developer, 3 năm tại Thành Công 45',
+    role: 'Senior Developer, 3 năm tại CHÂU Á THÀNH CÔNG',
     avatar: 'MA',
     quote:
-      'Thành Công 45 không chỉ là nơi làm việc - mà là nơi tôi được khuyến khích nghĩ lớn, hành động nhanh và biến mục tiêu thành kết quả thực tế.',
+      'CHÂU Á THÀNH CÔNG không chỉ là nơi làm việc - mà là nơi tôi được khuyến khích nghĩ lớn, hành động nhanh và biến mục tiêu thành kết quả thực tế.',
   },
   {
     name: 'Trần Thị Hương',
-    role: 'Marketing Manager, 4 năm tại Thành Công 45',
+    role: 'Marketing Manager, 4 năm tại CHÂU Á THÀNH CÔNG',
     avatar: 'TH',
     quote:
-      'Văn hóa 8 giá trị cốt lõi tại Thành Công 45 không chỉ nằm trên giấy. Tử Tế, Đoàn Kết và Kỷ Luật thể hiện rõ trong cách đội ngũ phối hợp mỗi ngày.',
+      'Văn hóa 8 giá trị cốt lõi tại CHÂU Á THÀNH CÔNG không chỉ nằm trên giấy. Tử Tế, Đoàn Kết và Kỷ Luật thể hiện rõ trong cách đội ngũ phối hợp mỗi ngày.',
   },
   {
     name: 'Lê Văn Đức',
-    role: 'Product Owner, 2 năm tại Thành Công 45',
+    role: 'Product Owner, 2 năm tại CHÂU Á THÀNH CÔNG',
     avatar: 'VD',
     quote:
-      'Thành Công 45 là nơi mỗi cá nhân đều có cơ hội tỏa sáng. Lộ trình từ Học việc đến Core Leader rất rõ ràng. Đó là điều tôi trân quý nhất.',
+      'CHÂU Á THÀNH CÔNG là nơi mỗi cá nhân đều có cơ hội tỏa sáng. Lộ trình từ Học việc đến Core Leader rất rõ ràng. Đó là điều tôi trân quý nhất.',
   },
 ]
 
 const culturePrograms = [
   {
-    title: 'THÀNH CÔNG 45 ACADEMY',
+    title: 'CHÂU Á THÀNH CÔNG ACADEMY',
     desc: 'Chương trình đào tạo nội bộ với 100+ khóa học từ kỹ năng cứng đến mềm, do chuyên gia trong và ngoài công ty giảng dạy.',
     icon: '🎓',
   },
@@ -61,7 +61,7 @@ const culturePrograms = [
     icon: '💡',
   },
   {
-    title: 'THÀNH CÔNG 45 CARES',
+    title: 'CHÂU Á THÀNH CÔNG CARES',
     desc: 'Chương trình CSR với các hoạt động thiện nguyện, bảo vệ môi trường và hỗ trợ cộng đồng xung quanh.',
     icon: '❤️',
   },
@@ -83,7 +83,7 @@ const activityHighlights = [
   {
     img: '/images/hoat-dong-20-10.webp',
     title: '8/3 – NGÀY CỦA HỘI CHỊ EM',
-    desc: 'Nhân ngày Quốc tế Phụ nữ, Thành Công 45 gửi lời chúc toàn thể chị em luôn xinh đẹp, ví luôn đầy và mood luôn chill!',
+    desc: 'Nhân ngày Quốc tế Phụ nữ, CHÂU Á THÀNH CÔNG gửi lời chúc toàn thể chị em luôn xinh đẹp, ví luôn đầy và mood luôn chill!',
     tag: '🌸 Sự kiện',
     date: '08/03/2025',
   },
@@ -97,21 +97,21 @@ const activityHighlights = [
   {
     img: '/images/sinh-nhat-van-phong.webp',
     title: 'CẦU LÔNG – GIẢI TỎA NĂNG LƯỢNG',
-    desc: 'Không chỉ hết mình trong công việc, các thành viên Thành Công 45 còn cháy hết mình trên sân cầu lông!',
+    desc: 'Không chỉ hết mình trong công việc, các thành viên CHÂU Á THÀNH CÔNG còn cháy hết mình trên sân cầu lông!',
     tag: '🏸 Thể thao',
     date: '2025',
   },
   {
     img: '/images/vinh-danh-top1.webp',
     title: 'VINH DANH TOP DOANH THU',
-    desc: 'Lễ trao giải Everest – Top 1 doanh thu. Thành Công 45 tôn vinh những cá nhân xuất sắc đã cống hiến hết mình.',
+    desc: 'Lễ trao giải Everest – Top 1 doanh thu. CHÂU Á THÀNH CÔNG tôn vinh những cá nhân xuất sắc đã cống hiến hết mình.',
     tag: '🏆 Vinh danh',
     date: 'T10/2024',
   },
   {
     img: '/images/ngay-nam-gioi.webp',
     title: 'HAPPY MEN\'S DAY',
-    desc: 'Thành Công 45 chúc mừng ngày nam giới – cảm ơn các anh em đã luôn đồng hành và cống hiến!',
+    desc: 'CHÂU Á THÀNH CÔNG chúc mừng ngày nam giới – cảm ơn các anh em đã luôn đồng hành và cống hiến!',
     tag: '🎉 Sự kiện',
     date: '11/2024',
   },
@@ -130,7 +130,7 @@ export default function CulturePage() {
         <div className="absolute inset-0">
           <img
             src={imgCulture}
-            alt="Văn hóa Thành Công 45"
+            alt="Văn hóa CHÂU Á THÀNH CÔNG"
             className="w-full h-full object-cover"
             loading="eager"
             fetchPriority="high"
@@ -152,8 +152,8 @@ export default function CulturePage() {
             </div>
 
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-white leading-[1.05] mb-6 tracking-tight">
-              Văn hóa{' '}
-              <span className="text-[#00afea]">Thành Công 45</span>
+              VĂN HÓA{' '}
+              <span className="text-[#00afea]">CHÂU Á THÀNH CÔNG</span>
             </h1>
 
             <p className="text-lg lg:text-xl text-white/80 leading-relaxed mb-10 max-w-xl">
@@ -187,7 +187,7 @@ export default function CulturePage() {
                 onClick={() => router.push('/gioi-thieu')}
                 className="border-2 border-white/40 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/10 hover:border-white/60 transition-all duration-300 backdrop-blur-sm"
               >
-                Về Thành Công 45
+                Về CHÂU Á THÀNH CÔNG
               </button>
             </div>
           </div>
@@ -207,10 +207,10 @@ export default function CulturePage() {
               </span>
             </div>
             <h2 className="text-3xl lg:text-4xl font-black text-[#0F172A] mb-4 tracking-tight">
-              8 GIÁ TRỊ CỐT LÕI THÀNH CÔNG 45
+              8 GIÁ TRỊ CỐT LÕI CHÂU Á THÀNH CÔNG
             </h2>
             <p className="text-[#64748B] text-lg max-w-2xl mx-auto">
-              Đây là bộ nguyên tắc định hướng cách Thành Công 45 suy nghĩ, phối hợp,
+              Đây là bộ nguyên tắc định hướng cách CHÂU Á THÀNH CÔNG suy nghĩ, phối hợp,
               phục vụ khách hàng và xây dựng đội ngũ mỗi ngày.
             </p>
           </div>
@@ -240,7 +240,7 @@ export default function CulturePage() {
                 Nghĩ Lớn - Tốc Độ - Kỷ Luật - Chuyên Gia
               </h3>
               <p className="text-[#475569] text-lg leading-relaxed mb-6">
-                Thành Công 45 xây dựng đội ngũ có khả năng đặt mục tiêu lớn, phản hồi nhanh
+                CHÂU Á THÀNH CÔNG xây dựng đội ngũ có khả năng đặt mục tiêu lớn, phản hồi nhanh
                 với thị trường và giữ cam kết trong từng đầu việc. Tốc độ chỉ tạo
                 giá trị khi đi cùng kỷ luật và năng lực chuyên môn đủ sâu.
               </p>
@@ -253,7 +253,7 @@ export default function CulturePage() {
             <div className="rounded-2xl overflow-hidden shadow-2xl">
               <img
                 src={imgOffice}
-                alt="Văn phòng Thành Công 45"
+                alt="Văn phòng CHÂU Á THÀNH CÔNG"
                 className="w-full h-auto object-cover"
                 loading="lazy"
                 decoding="async"
@@ -265,7 +265,7 @@ export default function CulturePage() {
             <div className="order-2 lg:order-1 rounded-2xl overflow-hidden shadow-2xl">
               <img
                 src={imgTeam}
-                alt="Đội ngũ Thành Công 45"
+                alt="Đội ngũ CHÂU Á THÀNH CÔNG"
                 className="w-full h-auto object-cover"
                 loading="lazy"
                 decoding="async"
@@ -276,7 +276,7 @@ export default function CulturePage() {
                 Đoàn Kết - Hạnh Phúc - Tử Tế - Sáng Tạo
               </h3>
               <p className="text-[#475569] text-lg leading-relaxed mb-6">
-                Văn hóa Thành Công 45 đặt con người ở trung tâm: tôn trọng đồng đội, phối
+                Văn hóa CHÂU Á THÀNH CÔNG đặt con người ở trung tâm: tôn trọng đồng đội, phối
                 hợp vì mục tiêu chung và giữ tinh thần tử tế trong cách làm việc
                 với khách hàng, đối tác và nội bộ.
               </p>
@@ -303,7 +303,7 @@ export default function CulturePage() {
               PHÚC LỢI VƯỢT TRỘI
             </h2>
             <p className="text-[#64748B] text-lg max-w-2xl mx-auto">
-              Thành Công 45 cam kết mang đến chế độ đãi ngộ tốt nhất để nhân viên yên tâm
+              CHÂU Á THÀNH CÔNG cam kết mang đến chế độ đãi ngộ tốt nhất để nhân viên yên tâm
               cống hiến và phát triển sự nghiệp.
             </p>
           </div>
@@ -340,7 +340,7 @@ export default function CulturePage() {
               CHƯƠNG TRÌNH VĂN HÓA
             </h2>
             <p className="text-[#64748B] text-lg max-w-2xl mx-auto">
-              Những chương trình đặc biệt giúp Thành Công 45 trở thành nơi làm việc tuyệt
+              Những chương trình đặc biệt giúp CHÂU Á THÀNH CÔNG trở thành nơi làm việc tuyệt
               vời nhất.
             </p>
           </div>
@@ -379,11 +379,11 @@ export default function CulturePage() {
               </span>
             </div>
             <h2 className="text-3xl lg:text-4xl font-black text-[#0F172A] mb-4 tracking-tight">
-              KHOẢNH KHẮC THÀNH CÔNG 45
+              KHOẢNH KHẮC CHÂU Á THÀNH CÔNG
             </h2>
             <p className="text-[#64748B] text-lg max-w-2xl mx-auto">
               Những khoảnh khắc đáng nhớ từ các hoạt động gắn kết, vinh danh và
-              sự kiện nội bộ tại Thành Công 45.
+              sự kiện nội bộ tại CHÂU Á THÀNH CÔNG.
             </p>
           </div>
 
@@ -436,7 +436,7 @@ export default function CulturePage() {
         <div
           role="dialog"
           aria-modal="true"
-          aria-label="Thư viện ảnh hoạt động Thành Công 45"
+          aria-label="Thư viện ảnh hoạt động CHÂU Á THÀNH CÔNG"
           className="fixed inset-0 z-50 flex items-center justify-center p-4"
           onClick={() => setGalleryImage(null)}
         >
@@ -444,7 +444,7 @@ export default function CulturePage() {
           <div className="relative max-w-5xl max-h-[90vh]" onClick={(e) => e.stopPropagation()}>
             <img
               src={galleryImage}
-              alt="Thành Công 45 Activity"
+              alt="CHÂU Á THÀNH CÔNG Activity"
               className="max-w-full max-h-[85vh] object-contain rounded-2xl shadow-2xl"
               loading="eager"
               decoding="async"
@@ -476,11 +476,11 @@ export default function CulturePage() {
               </span>
             </div>
             <h2 className="text-3xl lg:text-4xl font-black text-white mb-4 tracking-tight">
-              THÀNH CÔNG 45 QUA LỜI KỂ NHÂN VIÊN
+              CHÂU Á THÀNH CÔNG QUA LỜI KỂ NHÂN VIÊN
             </h2>
             <p className="text-slate-400 text-lg max-w-2xl mx-auto">
               Lắng nghe chia sẻ thực tế từ những thành viên đang đồng hành cùng
-              Thành Công 45.
+              CHÂU Á THÀNH CÔNG.
             </p>
           </div>
 
@@ -524,7 +524,7 @@ export default function CulturePage() {
 
             <div className="relative text-center">
               <h2 className="text-4xl lg:text-5xl font-black mb-5">
-                Bạn muốn trở thành một phần của Thành Công 45?
+                Bạn muốn trở thành một phần của CHÂU Á THÀNH CÔNG?
               </h2>
               <p className="text-blue-100 text-lg mb-10 max-w-2xl mx-auto leading-relaxed">
                 Khám phá cơ hội nghề nghiệp và cùng chúng tôi xây dựng tương

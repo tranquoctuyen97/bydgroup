@@ -13,7 +13,7 @@ export default function Logo() {
         >
             <img
                 src="/images/thanh-cong-45-logo.png"
-                alt="Thành Công 45"
+                alt="CHÂU Á THÀNH CÔNG"
                 style={{
                     height: '48px',
                     width: 'auto',

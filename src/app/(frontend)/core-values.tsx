@@ -23,7 +23,7 @@ export const coreValues: CoreValue[] = [
     title: 'NGHĨ LỚN',
     shortDesc: 'Dám đặt mục tiêu lớn, nhìn xa hơn giới hạn hiện tại.',
     longDesc:
-      'Thành Công 45 khuyến khích mỗi thành viên đặt mục tiêu lớn hơn điều đang có, nhìn rộng hơn phạm vi công việc trước mắt và tìm cách tạo ra giá trị có quy mô lớn hơn cho khách hàng, đội ngũ và thị trường.',
+      'CHÂU Á THÀNH CÔNG khuyến khích mỗi thành viên đặt mục tiêu lớn hơn điều đang có, nhìn rộng hơn phạm vi công việc trước mắt và tìm cách tạo ra giá trị có quy mô lớn hơn cho khách hàng, đội ngũ và thị trường.',
     workMeaning:
       'Trong công việc, Nghĩ Lớn là chủ động đề xuất hướng đi mới, không tự giới hạn bởi cách làm cũ và luôn gắn mục tiêu cá nhân với tầm nhìn phát triển dài hạn của công ty.',
     icon: 'rocket',
@@ -33,7 +33,7 @@ export const coreValues: CoreValue[] = [
     title: 'TỐC ĐỘ',
     shortDesc: 'Hành động nhanh, phản hồi nhanh, học nhanh và cải tiến nhanh.',
     longDesc:
-      'Tốc độ giúp Thành Công 45 thích nghi với thị trường thương mại điện tử thay đổi liên tục. Nhanh không có nghĩa là vội vàng, mà là rút ngắn thời gian từ quan sát đến hành động và từ hành động đến cải tiến.',
+      'Tốc độ giúp CHÂU Á THÀNH CÔNG thích nghi với thị trường thương mại điện tử thay đổi liên tục. Nhanh không có nghĩa là vội vàng, mà là rút ngắn thời gian từ quan sát đến hành động và từ hành động đến cải tiến.',
     workMeaning:
       'Mỗi đội nhóm ưu tiên phản hồi rõ ràng, xử lý việc quan trọng đúng lúc, thử nghiệm nhanh và đo lường kết quả để điều chỉnh kịp thời.',
     icon: 'bolt',
@@ -43,7 +43,7 @@ export const coreValues: CoreValue[] = [
     title: 'ĐOÀN KẾT',
     shortDesc: 'Cùng hướng về mục tiêu chung và hỗ trợ lẫn nhau.',
     longDesc:
-      'Thành Công 45 tin rằng sức mạnh tập thể luôn lớn hơn nỗ lực riêng lẻ. Đoàn Kết là cách các phòng ban phối hợp, chia sẻ thông tin, bảo vệ mục tiêu chung và cùng chịu trách nhiệm với kết quả.',
+      'CHÂU Á THÀNH CÔNG tin rằng sức mạnh tập thể luôn lớn hơn nỗ lực riêng lẻ. Đoàn Kết là cách các phòng ban phối hợp, chia sẻ thông tin, bảo vệ mục tiêu chung và cùng chịu trách nhiệm với kết quả.',
     workMeaning:
       'Trong vận hành hằng ngày, Đoàn Kết thể hiện qua sự phối hợp đúng vai trò, chủ động hỗ trợ đồng đội và ưu tiên lợi ích chung khi ra quyết định.',
     icon: 'team',
@@ -53,9 +53,9 @@ export const coreValues: CoreValue[] = [
     title: 'HẠNH PHÚC',
     shortDesc: 'Xây dựng môi trường tích cực, biết ơn và tôn trọng.',
     longDesc:
-      'Hạnh Phúc tại Thành Công 45 bắt đầu từ sự biết ơn, tinh thần tích cực và cảm giác được tôn trọng. Một đội ngũ hạnh phúc sẽ có năng lượng tốt hơn để phục vụ khách hàng và phát triển bền vững.',
+      'Hạnh Phúc tại CHÂU Á THÀNH CÔNG bắt đầu từ sự biết ơn, tinh thần tích cực và cảm giác được tôn trọng. Một đội ngũ hạnh phúc sẽ có năng lượng tốt hơn để phục vụ khách hàng và phát triển bền vững.',
     workMeaning:
-      'Thành Công 45 hướng đến môi trường nơi mỗi thành viên được ghi nhận, có động lực học hỏi, được chia sẻ khó khăn và được đồng hành trong quá trình trưởng thành.',
+      'CHÂU Á THÀNH CÔNG hướng đến môi trường nơi mỗi thành viên được ghi nhận, có động lực học hỏi, được chia sẻ khó khăn và được đồng hành trong quá trình trưởng thành.',
     icon: 'happy',
   },
   {
@@ -63,9 +63,9 @@ export const coreValues: CoreValue[] = [
     title: 'TỬ TẾ',
     shortDesc: 'Làm điều đúng, giữ chữ tín và hướng tới kết quả cùng thắng.',
     longDesc:
-      'Tử Tế là nền tảng trong cách Thành Công 45 làm việc với khách hàng, đối tác và đồng đội. Giá trị này yêu cầu sự trung thực, giữ cam kết và tôn trọng lợi ích của các bên liên quan.',
+      'Tử Tế là nền tảng trong cách CHÂU Á THÀNH CÔNG làm việc với khách hàng, đối tác và đồng đội. Giá trị này yêu cầu sự trung thực, giữ cam kết và tôn trọng lợi ích của các bên liên quan.',
     workMeaning:
-      'Mỗi quyết định cần hướng đến tinh thần win-win-win: khách hàng nhận được giá trị, đối tác được tôn trọng và Thành Công 45 phát triển bền vững.',
+      'Mỗi quyết định cần hướng đến tinh thần win-win-win: khách hàng nhận được giá trị, đối tác được tôn trọng và CHÂU Á THÀNH CÔNG phát triển bền vững.',
     icon: 'kindness',
   },
   {
@@ -73,7 +73,7 @@ export const coreValues: CoreValue[] = [
     title: 'KỶ LUẬT',
     shortDesc: 'Giữ cam kết, làm việc có kế hoạch và theo đuổi kết quả đến cùng.',
     longDesc:
-      'Kỷ Luật giúp ý tưởng trở thành kết quả. Thành Công 45 đề cao sự chuẩn bị, tuân thủ quy trình, đúng tiến độ và trách nhiệm với cam kết đã đưa ra.',
+      'Kỷ Luật giúp ý tưởng trở thành kết quả. CHÂU Á THÀNH CÔNG đề cao sự chuẩn bị, tuân thủ quy trình, đúng tiến độ và trách nhiệm với cam kết đã đưa ra.',
     workMeaning:
       'Trong công việc, Kỷ Luật là biết ưu tiên, bám sát mục tiêu, báo cáo minh bạch và hoàn thành việc đã nhận với chất lượng rõ ràng.',
     icon: 'discipline',
@@ -83,7 +83,7 @@ export const coreValues: CoreValue[] = [
     title: 'CHUYÊN GIA',
     shortDesc: 'Làm chủ chuyên môn để tạo ra giá trị vượt trội.',
     longDesc:
-      'Thành Công 45 xây dựng đội ngũ có năng lực chuyên sâu trong ngành hàng, nền tảng và hành vi khách hàng. Chuyên Gia không chỉ là biết nhiều, mà là hiểu sâu và giải quyết vấn đề hiệu quả.',
+      'CHÂU Á THÀNH CÔNG xây dựng đội ngũ có năng lực chuyên sâu trong ngành hàng, nền tảng và hành vi khách hàng. Chuyên Gia không chỉ là biết nhiều, mà là hiểu sâu và giải quyết vấn đề hiệu quả.',
     workMeaning:
       'Mỗi thành viên cần liên tục học hỏi, cập nhật kiến thức, chuẩn hóa cách làm và biến chuyên môn thành kết quả thực tế cho khách hàng và công ty.',
     icon: 'expert',
@@ -93,7 +93,7 @@ export const coreValues: CoreValue[] = [
     title: 'SÁNG TẠO',
     shortDesc: 'Tìm cách làm mới và biến ý tưởng thành hành động thực tế.',
     longDesc:
-      'Sáng Tạo giúp Thành Công 45 khác biệt trong thị trường cạnh tranh. Công ty khuyến khích thử nghiệm giải pháp mới, cải tiến quy trình và tìm ra cách phục vụ khách hàng tốt hơn.',
+      'Sáng Tạo giúp CHÂU Á THÀNH CÔNG khác biệt trong thị trường cạnh tranh. Công ty khuyến khích thử nghiệm giải pháp mới, cải tiến quy trình và tìm ra cách phục vụ khách hàng tốt hơn.',
     workMeaning:
       'Sáng Tạo được đo bằng hành động: phát hiện vấn đề, đề xuất giải pháp, thử nghiệm có mục tiêu và nhân rộng những cách làm hiệu quả.',
     icon: 'creative',

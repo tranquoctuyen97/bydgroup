@@ -322,7 +322,7 @@ export default function JobDetailPage() {
 
           {submitted ? (
             <div className="bg-green-50 border border-green-200 rounded-xl p-5 text-green-700">
-              Gửi hồ sơ thành công. Thành Công 45 sẽ phản hồi cho bạn sớm.
+              Gửi hồ sơ thành công. CHÂU Á THÀNH CÔNG sẽ phản hồi cho bạn sớm.
             </div>
           ) : (
             <div className="space-y-6">

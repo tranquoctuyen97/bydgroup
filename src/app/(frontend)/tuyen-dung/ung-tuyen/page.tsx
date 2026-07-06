@@ -172,10 +172,10 @@ export default function ApplyPage() {
       <div className="min-h-screen bg-white">
         <header className="bg-white border-b border-slate-100 sticky top-0 z-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <Link href="/" aria-label="Về trang chủ Thành Công 45" className="flex items-center gap-3">
+            <Link href="/" aria-label="Về trang chủ CHÂU Á THÀNH CÔNG" className="flex items-center gap-3">
               <ImageWithFallback
                 src="/images/thanh-cong-45-logo.png"
-                alt="Thành Công 45"
+                alt="CHÂU Á THÀNH CÔNG"
                 className="h-8 w-auto"
               />
             </Link>
@@ -209,7 +209,7 @@ export default function ApplyPage() {
               Gửi hồ sơ thành công!
             </h1>
             <p className="text-[#475569] text-lg leading-relaxed mb-8">
-              Cảm ơn bạn đã quan tâm đến cơ hội tại Thành Công 45. Chúng tôi sẽ xem xét
+              Cảm ơn bạn đã quan tâm đến cơ hội tại CHÂU Á THÀNH CÔNG. Chúng tôi sẽ xem xét
               hồ sơ của bạn và phản hồi trong vòng 5-7 ngày làm việc.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -236,10 +236,10 @@ export default function ApplyPage() {
     <div className="min-h-screen bg-[#FAFAFA]">
       <header className="bg-white border-b border-slate-100 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-          <Link href="/" aria-label="Về trang chủ Thành Công 45" className="flex items-center gap-3">
+          <Link href="/" aria-label="Về trang chủ CHÂU Á THÀNH CÔNG" className="flex items-center gap-3">
             <ImageWithFallback
               src="/images/thanh-cong-45-logo.png"
-              alt="Thành Công 45"
+              alt="CHÂU Á THÀNH CÔNG"
               className="h-8 w-auto"
             />
           </Link>
@@ -269,7 +269,7 @@ export default function ApplyPage() {
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="text-center mb-10">
           <h1 className="text-3xl lg:text-4xl font-black text-[#0F172A] mb-3">
-            Ứng tuyển tại Thành Công 45
+            Ứng tuyển tại CHÂU Á THÀNH CÔNG
           </h1>
           <p className="text-[#64748B] text-lg">
             Form đã được rút gọn để bạn gửi hồ sơ nhanh hơn.

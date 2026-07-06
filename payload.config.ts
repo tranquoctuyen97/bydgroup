@@ -109,8 +109,8 @@ export default buildConfig({
       baseDir: path.resolve(dirname),
     },
     meta: {
-      titleSuffix: ' | Thành Công 45',
-      description: 'Bảng quản trị nội bộ Thành Công 45',
+      titleSuffix: ' | CHÂU Á THÀNH CÔNG',
+      description: 'Bảng quản trị nội bộ CHÂU Á THÀNH CÔNG',
     },
     components: {
       graphics: {
