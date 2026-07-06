@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Thành Công 45 - Build Your Dream',
+  title: 'Thành Công 45',
   description: 'Kiến tạo tương lai thương mại điện tử đột phá. Công ty TNHH Châu Á Thành Công 45.',
 }
 

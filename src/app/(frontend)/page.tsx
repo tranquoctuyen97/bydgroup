@@ -112,7 +112,7 @@ export default function HomePage() {
             </div>
 
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-white leading-[1.05] mb-4 tracking-tight">
-              Thành Công 45 - <span className="text-[#00afea]">Build Your Dream</span>
+              CHÂU Á <br /> <span className="text-[#00afea]">THÀNH CÔNG</span>
             </h1>
 
             <p className="text-xl lg:text-2xl text-white font-semibold mb-4 max-w-xl">
