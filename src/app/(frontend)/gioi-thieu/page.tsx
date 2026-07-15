@@ -130,7 +130,7 @@ export default function GioiThieuPage() {
               <div className="h-1.5 w-1.5 rounded-full bg-[#00afea]" />
               <span className="text-xs font-bold uppercase tracking-widest text-[#00afea]">Về chúng tôi</span>
             </div>
-            <h2 className="mb-4 text-3xl font-black tracking-tight text-[#0F172A] lg:text-4xl">CHÂU Á THÀNH CÔNG VIỆT NAM</h2>
+            <h2 className="mb-4 text-3xl font-black tracking-tight text-[#0F172A] lg:text-4xl">CHÂU Á THÀNH CÔNG</h2>
             <p className="mx-auto max-w-2xl text-lg text-[#475569]">Hành trình xây dựng hệ sinh thái thương mại điện tử đa ngành tại Việt Nam & Đông Nam Á</p>
           </div>
 
@@ -308,7 +308,7 @@ export default function GioiThieuPage() {
             <div className="relative text-center">
               <h2 className="mb-5 text-4xl font-black uppercase lg:text-5xl">Cùng CHÂU Á THÀNH CÔNG kiến tạo giá trị vĩ đại</h2>
               <p className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-white/90">
-                Phụng sự xã hội qua những sản phẩm tốt lành - cùng chúng tôi nâng cao chất lượng cuộc sống cho mọi người.
+                Xây dựng CHÂU Á THÀNH CÔNG thành doanh nghiệp toàn cầu, phân phối sản phẩm Việt ra quốc tế, góp phần nâng cao vị thế kinh tế Việt Nam.
               </p>
               <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
                 <a
