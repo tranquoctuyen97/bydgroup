@@ -1,6 +1,7 @@
 import Link from 'next/link'
 
 import { CoreValueIcon, coreValues } from './core-values'
+import { fallbackNews, seededNews } from './tin-tuc/news-data'
 
 const stats = [
   { display: '1000+', label: 'Sản phẩm', icon: 'users' },
@@ -43,34 +44,10 @@ const services = [
 ]
 
 const teamGallery = [
-  { img: '/images/du-lich-cua-lo.webp', title: 'Trải nghiệm & Gắn kết', desc: 'Cùng nhau tạo kỷ niệm - vì đội ngũ mạnh bắt đầu từ sự kết nối' },
+  { img: '/images/event-2026/dyn07008.webp', title: 'Trải nghiệm & Gắn kết', desc: 'Khoảnh khắc team building 2026 đầy năng lượng giúp đội ngũ kết nối tự nhiên hơn' },
   { img: '/images/trao-thuong-byd.webp', title: 'Ghi nhận & Tôn vinh', desc: 'Mỗi nỗ lực đều xứng đáng được công nhận và tưởng thưởng' },
   { img: '/images/sinh-nhat-quy4.webp', title: 'Ấm áp như gia đình', desc: 'CHÂU Á THÀNH CÔNG là gia đình thứ hai - nơi bạn được quan tâm mỗi ngày' },
-  { img: '/images/hoat-dong-20-10.webp', title: 'Yêu thương & Sẻ chia', desc: 'Những khoảnh khắc đặc biệt dành cho những con người đặc biệt' },
-]
-
-const defaultNews = [
-  {
-    img: '/images/sinh-nhat-quy4.webp',
-    tag: 'Văn hóa',
-    title: 'Happy Birthday - Nhân sự Quý I của CHÂU Á THÀNH CÔNG',
-    desc: 'Công ty trân trọng gửi lời chúc mừng sinh nhật tới các thành viên có ngày sinh trong tháng 1, 2 và 3.',
-    date: '31 Tháng 3, 2025',
-  },
-  {
-    img: '/images/hoat-dong-20-10.webp',
-    tag: 'Sự kiện',
-    title: '8/3 - Ngày của hội chị em CHÂU Á THÀNH CÔNG',
-    desc: 'Nhân ngày Quốc tế Phụ nữ 8/3, CHÂU Á THÀNH CÔNG gửi lời chúc toàn thể chị em luôn xinh đẹp, ví luôn đầy và mood luôn chill!',
-    date: '8 Tháng 3, 2025',
-  },
-  {
-    img: '/images/du-lich-cua-lo.webp',
-    tag: 'Sự kiện',
-    title: 'Team Building Cửa Lò 2025 - Kết nối đội ngũ',
-    desc: 'Chuyến du lịch gắn kết đội ngũ tại Cửa Lò, nơi anh em cùng nhau tận hưởng những khoảnh khắc đáng nhớ.',
-    date: '20 Tháng 1, 2025',
-  },
+  { img: '/images/event-2026/dyn07840.webp', title: 'Yêu thương & Sẻ chia', desc: 'Không gian gala chỉn chu và ấm cúng tạo nên những khoảnh khắc gắn kết đáng nhớ' },
 ]
 
 function StatIcon({ type }: { type: string }) {
@@ -91,7 +68,7 @@ function StatIcon({ type }: { type: string }) {
 }
 
 export default function HomePage() {
-  const news = defaultNews
+  const news = [...seededNews, ...fallbackNews].slice(0, 3)
 
   return (
     <div className="bg-white">
@@ -143,7 +120,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="relative">
               <div className="rounded-2xl overflow-hidden shadow-2xl">
-                <img src="/images/du-lich-cua-lo.webp" alt="Đội ngũ CHÂU Á THÀNH CÔNG" className="w-full h-auto object-cover" loading="lazy" decoding="async" width="1200" height="800" />
+                <img src="/images/event-2026/dyn07840.webp" alt="Không gian Gala 2026 của CHÂU Á THÀNH CÔNG" className="w-full h-auto object-cover" loading="lazy" decoding="async" width="1200" height="800" />
               </div>
             </div>
 

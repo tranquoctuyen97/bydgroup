@@ -126,7 +126,7 @@ export default function JobsClient({ initialJobs }: { initialJobs: Job[] }) {
 
             <p className="text-lg lg:text-xl text-white/80 leading-relaxed mb-10 max-w-xl">
               Gia nhập đội ngũ CHÂU Á THÀNH CÔNG — nơi mỗi cá nhân đều có cơ hội tỏa sáng,
-              dám Nghĩ Lớn và tạo ra những thành tựu vĩ đại.
+              dám Nghĩ Lớn và tạo ra những thành tựu.
             </p>
 
             <div className="flex flex-wrap gap-4">

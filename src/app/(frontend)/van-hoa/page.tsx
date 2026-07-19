@@ -8,9 +8,9 @@ import { CoreValueIcon, coreValues } from '../core-values'
 
 /* ── images ───────────────────────────────────────── */
 
-const imgCulture = '/images/hoat-dong-20-10.webp'
-const imgOffice = '/images/du-lich-cua-lo.webp'
-const imgTeam = '/images/sinh-nhat-van-phong.webp'
+const imgCulture = '/images/event-2026/dyn07944.webp'
+const imgOffice = '/images/event-2026/dyn07008.webp'
+const imgTeam = '/images/event-2026/dyn07840.webp'
 
 /* ── data ─────────────────────────────────────────── */
 
@@ -81,18 +81,18 @@ const activityHighlights = [
     date: 'Quý I/2025',
   },
   {
-    img: '/images/hoat-dong-20-10.webp',
-    title: '8/3 – NGÀY CỦA HỘI CHỊ EM',
-    desc: 'Nhân ngày Quốc tế Phụ nữ, CHÂU Á THÀNH CÔNG gửi lời chúc toàn thể chị em luôn xinh đẹp, ví luôn đầy và mood luôn chill!',
+    img: '/images/event-2026/dyn07840.webp',
+    title: 'GALA DINNER 2026 – ĐỒNG LÒNG TỎA SÁNG',
+    desc: 'Không gian gala sang trọng, chỉn chu và giàu cảm xúc đã tạo nên một đêm kết nối đáng nhớ cho toàn thể đội ngũ.',
     tag: '🌸 Sự kiện',
-    date: '08/03/2025',
+    date: '13/07/2026',
   },
   {
-    img: '/images/du-lich-cua-lo.webp',
-    title: 'TEAM BUILDING – CỬA LÒ 2025',
-    desc: 'Chuyến du lịch gắn kết đội ngũ tại Cửa Lò, nơi anh em cùng nhau tận hưởng những khoảnh khắc đáng nhớ.',
+    img: '/images/event-2026/dyn07008.webp',
+    title: 'TEAM BUILDING – HẠ LONG 2026',
+    desc: 'Những khoảnh khắc vận động và tương tác ngoài trời đã tiếp thêm năng lượng mới cho tập thể CHÂU Á THÀNH CÔNG.',
     tag: '✈️ Du lịch',
-    date: '2025',
+    date: '12-13/07/2026',
   },
   {
     img: '/images/sinh-nhat-van-phong.webp',

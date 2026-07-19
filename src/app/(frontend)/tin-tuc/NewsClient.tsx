@@ -304,7 +304,48 @@ export default function NewsClient({ initialNews }: { initialNews: NewsItem[] })
                 <p className="text-[#475569] leading-relaxed text-lg mb-4">
                   {selectedNews.desc}
                 </p>
-                {selectedNews.content && (
+                {selectedNews.contentSections?.map((section) => (
+                  <section key={section.heading || section.paragraphs[0]} className="mb-8">
+                    {section.heading ? (
+                      <h3 className="text-xl font-bold text-[#0F172A] mb-4">
+                        {section.heading}
+                      </h3>
+                    ) : null}
+                    <div className="space-y-4">
+                      {section.paragraphs.map((paragraph) => (
+                        <p key={paragraph} className="text-[#475569] leading-relaxed">
+                          {paragraph}
+                        </p>
+                      ))}
+                    </div>
+                    {section.images?.length ? (
+                      <div
+                        className={`mt-6 grid gap-4 ${
+                          section.images.length > 1 ? 'md:grid-cols-2' : 'grid-cols-1'
+                        }`}
+                      >
+                        {section.images.map((image) => (
+                          <figure
+                            key={image.src}
+                            className="overflow-hidden rounded-2xl bg-slate-50 border border-slate-100"
+                          >
+                            <ImageWithFallback
+                              src={image.src}
+                              alt={image.alt}
+                              className="w-full aspect-[16/10] object-cover"
+                            />
+                            {image.caption ? (
+                              <figcaption className="px-4 py-3 text-sm text-[#64748B]">
+                                {image.caption}
+                              </figcaption>
+                            ) : null}
+                          </figure>
+                        ))}
+                      </div>
+                    ) : null}
+                  </section>
+                ))}
+                {selectedNews.content && !selectedNews.contentSections?.length && (
                   <div className="text-[#475569] leading-relaxed whitespace-pre-line">
                     {selectedNews.content}
                   </div>

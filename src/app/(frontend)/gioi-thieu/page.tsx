@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-const imgHero = '/images/du-lich-cua-lo.webp'
+const imgHero = '/images/event-2026/dyn07008.webp'
 
 const timeline = [
   {
@@ -138,8 +138,8 @@ export default function GioiThieuPage() {
             <div className="space-y-8">
               <div className="overflow-hidden rounded-2xl shadow-2xl">
                 <img
-                  src="/images/du-lich-cua-lo.webp"
-                  alt="Đội ngũ CHÂU Á THÀNH CÔNG"
+                  src="/images/event-2026/dyn07944.webp"
+                  alt="Đội ngũ CHÂU Á THÀNH CÔNG tại Gala 2026"
                   className="h-auto w-full object-cover"
                   loading="lazy"
                   decoding="async"
@@ -306,7 +306,7 @@ export default function GioiThieuPage() {
             <div className="absolute bottom-0 left-0 h-48 w-48 -translate-x-1/4 translate-y-1/3 rounded-full bg-white/5" />
 
             <div className="relative text-center">
-              <h2 className="mb-5 text-4xl font-black uppercase lg:text-5xl">Cùng CHÂU Á THÀNH CÔNG kiến tạo giá trị vĩ đại</h2>
+              <h2 className="mb-5 text-4xl font-black uppercase lg:text-5xl">Cùng CHÂU Á THÀNH CÔNG kiến tạo giá trị </h2>
               <p className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-white/90">
                 Xây dựng CHÂU Á THÀNH CÔNG thành doanh nghiệp toàn cầu, phân phối sản phẩm Việt ra quốc tế, góp phần nâng cao vị thế kinh tế Việt Nam.
               </p>
