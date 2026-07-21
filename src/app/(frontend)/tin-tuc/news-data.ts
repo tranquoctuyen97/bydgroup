@@ -138,7 +138,7 @@ export const fallbackNews: NewsItem[] = [
   },
   {
     id: 2,
-    img: '/images/event-2026/dyn07840.webp',
+    img: '/images/event-2026/women-day.webp',
     tag: 'Sự kiện',
     title: '8/3 – Ngày của hội chị em CHÂU Á THÀNH CÔNG 🌸',
     desc: 'Nhân ngày Quốc tế Phụ nữ 8/3, CHÂU Á THÀNH CÔNG gửi lời chúc toàn thể chị em luôn xinh đẹp, ví luôn đầy và mood luôn chill!',
@@ -148,7 +148,7 @@ export const fallbackNews: NewsItem[] = [
   },
   {
     id: 3,
-    img: '/images/sinh-nhat-van-phong.webp',
+    img: '/images/badminton.webp',
     tag: 'Văn hóa',
     title: 'Cầu lông CHÂU Á THÀNH CÔNG – Cháy hết mình sau giờ làm 🏸',
     desc: 'Không chỉ hết mình trong công việc, các thành viên CHÂU Á THÀNH CÔNG còn cháy hết mình trên sân cầu lông!',
@@ -168,7 +168,7 @@ export const fallbackNews: NewsItem[] = [
   },
   {
     id: 5,
-    img: '/images/event-2026/dyn07008.webp',
+    img: '/images/event-2026/dyn07075.webp',
     tag: 'Sự kiện',
     title: 'Team Building Cửa Lò 2025 – Kết nối đội ngũ ✈️',
     desc: 'Chuyến du lịch gắn kết đội ngũ tại Cửa Lò, nơi anh em cùng nhau tận hưởng những khoảnh khắc đáng nhớ.',

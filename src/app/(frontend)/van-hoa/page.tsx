@@ -9,7 +9,7 @@ import { CoreValueIcon, coreValues } from '../core-values'
 /* ── images ───────────────────────────────────────── */
 
 const imgCulture = '/images/event-2026/dyn07944.webp'
-const imgOffice = '/images/event-2026/dyn07008.webp'
+const imgOffice = '/images/event-2026/dyn07075.webp'
 const imgTeam = '/images/event-2026/dyn07840.webp'
 
 /* ── data ─────────────────────────────────────────── */
@@ -88,7 +88,7 @@ const activityHighlights = [
     date: '13/07/2026',
   },
   {
-    img: '/images/event-2026/dyn07008.webp',
+    img: '/images/event-2026/dyn07075.webp',
     title: 'TEAM BUILDING – HẠ LONG 2026',
     desc: 'Những khoảnh khắc vận động và tương tác ngoài trời đã tiếp thêm năng lượng mới cho tập thể CHÂU Á THÀNH CÔNG.',
     tag: '✈️ Du lịch',

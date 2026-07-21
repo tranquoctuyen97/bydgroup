@@ -44,7 +44,7 @@ const services = [
 ]
 
 const teamGallery = [
-  { img: '/images/event-2026/dyn07008.webp', title: 'Trải nghiệm & Gắn kết', desc: 'Khoảnh khắc team building 2026 đầy năng lượng giúp đội ngũ kết nối tự nhiên hơn' },
+  { img: '/images/event-2026/dyn07075.webp', title: 'Trải nghiệm & Gắn kết', desc: 'Khoảnh khắc team building 2026 đầy năng lượng giúp đội ngũ kết nối tự nhiên hơn' },
   { img: '/images/trao-thuong-byd.webp', title: 'Ghi nhận & Tôn vinh', desc: 'Mỗi nỗ lực đều xứng đáng được công nhận và tưởng thưởng' },
   { img: '/images/sinh-nhat-quy4.webp', title: 'Ấm áp như gia đình', desc: 'CHÂU Á THÀNH CÔNG là gia đình thứ hai - nơi bạn được quan tâm mỗi ngày' },
   { img: '/images/event-2026/dyn07840.webp', title: 'Yêu thương & Sẻ chia', desc: 'Không gian gala chỉn chu và ấm cúng tạo nên những khoảnh khắc gắn kết đáng nhớ' },

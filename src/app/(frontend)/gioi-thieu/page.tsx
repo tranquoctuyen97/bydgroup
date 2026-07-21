@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-const imgHero = '/images/event-2026/dyn07008.webp'
+const imgHero = '/images/event-2026/dyn07075.webp'
 
 const timeline = [
   {
